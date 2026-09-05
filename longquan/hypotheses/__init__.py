@@ -1,12 +1,12 @@
-"""Hypothesis-space modules: one per game rule.
+"""Primitive modules: one per rule primitive.
 
-Each module exposes the same interface the generic search consumes:
-    cover(obj_cells, pos, axes) -> set of covered cells
-    backproject(obj_cells, targets, axes, w, h) -> candidate positions
+Each primitive exposes the same interface the generic layers consume:
+    score(obs) -> float (match prior for the selector)
+    cover(rel_cells, pos, lines) -> set of covered cells
+    backproject(rel_cells, targets, lines, w, h) -> candidate positions
 
-To add a new game, drop a new module here and inject its cover/backproject
-into loop.solve(). The generic search / motion / loop layers never change.
+To add a new primitive, drop a new module here and register it in registry.py.
 """
-from . import mirror
+from . import reflect, translate, recolor, copy
 
-__all__ = ["mirror"]
+__all__ = ["reflect", "translate", "recolor", "copy"]

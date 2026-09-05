@@ -6,6 +6,7 @@ and horizontal mirror lines; lines are movable and may sit OUTSIDE the board
 (reflection works for any line coord).
 
 Interface:
+    score(obs) -> float  (0..1, match prior)
     cover(rel_cells, pos, lines) -> set of covered cells
     backproject(rel_cells, targets, lines, w, h) -> candidate object positions
     line_candidates(grid_w, grid_h) -> candidate line coord values (incl. outside)
@@ -13,6 +14,17 @@ Interface:
 from __future__ import annotations
 
 from typing import Iterable, List, Tuple
+
+
+def score(obs) -> float:
+    """Match prior: does the observation have line-like structures?
+
+    A reflect game shows a mirror line (a full column/row of a single color).
+    No line => low score; one or more lines => high score.
+    """
+    if not getattr(obs, "lines", None):
+        return 0.0
+    return min(1.0, 0.7 + 0.15 * len(obs.lines))
 
 
 def _reflect(cell: Tuple[int, int], kind: str, coord: int) -> Tuple[int, int]:
@@ -83,12 +95,10 @@ def line_candidates(grid_w: int, grid_h: int, *, padding: int = 8) -> List[int]:
     """Candidate coord values for a movable line.
 
     Lines may sit OUTSIDE the board (reflection works for any coord), so the
-    range is [-padding, size + padding]. padding=8 is generous enough for AR25;
-    a mirrored object at board edge can still reflect via a line slightly
-    outside the board.
+    range is [-padding, size + padding].
     """
     size = max(grid_w, grid_h)
     return list(range(-padding, size + padding))
 
 
-__all__ = ["cover", "backproject", "line_candidates"]
+__all__ = ["score", "cover", "backproject", "line_candidates"]

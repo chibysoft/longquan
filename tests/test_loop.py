@@ -7,7 +7,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 import numpy as np
 
 from longquan import perceive, solve, Tabu, ReplayResult
-from longquan.hypotheses import mirror
+from longquan.hypotheses import reflect
 from longquan.search import solve_configs
 
 
@@ -40,7 +40,7 @@ def test_perceive_recognizes_objects():
 def test_search_finds_known_optimum():
     obs = perceive(_build_l1_frame(), steps_left=64)
     lines = [(ln.kind, ln.coord) for ln in obs.lines]
-    configs = solve_configs(obs, lines, mirror.cover, mirror.backproject)
+    configs = solve_configs(obs, lines, reflect.cover, reflect.backproject)
     assert configs, "no config found"
     assert configs[0]["obj_0"] == (1, 15)
 
@@ -49,7 +49,7 @@ def test_loop_replays_ok():
     obs = perceive(_build_l1_frame(), steps_left=64)
     lines = [(ln.kind, ln.coord) for ln in obs.lines]
     tabu = Tabu("/tmp/longquan_test_tabu.jsonl")
-    result = solve(obs, lines, mirror.cover, mirror.backproject,
+    result = solve(obs, lines, reflect.cover, reflect.backproject,
                    replay=lambda a: ReplayResult(True, 1), tabu=tabu)
     assert result.replay_ok
     assert result.reason == "ok"
@@ -60,7 +60,7 @@ def test_loop_tabu_on_replay_failure():
     obs = perceive(_build_l1_frame(), steps_left=64)
     lines = [(ln.kind, ln.coord) for ln in obs.lines]
     tabu = Tabu("/tmp/longquan_test_tabu2.jsonl")
-    result = solve(obs, lines, mirror.cover, mirror.backproject,
+    result = solve(obs, lines, reflect.cover, reflect.backproject,
                    replay=lambda a: ReplayResult(False, 0, "hit wall"), tabu=tabu)
     assert not result.replay_ok
     assert result.reason == "all_replay_failed"
