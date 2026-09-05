@@ -6,40 +6,44 @@
 
 ## 当前状态摘要
 
-- **思想底座闭环（六份）**：从原理到运行时，已完整闭环。
-  1. `methodology.md` —— 为什么：规则原语量小可穷尽，组合量大易爆；三层定位 L0/L1/L2
-  2. `primitives.md` —— 怎么做：原语接口（score/cover/backproject）+ 选择器工作流
-  3. `primitives-taxonomy.md` —— 做哪些：17 原语全集（几何/拓扑/颜色/对称四族）
-  4. `the-real-mountain.md` —— 真高山是结构归纳，最优解是相对的（DSL内最短可证明，真规则不可证明）
-  5. `retry-loop.md` —— 怎么活下来：升级重试 + 步数预算（RHAE平方惩罚）+ 锚点分级
-  6. `roadmap.md` —— 三站路线（单原语做扎实 → 原语库成形 → 结构归纳）
+- **思想底座闭环（八份）**：从原理到运行时到施工，已完整闭环。
+  1. `methodology.md` —— 为什么：规则原语量小可穷尽，组合量大易爆；三层定位
+  2. `primitives.md` —— 怎么做：原语接口（score/cover/backproject）+ 选择器
+  3. `primitives-taxonomy.md` —— 做哪些：17 原语全集
+  4. `the-real-mountain.md` —— 真高山是结构归纳，最优解是相对的
+  5. `retry-loop.md` —— 怎么活下来：升级重试 + 步数预算 + 锚点分级
+  6. `step-budget.md` —— 经济基础：RHAE 平方惩罚，首试1.5×/累计2.5×
+  7. `roadmap.md` —— 三站路线
+  8. `execution-plan.md` —— 以终为始施工图，五阶段带验收
 
-- **代码骨架已立**：perceive/search/motion/loop/memory + hypotheses（mirror），L1 能力等价灵境 M1（线上验证 levels=1）。
-
-- **待追平**：L2/L3 三缺口（轴可动+负坐标、横轴真实帧识别、反射镜像干扰）。
-
----
-
-## 路线进度（三站）
-
-| 站 | 内容 | 状态 |
-|----|------|------|
-| 站 1 | 单原语做扎实（reflect 补全，追平 L1-L3） | 进行中：三缺口待修 |
-| 站 2 | 原语库成形（选择器 + 第一批原语 reflect/translate/recolor/copy） | 未开始 |
-| 站 3 | 结构归纳（程序合成：MDL + 约束求解，迁移 ft09） | 未开始 |
+- **阶段 0 达成**：reflect 原语在 AR25 L1-L3 端到端线上通关（levels=3）。
+  - 修复三缺口：可动轴识别（中心洞色0）、遍历所有轴候选+cost排序、横轴识别
+  - L2 找到 cost=11 的解，比灵境 M1 的 32 步省 21 步
 
 ---
 
-## 下一步：站 2 选择器 + 原语库第一批
+## 路线进度（五阶段，见 execution-plan.md）
 
-按 roadmap 和 primitives.md 的落地清单：
+| 阶段 | 内容 | 状态 |
+|------|------|------|
+| 0 | reflect 补全，追平 M1 | ✅ 达成：L1-L3 levels=3 |
+| 1 | 4 原语 + 选择器 | 进行中 |
+| 2 | 程序表示（原语序列） | 未开始 |
+| 3 | 结构归纳（MDL + 约束求解） | 未开始 |
+| 4 | ft09 迁移 + 报告 | 未开始 |
 
-1. `hypotheses/mirror.py` → 改名 `reflect.py`，接口对齐 score/cover/backproject 三函数
-2. 补「原语库注册表」`hypotheses/registry.py`
-3. loop.py 加「原语选择器」：遍历 registry，按 score 排序逐个试
-4. reflect 原语补全「轴可动 + 负坐标」（反射原语的固有属性）
+---
 
-**依赖关系**：站 2 依赖站 1 完成（reflect 先做扎实，才有资格谈选择器）。
+## 下一步：阶段 1 原语库成形
+
+按 primitives.md 的落地清单：
+
+1. `hypotheses/mirror.py` → 改名 `hypotheses/reflect.py`，接口对齐 score/cover/backproject
+2. 补 `hypotheses/translate.py`、`recolor.py`、`copy.py`（第一批其余 3 个）
+3. 写 `hypotheses/registry.py`：原语注册表
+4. loop 加「原语选择器」：按 score 排序，逐个试，回放淘汰
+
+**验证游戏的选择**（tags 不透露机制，需探路后定）：translate/recolor/copy 各从剩余 22 款里探路一个，用探路结论确定对应验证游戏。reflect 已在 AR25 验证。
 
 ---
 
