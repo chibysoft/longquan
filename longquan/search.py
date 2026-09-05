@@ -5,6 +5,8 @@ action tree. Uses target decomposition: iterate line positions (the coupling
 variables), then solve objects independently and combine via bitmasks.
 
 Game rule injected as cover/backproject/line_candidates callbacks.
+Object cells are ABSOLUTE board coords; this module converts them to offsets
+before calling the hypothesis (which expects offsets).
 """
 from __future__ import annotations
 
@@ -29,8 +31,7 @@ def _target_bitmap(covered: set, target_index: Dict[Tuple[int, int], int]) -> in
     return bm
 
 
-def _search_objects(obs, lines, cover, backproject, target_index, all_mask,
-                    max_solutions):
+def _search_objects(obs, lines, cover, backproject, target_index, all_mask):
     """For fixed line positions, find object configs covering all targets."""
     targets_sorted = sorted(obs.targets)
     per_obj = []
@@ -48,8 +49,6 @@ def _search_objects(obs, lines, cover, backproject, target_index, all_mask,
     solutions = []
 
     def combine(idx, cfg, bm):
-        if len(solutions) >= max_solutions:
-            return
         if bm == all_mask:
             solutions.append(dict(cfg))
             return
@@ -58,11 +57,26 @@ def _search_objects(obs, lines, cover, backproject, target_index, all_mask,
         obj = obs.objects[idx]
         for pos, m in per_obj[idx]:
             combine(idx + 1, {**cfg, obj.id: pos}, bm | m)
-            if len(solutions) >= max_solutions:
-                return
 
     combine(0, {}, 0)
     return solutions
+
+
+def _config_cost(obs, cfg):
+    """Total moves: line moves + object moves. Every move is a real action."""
+    cost = 0
+    lines = cfg.get("_lines", [])
+    cur_lines = {ln.kind: ln.coord for ln in obs.lines}
+    for kind, coord in lines:
+        cur = cur_lines.get(kind, 0)
+        cost += abs(coord - cur)
+    for obj in obs.objects:
+        if obj.id not in cfg:
+            continue
+        tx, ty = cfg[obj.id]
+        cx, cy = obj.bbox[0], obj.bbox[1]
+        cost += abs(tx - cx) + abs(ty - cy)
+    return cost
 
 
 def solve_configs(
@@ -74,8 +88,15 @@ def solve_configs(
     line_candidates: LineCandidatesFn = None,
     max_solutions: int = 8,
 ) -> List[Dict]:
-    """Return configs. Each config is {obj_id: pos} plus a special '_lines' key
-    holding the chosen line positions [(kind, coord), ...]."""
+    """Return configs sorted by cost (ascending).
+
+    Line positions are candidates ONLY for movable lines; fixed lines stay put.
+    The caller passes `lines` as [(kind, coord), ...] plus the movable flag is
+    carried on obs.lines (matched by kind+coord).
+
+    Iterates all movable-line candidate positions; for each, finds object
+    configs covering all targets; collects all valid configs; sorts by cost.
+    """
     targets_sorted = sorted(obs.targets)
     target_index = {t: i for i, t in enumerate(targets_sorted)}
     all_mask = (1 << len(targets_sorted)) - 1
@@ -85,12 +106,28 @@ def solve_configs(
     if not obs.objects:
         return []
 
-    # Iterate line positions. For lines already detected as movable, try all
-    # candidates; if line_candidates is None, keep the observed lines fixed.
-    line_options = [lines]  # default: keep observed
-    if line_candidates is not None and lines:
-        for i, (kind, _) in enumerate(lines):
-            for cand in line_candidates(obs.grid_w, obs.grid_h):
+    # Which lines are movable? Match obs.lines (has .movable) to passed lines.
+    movable_flags = []
+    for kind, coord in lines:
+        movable = False
+        for ln in obs.lines:
+            if ln.kind == kind and ln.coord == coord:
+                movable = ln.movable
+                break
+        movable_flags.append(movable)
+
+    # Build line-position options. For movable lines, enumerate candidates;
+    # for fixed lines, keep observed coord.
+    line_options = []
+    if line_candidates is None or not any(movable_flags):
+        line_options = [lines]
+    else:
+        cands = line_candidates(obs.grid_w, obs.grid_h)
+        # Enumerate only over movable line indices.
+        movable_idx = [i for i, m in enumerate(movable_flags) if m]
+        for i in movable_idx:
+            kind, _ = lines[i]
+            for cand in cands:
                 alt = list(lines)
                 alt[i] = (kind, cand)
                 line_options.append(alt)
@@ -98,18 +135,17 @@ def solve_configs(
     results = []
     seen = set()
     for ls in line_options:
-        sols = _search_objects(obs, ls, cover, backproject, target_index,
-                               all_mask, max_solutions)
+        sols = _search_objects(obs, ls, cover, backproject, target_index, all_mask)
         for cfg in sols:
-            key = repr(sorted(cfg.items()))
+            cfg["_lines"] = ls
+            key = repr((tuple(sorted(cfg.items())), tuple(ls)))
             if key in seen:
                 continue
             seen.add(key)
-            cfg["_lines"] = ls
             results.append(cfg)
-            if len(results) >= max_solutions:
-                return results
-    return results
+
+    results.sort(key=lambda c: _config_cost(obs, c))
+    return results[:max_solutions]
 
 
 __all__ = ["solve_configs"]

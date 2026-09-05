@@ -1,14 +1,14 @@
-"""Mirror-reflection hypothesis (AR25).
+"""Mirror-reflection primitive (AR25).
 
 The ONLY place that knows about mirror lines and reflection. The generic
 search calls cover/backproject without knowing the rule. Supports both vertical
-and horizontal mirror lines; lines are movable, so this module also provides
-candidate line positions for the search to iterate.
+and horizontal mirror lines; lines are movable and may sit OUTSIDE the board
+(reflection works for any line coord).
 
 Interface:
     cover(rel_cells, pos, lines) -> set of covered cells
     backproject(rel_cells, targets, lines, w, h) -> candidate object positions
-    line_candidates(grid_w, grid_h) -> candidate line coord values
+    line_candidates(grid_w, grid_h) -> candidate line coord values (incl. outside)
 """
 from __future__ import annotations
 
@@ -79,9 +79,16 @@ def backproject(
     return sorted(valid)
 
 
-def line_candidates(grid_w: int, grid_h: int) -> List[int]:
-    """Candidate coord values for a movable line (any board column/row)."""
-    return list(range(max(grid_w, grid_h)))
+def line_candidates(grid_w: int, grid_h: int, *, padding: int = 8) -> List[int]:
+    """Candidate coord values for a movable line.
+
+    Lines may sit OUTSIDE the board (reflection works for any coord), so the
+    range is [-padding, size + padding]. padding=8 is generous enough for AR25;
+    a mirrored object at board edge can still reflect via a line slightly
+    outside the board.
+    """
+    size = max(grid_w, grid_h)
+    return list(range(-padding, size + padding))
 
 
 __all__ = ["cover", "backproject", "line_candidates"]

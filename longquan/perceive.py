@@ -3,6 +3,10 @@
 Reads ONLY the rendered frame. Color semantics are hypothesis-space parameters
 told at design time, not runtime source reading. Frame physics (measured):
 board cell = pixel // 3; crop x=63 column and y=63 row.
+
+Movable-line detection (measured from real frames):
+- fixed line: every cell renders solid color 10 (no center hole)
+- movable line: every cell has color 0 at its center (render marker)
 """
 from __future__ import annotations
 
@@ -47,6 +51,22 @@ def _connected(cells: set) -> List[set]:
     return comps
 
 
+def _line_movable(cropped: np.ndarray, kind: str, coord: int) -> bool:
+    """A line is movable if its cells have a color-0 center hole (measured)."""
+    # Sample a few cells along the line and check their center pixel.
+    samples = 0
+    holes = 0
+    for g in range(21):
+        px, py = (coord * 3 + 1, g * 3 + 1) if kind == "V" else (g * 3 + 1, coord * 3 + 1)
+        if not (0 <= px < 63 and 0 <= py < 63):
+            continue
+        samples += 1
+        if int(cropped[py, px]) == COLOR_SELECTED:
+            holes += 1
+    # Movable if a clear majority of sampled centers are holes.
+    return samples > 0 and holes >= samples * 0.8
+
+
 def perceive(
     frame,
     *,
@@ -68,11 +88,13 @@ def perceive(
         by_y.setdefault(gy, []).append(gx)
     for gx, gys in by_x.items():
         if len(gys) >= 15:
-            lines.append(Line(kind="V", coord=gx))
+            movable = _line_movable(cropped, "V", gx)
+            lines.append(Line(kind="V", coord=gx, movable=movable))
             line_span |= {(gx, gy) for gy in range(21)}
     for gy, gxs in by_y.items():
         if len(gxs) >= 15:
-            lines.append(Line(kind="H", coord=gy))
+            movable = _line_movable(cropped, "H", gy)
+            lines.append(Line(kind="H", coord=gy, movable=movable))
             line_span |= {(gx, gy) for gx in range(21)}
 
     targets = sorted(_grid_cells(cropped, COLOR_TARGET))

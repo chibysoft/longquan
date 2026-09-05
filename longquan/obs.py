@@ -16,9 +16,14 @@ class Obj:
 
 @dataclass
 class Line:
-    """A line-like structure. kind is 'V' (vertical, at x=coord) or 'H' (horizontal, at y=coord)."""
+    """A line-like structure. kind 'V' (vertical, at x=coord) or 'H' (horizontal, at y=coord).
+
+    movable: True if the line has a center "hole" (color 0) in its cells — the
+    render marker for a movable line (fixed lines render solid, no hole).
+    """
     kind: str
     coord: int
+    movable: bool = False
 
 
 @dataclass
