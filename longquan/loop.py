@@ -1,12 +1,4 @@
-"""Longquan learner loop: orchestrate perceive -> search -> motion -> replay.
-
-The closed-book loop: reduce a frame to Obs, search configs, turn configs into
-actions, replay, record failures into tabu, try the next config.
-
-This is the ONLY entry point a caller needs. It knows nothing about any game's
-rule; the rule is the `cover`/`backproject` pair injected by the caller (from
-hypotheses/mirror.py for the first game).
-"""
+"""Longquan learner loop: perceive -> search -> motion -> replay -> tabu."""
 from __future__ import annotations
 
 from dataclasses import dataclass, field
@@ -30,7 +22,7 @@ class ReplayResult:
 @dataclass
 class SolveResult:
     actions: List[int] = field(default_factory=list)
-    config: Optional[Dict[str, Tuple[int, int]]] = None
+    config: Optional[Dict] = None
     configs_tried: int = 0
     replay_ok: bool = False
     reason: str = ""
@@ -39,23 +31,26 @@ class SolveResult:
 
 def solve(
     obs: Obs,
-    axes: List[int],
+    lines: List[Tuple[str, int]],
     cover,
     backproject,
     replay: Callable[[List[int]], ReplayResult],
     *,
+    line_candidates=None,
     tabu: Optional[Tabu] = None,
     max_configs: int = 8,
 ) -> SolveResult:
     tabu = tabu if tabu is not None else Tabu()
-    configs = solve_configs(obs, axes, cover, backproject, max_solutions=max_configs)
+    configs = solve_configs(obs, lines, cover, backproject,
+                            line_candidates=line_candidates,
+                            max_solutions=max_configs)
 
     if not configs:
         return SolveResult(reason="no_cover", configs_tried=0)
 
     tried = 0
     for cfg in configs:
-        key = repr(sorted(cfg.items()))
+        key = repr(sorted((k, v) for k, v in cfg.items() if k != "_lines"))
         tried += 1
         if tabu.blocked(HYPOTHESIS_SPACE_TYPE, key):
             continue

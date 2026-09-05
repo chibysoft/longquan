@@ -5,13 +5,13 @@ Pipeline: perceive (frame -> Obs) -> search (config space) -> motion
 
 Game rules are hypothesis-space modules (see hypotheses/), not hardcoded here.
 """
-from .obs import Obs, Obj
+from .obs import Obs, Obj, Line
 from .perceive import perceive
 from .memory import Tabu, TabuRecord
 from .loop import solve, SolveResult, ReplayResult
 
 __all__ = [
-    "Obs", "Obj", "perceive",
+    "Obs", "Obj", "Line", "perceive",
     "Tabu", "TabuRecord",
     "solve", "SolveResult", "ReplayResult",
 ]
