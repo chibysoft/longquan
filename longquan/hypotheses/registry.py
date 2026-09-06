@@ -6,7 +6,8 @@ order, and eliminating failed ones via replay.
 
 reflect: fully implemented (verified on AR25).
 translate: cover/backproject implemented; verify game not yet picked.
-recolor / copy: score only; cover/backproject are TODO pending a verify game.
+copy: cover/backproject implemented; verify game WITHDRAWN (ls20 -> move+match).
+recolor: score only; cover/backproject are TODO pending a verify game.
 """
 from __future__ import annotations
 

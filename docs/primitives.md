@@ -33,6 +33,8 @@
 
 ## 2. 原语的统一接口（三个函数）
 
+> **注意（2026-09-05 更正）：本「三函数」只统一了「几何族」（reflect/translate/recolor/copy 等网格变换原语）。** 交互族（move/mate/match/sequence/gravity/waypoint）走另一套「状态机」接口（`init/actions/step/done`），见 `docs/primitive-interface-interactive.md`。因为交互规则的「消除/盖印/时序/步数上限」塞不进「配置→覆盖」的纯函数契约。
+
 每个原语模块暴露三个函数，签名统一：
 
 ```python
@@ -82,6 +84,8 @@ def backproject(obs, param, obj_cells, targets) -> list[pos]
 组合 = 一个游戏的规则是多个原语的复合（如「先反射再变色」）。
 
 **钩子已经在接口里**：`cover` 返回 `set`。两个原语组合 = 两个 cover 的**并集**（或复合）。因为 set 天然支持并集，组合不需要改接口，只需要未来加一层「组合器」。
+
+> **这只适用于几何族之间的组合。** 交互族的组合 = `step` 的**序列**（先 move 后 match，状态逐步演化），不是 set 并集。交互族的「组合器」是状态空间搜索器，见 `docs/primitive-interface-interactive.md` §5。
 
 **第一版边界（明确不做）**：只支持单原语。先证明「单原语能从 AR25 迁移到 ft09」，再谈组合。否则一口吃不成胖子。
 
