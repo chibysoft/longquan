@@ -1,0 +1,735 @@
+{
+  "game_id": "ft09-0d8bbf25",
+  "l2_clear": {
+    "cleared": true,
+    "levels_end": 2,
+    "base": 9,
+    "flip_to": 12,
+    "trajectory": [
+      {
+        "step": 1,
+        "pixel": [
+          23,
+          17
+        ],
+        "block_origin": [
+          20,
+          14
+        ],
+        "polarity": "normal",
+        "levels_completed": 1,
+        "diff_summary": {
+          "9->12": 36,
+          "12->11": 2
+        }
+      },
+      {
+        "step": 2,
+        "pixel": [
+          23,
+          25
+        ],
+        "block_origin": [
+          20,
+          22
+        ],
+        "polarity": "normal",
+        "levels_completed": 1,
+        "diff_summary": {
+          "9->12": 36,
+          "12->11": 2
+        }
+      },
+      {
+        "step": 3,
+        "pixel": [
+          39,
+          25
+        ],
+        "block_origin": [
+          36,
+          22
+        ],
+        "polarity": "normal",
+        "levels_completed": 1,
+        "diff_summary": {
+          "9->12": 36,
+          "12->11": 2
+        }
+      },
+      {
+        "step": 4,
+        "pixel": [
+          23,
+          33
+        ],
+        "block_origin": [
+          20,
+          30
+        ],
+        "polarity": "normal",
+        "levels_completed": 1,
+        "diff_summary": {
+          "9->12": 36,
+          "12->11": 2
+        }
+      },
+      {
+        "step": 5,
+        "pixel": [
+          39,
+          33
+        ],
+        "block_origin": [
+          36,
+          30
+        ],
+        "polarity": "normal",
+        "levels_completed": 1,
+        "diff_summary": {
+          "9->12": 36,
+          "12->11": 2
+        }
+      },
+      {
+        "step": 6,
+        "pixel": [
+          23,
+          49
+        ],
+        "block_origin": [
+          20,
+          46
+        ],
+        "polarity": "normal",
+        "levels_completed": 1,
+        "diff_summary": {
+          "9->12": 36,
+          "12->11": 2
+        }
+      },
+      {
+        "step": 7,
+        "pixel": [
+          31,
+          49
+        ],
+        "block_origin": [
+          28,
+          46
+        ],
+        "polarity": "normal",
+        "levels_completed": 2,
+        "diff_summary": {
+          "9->12": 36
+        }
+      }
+    ]
+  },
+  "l3_levels_start": 2,
+  "l3_levels_end": 3,
+  "cleared": true,
+  "base": 8,
+  "flip_to": 12,
+  "analysis": {
+    "label": "L3",
+    "hist": {
+      "4": 3028,
+      "8": 852,
+      "12": 87,
+      "0": 72,
+      "2": 56,
+      "11": 1
+    },
+    "n0": 72,
+    "n2": 56,
+    "n8": 852,
+    "n9": 0,
+    "n12": 87,
+    "patches": [
+      {
+        "origin": [
+          28,
+          12
+        ],
+        "hist": {
+          "0": 20,
+          "12": 4,
+          "2": 12
+        },
+        "macro": {
+          "0,0": "0",
+          "0,1": "0",
+          "0,2": "0",
+          "1,0": "0",
+          "1,1": "fixed",
+          "1,2": "2",
+          "2,0": "2",
+          "2,1": "0",
+          "2,2": "2"
+        },
+        "fixed_color": 12
+      },
+      {
+        "origin": [
+          20,
+          28
+        ],
+        "hist": {
+          "2": 16,
+          "0": 16,
+          "8": 4
+        },
+        "macro": {
+          "0,0": "2",
+          "0,1": "0",
+          "0,2": "2",
+          "1,0": "2",
+          "1,1": "fixed",
+          "1,2": "0",
+          "2,0": "0",
+          "2,1": "0",
+          "2,2": "2"
+        },
+        "fixed_color": 8
+      },
+      {
+        "origin": [
+          36,
+          28
+        ],
+        "hist": {
+          "2": 16,
+          "0": 16,
+          "8": 4
+        },
+        "macro": {
+          "0,0": "2",
+          "0,1": "0",
+          "0,2": "0",
+          "1,0": "0",
+          "1,1": "fixed",
+          "1,2": "2",
+          "2,0": "2",
+          "2,1": "0",
+          "2,2": "2"
+        },
+        "fixed_color": 8
+      },
+      {
+        "origin": [
+          28,
+          44
+        ],
+        "hist": {
+          "2": 12,
+          "0": 20,
+          "12": 4
+        },
+        "macro": {
+          "0,0": "2",
+          "0,1": "0",
+          "0,2": "2",
+          "1,0": "0",
+          "1,1": "fixed",
+          "1,2": "2",
+          "2,0": "0",
+          "2,1": "0",
+          "2,2": "0"
+        },
+        "fixed_color": 12
+      }
+    ],
+    "plan_n": 14,
+    "base": 8,
+    "flip_to": 12,
+    "plan": [
+      {
+        "ax": 20,
+        "ay": 4,
+        "ox": 20,
+        "oy": 4,
+        "block": [
+          0,
+          0
+        ],
+        "instr": [
+          28,
+          12
+        ],
+        "fixed_color": 12,
+        "polarity": "normal",
+        "cx": 23,
+        "cy": 7
+      },
+      {
+        "ax": 28,
+        "ay": 4,
+        "ox": 20,
+        "oy": 4,
+        "block": [
+          0,
+          1
+        ],
+        "instr": [
+          28,
+          12
+        ],
+        "fixed_color": 12,
+        "polarity": "normal",
+        "cx": 31,
+        "cy": 7
+      },
+      {
+        "ax": 36,
+        "ay": 4,
+        "ox": 20,
+        "oy": 4,
+        "block": [
+          0,
+          2
+        ],
+        "instr": [
+          28,
+          12
+        ],
+        "fixed_color": 12,
+        "polarity": "normal",
+        "cx": 39,
+        "cy": 7
+      },
+      {
+        "ax": 20,
+        "ay": 12,
+        "ox": 20,
+        "oy": 4,
+        "block": [
+          1,
+          0
+        ],
+        "instr": [
+          28,
+          12
+        ],
+        "fixed_color": 12,
+        "polarity": "normal",
+        "cx": 23,
+        "cy": 15
+      },
+      {
+        "ax": 12,
+        "ay": 20,
+        "ox": 12,
+        "oy": 20,
+        "block": [
+          0,
+          0
+        ],
+        "instr": [
+          20,
+          28
+        ],
+        "fixed_color": 8,
+        "polarity": "inverted",
+        "cx": 15,
+        "cy": 23
+      },
+      {
+        "ax": 28,
+        "ay": 20,
+        "ox": 20,
+        "oy": 4,
+        "block": [
+          2,
+          1
+        ],
+        "instr": [
+          28,
+          12
+        ],
+        "fixed_color": 12,
+        "polarity": "normal",
+        "cx": 31,
+        "cy": 23
+      },
+      {
+        "ax": 12,
+        "ay": 28,
+        "ox": 12,
+        "oy": 20,
+        "block": [
+          1,
+          0
+        ],
+        "instr": [
+          20,
+          28
+        ],
+        "fixed_color": 8,
+        "polarity": "inverted",
+        "cx": 15,
+        "cy": 31
+      },
+      {
+        "ax": 44,
+        "ay": 28,
+        "ox": 28,
+        "oy": 20,
+        "block": [
+          1,
+          2
+        ],
+        "instr": [
+          36,
+          28
+        ],
+        "fixed_color": 8,
+        "polarity": "inverted",
+        "cx": 47,
+        "cy": 31
+      },
+      {
+        "ax": 28,
+        "ay": 36,
+        "ox": 12,
+        "oy": 20,
+        "block": [
+          2,
+          2
+        ],
+        "instr": [
+          20,
+          28
+        ],
+        "fixed_color": 8,
+        "polarity": "inverted",
+        "cx": 31,
+        "cy": 39
+      },
+      {
+        "ax": 44,
+        "ay": 36,
+        "ox": 28,
+        "oy": 20,
+        "block": [
+          2,
+          2
+        ],
+        "instr": [
+          36,
+          28
+        ],
+        "fixed_color": 8,
+        "polarity": "inverted",
+        "cx": 47,
+        "cy": 39
+      },
+      {
+        "ax": 20,
+        "ay": 44,
+        "ox": 20,
+        "oy": 36,
+        "block": [
+          1,
+          0
+        ],
+        "instr": [
+          28,
+          44
+        ],
+        "fixed_color": 12,
+        "polarity": "normal",
+        "cx": 23,
+        "cy": 47
+      },
+      {
+        "ax": 20,
+        "ay": 52,
+        "ox": 20,
+        "oy": 36,
+        "block": [
+          2,
+          0
+        ],
+        "instr": [
+          28,
+          44
+        ],
+        "fixed_color": 12,
+        "polarity": "normal",
+        "cx": 23,
+        "cy": 55
+      },
+      {
+        "ax": 28,
+        "ay": 52,
+        "ox": 20,
+        "oy": 36,
+        "block": [
+          2,
+          1
+        ],
+        "instr": [
+          28,
+          44
+        ],
+        "fixed_color": 12,
+        "polarity": "normal",
+        "cx": 31,
+        "cy": 55
+      },
+      {
+        "ax": 36,
+        "ay": 52,
+        "ox": 20,
+        "oy": 36,
+        "block": [
+          2,
+          2
+        ],
+        "instr": [
+          28,
+          44
+        ],
+        "fixed_color": 12,
+        "polarity": "normal",
+        "cx": 39,
+        "cy": 55
+      }
+    ]
+  },
+  "trajectory": [
+    {
+      "step": 1,
+      "pixel": [
+        23,
+        7
+      ],
+      "block_origin": [
+        20,
+        4
+      ],
+      "polarity": "normal",
+      "levels_completed": 2,
+      "diff_summary": {
+        "8->12": 36
+      }
+    },
+    {
+      "step": 2,
+      "pixel": [
+        31,
+        7
+      ],
+      "block_origin": [
+        28,
+        4
+      ],
+      "polarity": "normal",
+      "levels_completed": 2,
+      "diff_summary": {
+        "8->12": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 3,
+      "pixel": [
+        39,
+        7
+      ],
+      "block_origin": [
+        36,
+        4
+      ],
+      "polarity": "normal",
+      "levels_completed": 2,
+      "diff_summary": {
+        "8->12": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 4,
+      "pixel": [
+        23,
+        15
+      ],
+      "block_origin": [
+        20,
+        12
+      ],
+      "polarity": "normal",
+      "levels_completed": 2,
+      "diff_summary": {
+        "8->12": 36
+      }
+    },
+    {
+      "step": 5,
+      "pixel": [
+        15,
+        23
+      ],
+      "block_origin": [
+        12,
+        20
+      ],
+      "polarity": "inverted",
+      "levels_completed": 2,
+      "diff_summary": {
+        "8->12": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 6,
+      "pixel": [
+        31,
+        23
+      ],
+      "block_origin": [
+        28,
+        20
+      ],
+      "polarity": "normal",
+      "levels_completed": 2,
+      "diff_summary": {
+        "8->12": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 7,
+      "pixel": [
+        15,
+        31
+      ],
+      "block_origin": [
+        12,
+        28
+      ],
+      "polarity": "inverted",
+      "levels_completed": 2,
+      "diff_summary": {
+        "8->12": 36
+      }
+    },
+    {
+      "step": 8,
+      "pixel": [
+        47,
+        31
+      ],
+      "block_origin": [
+        44,
+        28
+      ],
+      "polarity": "inverted",
+      "levels_completed": 2,
+      "diff_summary": {
+        "8->12": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 9,
+      "pixel": [
+        31,
+        39
+      ],
+      "block_origin": [
+        28,
+        36
+      ],
+      "polarity": "inverted",
+      "levels_completed": 2,
+      "diff_summary": {
+        "8->12": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 10,
+      "pixel": [
+        47,
+        39
+      ],
+      "block_origin": [
+        44,
+        36
+      ],
+      "polarity": "inverted",
+      "levels_completed": 2,
+      "diff_summary": {
+        "8->12": 36
+      }
+    },
+    {
+      "step": 11,
+      "pixel": [
+        23,
+        47
+      ],
+      "block_origin": [
+        20,
+        44
+      ],
+      "polarity": "normal",
+      "levels_completed": 2,
+      "diff_summary": {
+        "8->12": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 12,
+      "pixel": [
+        23,
+        55
+      ],
+      "block_origin": [
+        20,
+        52
+      ],
+      "polarity": "normal",
+      "levels_completed": 2,
+      "diff_summary": {
+        "8->12": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 13,
+      "pixel": [
+        31,
+        55
+      ],
+      "block_origin": [
+        28,
+        52
+      ],
+      "polarity": "normal",
+      "levels_completed": 2,
+      "diff_summary": {
+        "8->12": 36
+      }
+    },
+    {
+      "step": 14,
+      "pixel": [
+        39,
+        55
+      ],
+      "block_origin": [
+        36,
+        52
+      ],
+      "polarity": "normal",
+      "levels_completed": 3,
+      "diff_summary": {
+        "8->12": 36
+      }
+    }
+  ]
+}

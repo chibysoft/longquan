@@ -1,26 +1,40 @@
 # 当前断点交接（Handoff）
 
-> 2026-09-06 · 给 Cursor 接手的当前状态快照，不是设计文档。
+> 2026-09-07 · 给 Cursor 接手的当前状态快照，不是设计文档。
 > **口径（与 verify-games.md 第三版对齐）**：ls20 = move+match；copy 撤回未验证。
+> **并行线**：ft09 L1–L4 通关；L4 为三态循环 mask-flip（0→fixed，2→8）。
 
 ---
 
 ## 当前进度
 
-**关键路径：阶段 1b —— L1+L2 seated 线上 PASS；L3 感知已修，卡在武装迁移。**
+**关键路径仍是 ls20 L3 武装；ft09 为验收线并行探路。**
 
 ```
-① 交互族坐实（ls20 = move+match） ← 我们现在在这里
+① 交互族坐实（ls20 = move+match）
    ├── move / 任务 A              ← ✅
    ├── match 通关（H19/H20/H21/H23）← ✅ L1+L2 seated clear PASS
    └── ls20 L3–L7 / 全关          ← ⏳ L3 能走到 stamp 门前，武装未迁移
-② 阶段1.5：反向验证
-③ 阶段2：程序表示
-④ 阶段3：结构归纳
-⑤ 阶段4：ft09 迁移
+…
+⑤ 阶段4：ft09 迁移               ← ⏳ L1–L4 ✅；L4 三态规则已锁
 ```
 
 mate（m0r0）**不并行**。
+
+---
+
+## ft09（2026-09-07）
+
+| 项 | 状态 |
+|----|------|
+| L1 | ✅ base9→8；0=翻；单 3×3 |
+| L2 | ✅ base9→12；双层 3×3 并集 |
+| L3 | ✅ base8→12；十字 4 图案；fixed==base 极性反转 |
+| L4 | ✅ **三态** `9→8→12→9`；宏格 `0→fixed色`、`2→8`；三图案一致；21 点 levels 3→4 |
+| 图例 | 右上 4×4 堆叠 9/8/12 = 循环次序 |
+| 产物 | `ft09_l4_click_flip_probe.py` · `ft09_l4_frame_live.json` · `ft09_l4_click_flip_trajectory.json` · `docs/ft09-l4-click-flip-probe.md` |
+
+**ft09 下一步**：L5 拉帧+闭环（检验三态规则是否再迁）。
 
 ---
 

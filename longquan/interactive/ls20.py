@@ -210,35 +210,48 @@ def carrying_near_mover(frame, mover_bbox: Optional[BBox] = None):
 
 
 def detect_warps(frame, offset: Optional[Tuple[int, int]] = None, walkable=None):
-    """Live-probed L3+: top-band portal cells.
+    """Live-probed L3+: portal cells (horizontal + vertical).
 
-    Pattern: walkable cell with no UP neighbor, color-1 strip immediately west of
-    the 5x2 footprint, and a contiguous same-row run to the right. Any action
-    from that cell teleports to the rightmost cell of the run (engine flash).
-    L1/L2: empty. L3: {(1,1), *DIRS} -> (6,1).
+    Horizontal: walkable cell with no UP neighbor, color-1 strip immediately
+    west of the 5x2 footprint, and a contiguous same-row run to the right. Any
+    action from that cell teleports to the rightmost cell of the run.
+    L3: {(1,1), *DIRS} -> (6,1).
+
+    Vertical (live-probed E2): a color-1 HORIZONTAL bar directly above the 5x2
+    footprint (x-aligned). A DOWN action teleports down the SAME COLUMN to the
+    bottom of the contiguous walkable run (the stamp-gate approach cell).
+    L3: {(10,1), DOWN} -> (10,9).  L1/L2: empty.
     """
     if offset is None:
         offset = grid_offset(frame)
     if walkable is None:
         walkable = build_walkable(frame, offset, armed=False)
     g = _plane(frame)
+    H, W = g.shape
+    mw = MOVE_SHAPE[0]
     warps = {}
     for (cx, cy) in walkable:
-        if (cx, cy - 1) in walkable:
-            continue
         px, py = cursor_to_pixel((cx, cy), offset)
-        if px <= 0 or py + 1 >= g.shape[0]:
+        if px < 0 or py < 0 or py + 1 >= H:
             continue
-        if not np.any(g[py:py + 2, px - 1] == 1):
-            continue
-        x = cx
-        while (x + 1, cy) in walkable:
-            x += 1
-        land = (x, cy)
-        if land == (cx, cy):
-            continue
-        for d in ((1, 0), (-1, 0), (0, 1), (0, -1)):
-            warps[((cx, cy), d)] = land
+        # --- horizontal portal: color-1 strip west + same-row run ---
+        if (cx, cy - 1) not in walkable and px > 0 and np.any(g[py:py + 2, px - 1] == 1):
+            x = cx
+            while (x + 1, cy) in walkable:
+                x += 1
+            land = (x, cy)
+            if land != (cx, cy):
+                for d in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                    warps[((cx, cy), d)] = land
+        # --- vertical portal: color-1 HORIZONTAL bar directly above ---
+        # (>=2 px: reject single-pixel vline/plus fragments above a footprint)
+        if py - 1 >= 0 and px + mw <= W and int(np.sum(g[py - 1, px:px + mw] == 1)) >= 2:
+            y = cy
+            while (cx, y + 1) in walkable:
+                y += 1
+            land = (cx, y)
+            if land != (cx, cy):
+                warps[((cx, cy), (0, 1))] = land
     return warps
 
 

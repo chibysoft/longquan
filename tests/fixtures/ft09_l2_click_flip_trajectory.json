@@ -1,0 +1,280 @@
+{
+  "game_id": "ft09-0d8bbf25",
+  "l2_levels_start": 1,
+  "l2_levels_end": 2,
+  "cleared": true,
+  "puzzles": [
+    {
+      "name": "upper",
+      "ox": 20,
+      "oy": 14,
+      "instr": [
+        28,
+        22
+      ],
+      "macro": {
+        "0,0": "flip",
+        "0,1": "keep",
+        "0,2": "keep",
+        "1,0": "flip",
+        "1,1": "fixed",
+        "1,2": "flip",
+        "2,0": "flip",
+        "2,1": "keep",
+        "2,2": "flip"
+      },
+      "flips": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "lower",
+      "ox": 20,
+      "oy": 30,
+      "instr": [
+        28,
+        38
+      ],
+      "macro": {
+        "0,0": "flip",
+        "0,1": "keep",
+        "0,2": "flip",
+        "1,0": "keep",
+        "1,1": "fixed",
+        "1,2": "keep",
+        "2,0": "flip",
+        "2,1": "flip",
+        "2,2": "keep"
+      },
+      "flips": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    }
+  ],
+  "plan": [
+    {
+      "puzzle": "upper",
+      "ox": 20,
+      "oy": 14,
+      "block": [
+        0,
+        0
+      ]
+    },
+    {
+      "puzzle": "upper",
+      "ox": 20,
+      "oy": 14,
+      "block": [
+        1,
+        0
+      ]
+    },
+    {
+      "puzzle": "upper",
+      "ox": 20,
+      "oy": 14,
+      "block": [
+        1,
+        2
+      ]
+    },
+    {
+      "puzzle": "upper",
+      "ox": 20,
+      "oy": 14,
+      "block": [
+        2,
+        0
+      ]
+    },
+    {
+      "puzzle": "upper",
+      "ox": 20,
+      "oy": 14,
+      "block": [
+        2,
+        2
+      ]
+    },
+    {
+      "puzzle": "lower",
+      "ox": 20,
+      "oy": 30,
+      "block": [
+        2,
+        0
+      ]
+    },
+    {
+      "puzzle": "lower",
+      "ox": 20,
+      "oy": 30,
+      "block": [
+        2,
+        1
+      ]
+    }
+  ],
+  "trajectory": [
+    {
+      "step": 1,
+      "puzzle": "upper",
+      "block": [
+        0,
+        0
+      ],
+      "pixel": [
+        23,
+        17
+      ],
+      "levels_completed": 1,
+      "diff_summary": {
+        "9->12": 36,
+        "12->11": 2
+      },
+      "diff_n": 38
+    },
+    {
+      "step": 2,
+      "puzzle": "upper",
+      "block": [
+        1,
+        0
+      ],
+      "pixel": [
+        23,
+        25
+      ],
+      "levels_completed": 1,
+      "diff_summary": {
+        "9->12": 36,
+        "12->11": 2
+      },
+      "diff_n": 38
+    },
+    {
+      "step": 3,
+      "puzzle": "upper",
+      "block": [
+        1,
+        2
+      ],
+      "pixel": [
+        39,
+        25
+      ],
+      "levels_completed": 1,
+      "diff_summary": {
+        "9->12": 36,
+        "12->11": 2
+      },
+      "diff_n": 38
+    },
+    {
+      "step": 4,
+      "puzzle": "upper",
+      "block": [
+        2,
+        0
+      ],
+      "pixel": [
+        23,
+        33
+      ],
+      "levels_completed": 1,
+      "diff_summary": {
+        "9->12": 36,
+        "12->11": 2
+      },
+      "diff_n": 38
+    },
+    {
+      "step": 5,
+      "puzzle": "upper",
+      "block": [
+        2,
+        2
+      ],
+      "pixel": [
+        39,
+        33
+      ],
+      "levels_completed": 1,
+      "diff_summary": {
+        "9->12": 36,
+        "12->11": 2
+      },
+      "diff_n": 38
+    },
+    {
+      "step": 6,
+      "puzzle": "lower",
+      "block": [
+        2,
+        0
+      ],
+      "pixel": [
+        23,
+        49
+      ],
+      "levels_completed": 1,
+      "diff_summary": {
+        "9->12": 36,
+        "12->11": 2
+      },
+      "diff_n": 38
+    },
+    {
+      "step": 7,
+      "puzzle": "lower",
+      "block": [
+        2,
+        1
+      ],
+      "pixel": [
+        31,
+        49
+      ],
+      "levels_completed": 2,
+      "diff_summary": {
+        "9->12": 36
+      },
+      "diff_n": 36
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "game_id": "ft09-0d8bbf25",
+  "climb": [
+    {
+      "label": "L2",
+      "cleared": true,
+      "levels_end": 2
+    },
+    {
+      "label": "L3",
+      "cleared": true,
+      "levels_end": 3
+    },
+    {
+      "label": "L4",
+      "cleared": true,
+      "levels_end": 4
+    }
+  ],
+  "l5_levels_start": 4,
+  "l5_levels_end": 4,
+  "cleared": false,
+  "plan": [
+    {
+      "ax": 30,
+      "ay": 4,
+      "polarity": "normal"
+    },
+    {
+      "ax": 14,
+      "ay": 20,
+      "polarity": "normal"
+    },
+    {
+      "ax": 30,
+      "ay": 20,
+      "polarity": "normal"
+    },
+    {
+      "ax": 46,
+      "ay": 20,
+      "polarity": "normal"
+    },
+    {
+      "ax": 14,
+      "ay": 36,
+      "polarity": "normal"
+    },
+    {
+      "ax": 30,
+      "ay": 36,
+      "polarity": "inverted"
+    },
+    {
+      "ax": 46,
+      "ay": 36,
+      "polarity": "inverted"
+    },
+    {
+      "ax": 14,
+      "ay": 52,
+      "polarity": "inverted"
+    },
+    {
+      "ax": 30,
+      "ay": 52,
+      "polarity": "inverted"
+    },
+    {
+      "ax": 22,
+      "ay": 12,
+      "polarity": "inverted"
+    },
+    {
+      "ax": 22,
+      "ay": 28,
+      "polarity": "inverted"
+    },
+    {
+      "ax": 38,
+      "ay": 44,
+      "polarity": "inverted"
+    }
+  ],
+  "legend": [],
+  "trajectory": [
+    {
+      "step": 1,
+      "block_origin": [
+        30,
+        4
+      ],
+      "before": 14,
+      "after": 15,
+      "target": 15,
+      "polarity": "normal",
+      "levels_completed": 4
+    },
+    {
+      "step": 2,
+      "block_origin": [
+        14,
+        20
+      ],
+      "before": 14,
+      "after": 15,
+      "target": 15,
+      "polarity": "normal",
+      "levels_completed": 4
+    },
+    {
+      "step": 3,
+      "block_origin": [
+        30,
+        20
+      ],
+      "before": 14,
+      "after": 15,
+      "target": 15,
+      "polarity": "normal",
+      "levels_completed": 4
+    },
+    {
+      "step": 4,
+      "block_origin": [
+        46,
+        20
+      ],
+      "before": 14,
+      "after": 15,
+      "target": 15,
+      "polarity": "normal",
+      "levels_completed": 4
+    },
+    {
+      "step": 5,
+      "block_origin": [
+        14,
+        36
+      ],
+      "before": 14,
+      "after": 15,
+      "target": 15,
+      "polarity": "normal",
+      "levels_completed": 4
+    },
+    {
+      "step": 6,
+      "block_origin": [
+        30,
+        36
+      ],
+      "before": 14,
+      "after": 15,
+      "target": 15,
+      "polarity": "inverted",
+      "levels_completed": 4
+    },
+    {
+      "step": 7,
+      "block_origin": [
+        46,
+        36
+      ],
+      "before": 14,
+      "after": 15,
+      "target": 15,
+      "polarity": "inverted",
+      "levels_completed": 4
+    },
+    {
+      "step": 8,
+      "block_origin": [
+        14,
+        52
+      ],
+      "before": 14,
+      "after": 15,
+      "target": 15,
+      "polarity": "inverted",
+      "levels_completed": 4
+    },
+    {
+      "step": 9,
+      "block_origin": [
+        30,
+        52
+      ],
+      "before": 14,
+      "after": 15,
+      "target": 15,
+      "polarity": "inverted",
+      "levels_completed": 4
+    },
+    {
+      "step": 10,
+      "block_origin": [
+        22,
+        12
+      ],
+      "before": 14,
+      "after": 15,
+      "target": 15,
+      "polarity": "inverted",
+      "levels_completed": 4
+    },
+    {
+      "step": 11,
+      "block_origin": [
+        22,
+        28
+      ],
+      "before": 14,
+      "after": 15,
+      "target": 15,
+      "polarity": "inverted",
+      "levels_completed": 4
+    },
+    {
+      "step": 12,
+      "block_origin": [
+        38,
+        44
+      ],
+      "before": 14,
+      "after": 15,
+      "target": 15,
+      "polarity": "inverted",
+      "levels_completed": 4
+    }
+  ],
+  "rule": "binary_14_15_polarity"
+}

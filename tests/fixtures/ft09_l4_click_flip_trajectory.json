@@ -1,0 +1,450 @@
+{
+  "game_id": "ft09-0d8bbf25",
+  "climb": [
+    {
+      "label": "L2",
+      "cleared": true,
+      "levels_end": 2
+    },
+    {
+      "label": "L3",
+      "cleared": true,
+      "levels_end": 3
+    }
+  ],
+  "l4_levels_start": 3,
+  "l4_levels_end": 4,
+  "cleared": true,
+  "rule": "0->fixed_color; 2->8; cycle 9->8->12->9",
+  "need": {
+    "12,14": 1,
+    "20,14": 2,
+    "28,14": 1,
+    "12,22": 1,
+    "28,22": 1,
+    "12,30": 1,
+    "20,30": 2,
+    "28,30": 1,
+    "44,14": 1,
+    "44,22": 1,
+    "36,30": 1,
+    "20,38": 1,
+    "36,38": 1,
+    "20,46": 2,
+    "28,46": 2,
+    "36,46": 2
+  },
+  "targets": {
+    "12,14": 8,
+    "20,14": 12,
+    "28,14": 8,
+    "12,22": 8,
+    "28,22": 8,
+    "12,30": 8,
+    "20,30": 12,
+    "28,30": 8,
+    "36,14": 9,
+    "44,14": 8,
+    "44,22": 8,
+    "36,30": 8,
+    "44,30": 9,
+    "20,38": 8,
+    "36,38": 8,
+    "20,46": 12,
+    "28,46": 12,
+    "36,46": 12
+  },
+  "trajectory": [
+    {
+      "step": 1,
+      "block_origin": [
+        12,
+        14
+      ],
+      "pixel": [
+        15,
+        17
+      ],
+      "before": 9,
+      "after": 8,
+      "target": 8,
+      "levels_completed": 3,
+      "diff_summary": {
+        "9->8": 36
+      }
+    },
+    {
+      "step": 2,
+      "block_origin": [
+        20,
+        14
+      ],
+      "pixel": [
+        23,
+        17
+      ],
+      "before": 9,
+      "after": 8,
+      "target": 12,
+      "levels_completed": 3,
+      "diff_summary": {
+        "9->8": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 3,
+      "block_origin": [
+        20,
+        14
+      ],
+      "pixel": [
+        23,
+        17
+      ],
+      "before": 8,
+      "after": 12,
+      "target": 12,
+      "levels_completed": 3,
+      "diff_summary": {
+        "8->12": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 4,
+      "block_origin": [
+        28,
+        14
+      ],
+      "pixel": [
+        31,
+        17
+      ],
+      "before": 9,
+      "after": 8,
+      "target": 8,
+      "levels_completed": 3,
+      "diff_summary": {
+        "9->8": 36
+      }
+    },
+    {
+      "step": 5,
+      "block_origin": [
+        44,
+        14
+      ],
+      "pixel": [
+        47,
+        17
+      ],
+      "before": 9,
+      "after": 8,
+      "target": 8,
+      "levels_completed": 3,
+      "diff_summary": {
+        "9->8": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 6,
+      "block_origin": [
+        12,
+        22
+      ],
+      "pixel": [
+        15,
+        25
+      ],
+      "before": 9,
+      "after": 8,
+      "target": 8,
+      "levels_completed": 3,
+      "diff_summary": {
+        "9->8": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 7,
+      "block_origin": [
+        28,
+        22
+      ],
+      "pixel": [
+        31,
+        25
+      ],
+      "before": 9,
+      "after": 8,
+      "target": 8,
+      "levels_completed": 3,
+      "diff_summary": {
+        "9->8": 36
+      }
+    },
+    {
+      "step": 8,
+      "block_origin": [
+        44,
+        22
+      ],
+      "pixel": [
+        47,
+        25
+      ],
+      "before": 9,
+      "after": 8,
+      "target": 8,
+      "levels_completed": 3,
+      "diff_summary": {
+        "9->8": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 9,
+      "block_origin": [
+        12,
+        30
+      ],
+      "pixel": [
+        15,
+        33
+      ],
+      "before": 9,
+      "after": 8,
+      "target": 8,
+      "levels_completed": 3,
+      "diff_summary": {
+        "9->8": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 10,
+      "block_origin": [
+        20,
+        30
+      ],
+      "pixel": [
+        23,
+        33
+      ],
+      "before": 9,
+      "after": 8,
+      "target": 12,
+      "levels_completed": 3,
+      "diff_summary": {
+        "9->8": 36
+      }
+    },
+    {
+      "step": 11,
+      "block_origin": [
+        20,
+        30
+      ],
+      "pixel": [
+        23,
+        33
+      ],
+      "before": 8,
+      "after": 12,
+      "target": 12,
+      "levels_completed": 3,
+      "diff_summary": {
+        "8->12": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 12,
+      "block_origin": [
+        28,
+        30
+      ],
+      "pixel": [
+        31,
+        33
+      ],
+      "before": 9,
+      "after": 8,
+      "target": 8,
+      "levels_completed": 3,
+      "diff_summary": {
+        "9->8": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 13,
+      "block_origin": [
+        36,
+        30
+      ],
+      "pixel": [
+        39,
+        33
+      ],
+      "before": 9,
+      "after": 8,
+      "target": 8,
+      "levels_completed": 3,
+      "diff_summary": {
+        "9->8": 36
+      }
+    },
+    {
+      "step": 14,
+      "block_origin": [
+        20,
+        38
+      ],
+      "pixel": [
+        23,
+        41
+      ],
+      "before": 9,
+      "after": 8,
+      "target": 8,
+      "levels_completed": 3,
+      "diff_summary": {
+        "9->8": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 15,
+      "block_origin": [
+        36,
+        38
+      ],
+      "pixel": [
+        39,
+        41
+      ],
+      "before": 9,
+      "after": 8,
+      "target": 8,
+      "levels_completed": 3,
+      "diff_summary": {
+        "9->8": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 16,
+      "block_origin": [
+        20,
+        46
+      ],
+      "pixel": [
+        23,
+        49
+      ],
+      "before": 9,
+      "after": 8,
+      "target": 12,
+      "levels_completed": 3,
+      "diff_summary": {
+        "9->8": 36
+      }
+    },
+    {
+      "step": 17,
+      "block_origin": [
+        20,
+        46
+      ],
+      "pixel": [
+        23,
+        49
+      ],
+      "before": 8,
+      "after": 12,
+      "target": 12,
+      "levels_completed": 3,
+      "diff_summary": {
+        "8->12": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 18,
+      "block_origin": [
+        28,
+        46
+      ],
+      "pixel": [
+        31,
+        49
+      ],
+      "before": 9,
+      "after": 8,
+      "target": 12,
+      "levels_completed": 3,
+      "diff_summary": {
+        "9->8": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 19,
+      "block_origin": [
+        28,
+        46
+      ],
+      "pixel": [
+        31,
+        49
+      ],
+      "before": 8,
+      "after": 12,
+      "target": 12,
+      "levels_completed": 3,
+      "diff_summary": {
+        "8->12": 36
+      }
+    },
+    {
+      "step": 20,
+      "block_origin": [
+        36,
+        46
+      ],
+      "pixel": [
+        39,
+        49
+      ],
+      "before": 9,
+      "after": 8,
+      "target": 12,
+      "levels_completed": 3,
+      "diff_summary": {
+        "9->8": 36,
+        "12->11": 1
+      }
+    },
+    {
+      "step": 21,
+      "block_origin": [
+        36,
+        46
+      ],
+      "pixel": [
+        39,
+        49
+      ],
+      "before": 8,
+      "after": 12,
+      "target": 12,
+      "levels_completed": 4,
+      "diff_summary": {
+        "8->12": 36
+      }
+    }
+  ]
+}

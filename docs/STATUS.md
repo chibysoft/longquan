@@ -31,11 +31,11 @@
 |------|------|------|
 | 0 | reflect 补全，追平 M1 | ✅ 达成：L1-L3 levels=3 |
 | 1a | 选择器（solve_auto） | 部分：代码已有；AR25 自动选对验收未收口 |
-| 1b | 交互族坐实（move+match @ ls20） | move✅；L1✅；**L2 seated✅**；L3 感知待做 |
+| 1b | 交互族坐实（move+match @ ls20） | move✅；L1+L2 seated✅；L3 感知/传送✅；**卡在 L3 武装迁移** |
 | 1.5 | 原语库反向验证 | 未开始 |
 | 2 | 程序表示（原语序列） | 未开始 |
 | 3 | 结构归纳（MDL + 约束求解） | 未开始 |
-| 4 | ft09 迁移 + 报告 | 未开始 |
+| 4 | ft09 迁移 + 报告 | L1–L4 通关；L4 三态 0→fixed / 2→8 已锁 |
 
 ---
 
@@ -46,8 +46,9 @@
 1. **任务 A**：ls20 move 线上闭环——✅ PASS
 2. **任务 B**：match — **H19/H20 坐实**；L1 seated PASS
 3. **任务 C**：L2+ — **L2 seated PASS**（H21 能量 + H23 仪式）；`tools/ls20_seated_clear.py`
-4. **下一步**：修 L3 感知（stamp/walkable/通关），推 L3–L7；禁止罐头序列
-5. mate（m0r0）**不并行**
+4. **下一步**：L3 武装可证伪假设轮（H23 未跨关）；勿再盲调规划器；禁止罐头序列
+5. 工程加速可选：`D:\Projects\Prime Agent`（DeepSeek）只做探针/跑分，不写答案表进 solver
+6. mate（m0r0）**不并行**
 
 几何族 copy 代码可留库，标注「未验证」；不以 ls20 当 copy 的验证游戏。
 
