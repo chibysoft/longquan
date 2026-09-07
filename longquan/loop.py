@@ -87,6 +87,7 @@ def solve_auto(
     tabu: Optional[Tabu] = None,
     max_configs: int = 8,
     max_primitives: int = 3,
+    frame=None,
 ) -> SolveResult:
     """Select the best primitive from the registry by score, then solve.
 
@@ -98,7 +99,22 @@ def solve_auto(
 
     For primitives with a line_candidates function (movable lines), pass it
     through so the search can iterate line positions.
+
+    If ``frame`` is provided, ``selector.select_family`` must return
+    ``\"reflect\"`` (geometric cover/backproject path). Other families
+    (toggle/move) are interactive pipelines — callers should dispatch via
+    ``selector.route(frame)`` instead of this function.
     """
+    if frame is not None:
+        from .selector import select_family
+
+        family = select_family(frame)
+        if family != "reflect":
+            return SolveResult(
+                reason=f"wrong_family:{family}",
+                primitive="",
+            )
+
     from .hypotheses.registry import PRIMITIVES
 
     scored = []

@@ -1,0 +1,52 @@
+# L4 H5ab recording path
+
+> NO_CLEAR
+
+- `{'tag': 'fuel', 'step': 1, 'action': 3, 'cursor': (9, 1), 'mover': (49, 5, 53, 6), 'levels': 3, 'ui': 80}`
+- `{'tag': 'fuel', 'step': 2, 'action': 3, 'cursor': (8, 1), 'mover': (44, 5, 48, 6), 'levels': 3, 'ui': 78}`
+- `{'tag': 'fuel', 'step': 3, 'action': 3, 'cursor': (7, 1), 'mover': (39, 5, 43, 6), 'levels': 3, 'ui': 76}`
+- `{'tag': 'fuel', 'step': 4, 'action': 2, 'cursor': (7, 2), 'mover': (39, 10, 43, 11), 'levels': 3, 'ui': 74}`
+- `{'tag': 'fuel', 'step': 5, 'action': 3, 'cursor': (6, 2), 'mover': (34, 10, 38, 11), 'levels': 3, 'ui': 72}`
+- `{'tag': 'fuel', 'step': 6, 'action': 2, 'cursor': (6, 3), 'mover': (34, 15, 38, 16), 'levels': 3, 'ui': 70}`
+- `{'tag': 'fuel', 'step': 7, 'action': 3, 'cursor': (5, 3), 'mover': (29, 15, 33, 16), 'levels': 3, 'ui': 68}`
+- `{'tag': 'fuel', 'step': 8, 'action': 3, 'cursor': (4, 3), 'mover': (24, 15, 28, 16), 'levels': 3, 'ui': 66}`
+- `{'tag': 'fuel', 'step': 9, 'action': 3, 'cursor': (3, 3), 'mover': (19, 15, 23, 16), 'levels': 3, 'ui': 84}`
+- `{'tag': 'start', 'cursor': (3, 3), 'snap': {'gate': (1, 1), 'gate_in_walk_u': False, 'gate_in_walk_a': True, 'stamp_c9': 6, 'has_plus': False, 'unlock_cands': [], 'marker': (26, 32, 27, 33), 'c9': 23, 'c12': 12, 'c14': 22, 'c0': 5, 'c8': 14, 'c11': 92, 'ui': 84, 'cursor': (3, 3), 'mover': (19, 15, 23, 16)}}`
+- `{'tag': 'to_91', 'step': 1, 'action': 4, 'cursor': (4, 3), 'mover': (24, 15, 28, 16), 'levels': 3, 'ui': 82}`
+- `{'tag': 'to_91', 'step': 2, 'action': 4, 'cursor': (5, 3), 'mover': (29, 15, 33, 16), 'levels': 3, 'ui': 80}`
+- `{'tag': 'to_91', 'step': 3, 'action': 4, 'cursor': (6, 3), 'mover': (34, 15, 38, 16), 'levels': 3, 'ui': 78}`
+- `{'tag': 'to_91', 'step': 4, 'action': 4, 'cursor': (7, 3), 'mover': (39, 15, 43, 16), 'levels': 3, 'ui': 76}`
+- `{'tag': 'to_91', 'step': 5, 'action': 2, 'cursor': (7, 4), 'mover': (39, 20, 43, 21), 'levels': 3, 'ui': 74}`
+- `{'tag': 'to_91', 'step': 6, 'action': 2, 'cursor': (7, 5), 'mover': (39, 25, 43, 26), 'levels': 3, 'ui': 72}`
+- `{'tag': 'to_91', 'step': 7, 'action': 4, 'cursor': (8, 1), 'mover': (44, 5, 48, 6), 'levels': 3, 'ui': 70}`
+- `{'tag': 'L_to_81', 'aid': 3, 'from': (8, 1), 'to': (7, 1), 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'ui': 68, 'levels': 3, 'n': 52, 'trans': {'3->9': 15, '3->12': 10, '9->3': 15, '11->3': 2, '12->3': 10}}`
+- `{'tag': 'L_to_71', 'aid': 3, 'from': (7, 1), 'to': (7, 1), 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'ui': 66, 'levels': 3, 'n': 2, 'trans': {'11->3': 2}}`
+- `{'tag': 'D_to_72', 'aid': 2, 'from': (7, 1), 'to': (7, 2), 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'ui': 64, 'levels': 3, 'n': 52, 'trans': {'3->9': 15, '3->12': 10, '9->3': 15, '11->3': 2, '12->3': 10}}`
+- `{'tag': 'D_to_73', 'aid': 2, 'from': (7, 2), 'to': (7, 3), 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'ui': 62, 'levels': 3, 'n': 52, 'trans': {'3->9': 15, '3->12': 10, '9->3': 15, '11->3': 2, '12->3': 10}}`
+- `{'tag': 'D_to_74', 'aid': 2, 'from': (7, 3), 'to': (7, 4), 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'ui': 60, 'levels': 3, 'n': 52, 'trans': {'3->9': 15, '3->12': 10, '9->3': 15, '11->3': 2, '12->3': 10}}`
+- `{'tag': 'L_to_64', 'aid': 3, 'from': (7, 4), 'to': (6, 4), 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'ui': 58, 'levels': 3, 'n': 52, 'trans': {'3->9': 15, '3->12': 10, '9->3': 15, '11->3': 2, '12->3': 10}}`
+- `{'tag': 'D_warp_105', 'aid': 2, 'from': (6, 4), 'to': (10, 5), 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'ui': 56, 'levels': 3, 'n': 52, 'trans': {'3->9': 15, '3->12': 10, '9->3': 15, '11->3': 2, '12->3': 10}}`
+- `{'tag': 'D_to_106', 'aid': 2, 'from': (10, 5), 'to': (10, 6), 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'ui': 54, 'levels': 3, 'n': 52, 'trans': {'3->9': 15, '3->12': 10, '9->3': 15, '11->3': 2, '12->3': 10}}`
+- `{'tag': 'L_to_96', 'aid': 3, 'from': (10, 6), 'to': (9, 6), 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'ui': 52, 'levels': 3, 'n': 52, 'trans': {'3->9': 15, '3->12': 10, '9->3': 15, '11->3': 2, '12->3': 10}}`
+- `{'tag': 'L_to_86', 'aid': 3, 'from': (9, 6), 'to': (8, 6), 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'ui': 50, 'levels': 3, 'n': 52, 'trans': {'3->9': 15, '3->12': 10, '9->3': 15, '11->3': 2, '12->3': 10}}`
+- `{'tag': 'U_to_85', 'aid': 1, 'from': (8, 6), 'to': (8, 5), 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'ui': 48, 'levels': 3, 'n': 52, 'trans': {'3->9': 15, '3->12': 10, '9->3': 15, '11->3': 2, '12->3': 10}}`
+- `{'tag': '85_L', 'aid': 3, 'from': (8, 5), 'to': (6, 5), 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'ui': 46, 'levels': 3, 'n': 52, 'trans': {'3->9': 15, '3->12': 10, '9->3': 15, '11->3': 2, '12->3': 10}}`
+- `{'tag': 'oscD_0', 'aid': 2, 'from': (6, 5), 'to': (6, 6), 'gate_u': False, 'armed_only': [(1, 1)], 'ui': 44, 'levels': 3, 'n': 71, 'trans': {'0->9': 1, '3->9': 9, '3->12': 7, '8->9': 2, '9->3': 15, '9->12': 1, '11->3': 2, '12->3': 10, '12->9': 2, '14->8': 20, '14->12': 2}}`
+- `{'tag': 'oscU_1', 'aid': 1, 'from': (6, 6), 'to': (6, 5), 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'ui': 42, 'levels': 3, 'n': 51, 'trans': {'3->9': 15, '3->12': 10, '9->0': 1, '9->3': 9, '9->8': 2, '9->12': 2, '11->3': 2, '12->3': 7, '12->9': 1, '12->14': 2}}`
+- `{'tag': 'oscD_2', 'aid': 2, 'from': (6, 5), 'to': (6, 6), 'gate_u': False, 'armed_only': [(1, 1)], 'ui': 40, 'levels': 3, 'n': 71, 'trans': {'0->9': 1, '3->9': 9, '3->12': 7, '8->9': 2, '8->12': 20, '9->3': 15, '9->12': 1, '11->3': 2, '12->3': 10, '12->9': 2, '14->12': 2}}`
+- `{'tag': 'oscU_3', 'aid': 1, 'from': (6, 6), 'to': (6, 5), 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'ui': 38, 'levels': 3, 'n': 51, 'trans': {'3->9': 15, '3->12': 10, '9->0': 1, '9->3': 9, '9->8': 2, '9->12': 2, '11->3': 2, '12->3': 7, '12->9': 1, '12->14': 2}}`
+- `{'tag': 'oscD_4', 'aid': 2, 'from': (6, 5), 'to': (6, 6), 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1)], 'ui': 36, 'levels': 3, 'n': 71, 'trans': {'0->9': 1, '3->9': 9, '3->12': 7, '8->9': 2, '9->3': 15, '9->12': 1, '11->3': 2, '12->3': 10, '12->9': 22, '14->12': 2}}`
+- `{'tag': 'oscU_5', 'aid': 1, 'from': (6, 6), 'to': (6, 5), 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'ui': 34, 'levels': 3, 'n': 51, 'trans': {'3->9': 15, '3->12': 10, '9->0': 1, '9->3': 9, '9->8': 2, '9->12': 2, '11->3': 2, '12->3': 7, '12->9': 1, '12->14': 2}}`
+- `{'tag': 'oscD_6', 'aid': 2, 'from': (6, 5), 'to': (6, 6), 'gate_u': False, 'armed_only': [(1, 1)], 'ui': 32, 'levels': 3, 'n': 71, 'trans': {'0->9': 1, '3->9': 9, '3->12': 7, '8->9': 2, '9->3': 15, '9->12': 1, '9->14': 20, '11->3': 2, '12->3': 10, '12->9': 2, '14->12': 2}}`
+- `{'tag': 'oscU_7', 'aid': 1, 'from': (6, 6), 'to': (6, 5), 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'ui': 30, 'levels': 3, 'n': 51, 'trans': {'3->9': 15, '3->12': 10, '9->0': 1, '9->3': 9, '9->8': 2, '9->12': 2, '11->3': 2, '12->3': 7, '12->9': 1, '12->14': 2}}`
+- `{'tag': 'to_21', 'step': 1, 'action': 4, 'cursor': (7, 5), 'mover': (39, 25, 43, 26), 'levels': 3, 'ui': 28}`
+- `{'tag': 'to_21', 'step': 2, 'action': 2, 'cursor': (7, 2), 'mover': (39, 10, 43, 11), 'levels': 3, 'ui': 26}`
+- `{'tag': 'to_21', 'step': 3, 'action': 3, 'cursor': (6, 2), 'mover': (34, 10, 38, 11), 'levels': 3, 'ui': 24}`
+- `{'tag': 'to_21', 'step': 4, 'action': 3, 'cursor': (6, 2), 'mover': (34, 10, 38, 11), 'levels': 3, 'ui': 22}`
+- `{'tag': 'to_21', 'step': 5, 'action': 3, 'cursor': (6, 2), 'mover': (34, 10, 38, 11), 'levels': 3, 'ui': 20}`
+- `{'tag': 'to_21', 'step': 6, 'action': 1, 'cursor': (6, 2), 'mover': (34, 10, 38, 11), 'levels': 3, 'ui': 18}`
+- `{'tag': 'to_21', 'step': 7, 'action': 1, 'cursor': (6, 2), 'mover': (34, 10, 38, 11), 'levels': 3, 'ui': 16}`
+- `{'tag': 'to_21', 'step': 8, 'action': 3, 'cursor': (6, 2), 'mover': (34, 10, 38, 11), 'levels': 3, 'ui': 14}`
+- `{'tag': 'to_21', 'step': 9, 'action': 3, 'cursor': (6, 2), 'mover': (34, 10, 38, 11), 'levels': 3, 'ui': 12}`
+- `{'tag': 'LEFT_gate', 'aid': 3, 'from': (6, 2), 'to': (6, 2), 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'ui': 10, 'levels': 3, 'n': 2, 'trans': {'11->3': 2}}`
+- `{'tag': 'RESULT', 'verdict': 'NO_CLEAR', 'levels': 3, 'final_cursor': (6, 2), 'gate': {'gate': (1, 1), 'gate_in_walk_u': False, 'gate_in_walk_a': True, 'stamp_c9': 6, 'has_plus': False, 'unlock_cands': [], 'marker': (26, 32, 27, 33)}, 'snap': {'gate': (1, 1), 'gate_in_walk_u': False, 'gate_in_walk_a': True, 'stamp_c9': 6, 'has_plus': False, 'unlock_cands': [], 'marker': (26, 32, 27, 33), 'c9': 23, 'c12': 12, 'c14': 22, 'c0': 5, 'c8': 14, 'c11': 18, 'ui': 10, 'cursor': (6, 2), 'mover': (34, 10, 38, 11)}}`

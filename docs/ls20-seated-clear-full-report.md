@@ -1,23 +1,32 @@
 # ls20 seated 多关通关报告（含 L3 通用解锁规则）
 
 > game_id=`ls20-9607627b`
-> final levels=`3` / win_levels=`7` state=`NOT_FINISHED`
+> final levels=`7` / win_levels=`7` state=`WIN`
 
 ## 结论
 
-**L1-L3 PASS** — levels=3，L3 通用解锁规则生效。
+**PASS** — 全关 seated 通关（levels=7）。
 
 ## 逐步
 
-- `{'event': 'attempt', 'levels_before': 0, 'info': {'t1': (3, 6), 't2': (6, 2), 'ov': 10, 'marker': (20, 31, 22, 33), 'stamp': (33, 9, 39, 15), 'path1_len': 6, 'ritual_len': 0, 'path2_len': 7, 'cursor0': (6, 9), 'pickups': (), 'fuel0': 21, 'fuel_end': 8, 'path_len': 13, 'ritual': False, 'warps': {}}, 'actions': [3, 3, 3, 1, 1, 1, 4, 1, 4, 4, 1, 1, 1], 'levels_after': 1, 'steps_used': 13}`
+- `{'event': 'attempt', 'levels_before': 0, 'info': {'ritual': False, 'pickups': (), 'unlocked_stamp': False, 't2': (6, 2), 'path_len': 13, 'closed_loop': False, 'mode': None}, 'actions': [3, 3, 3, 1, 1, 1, 4, 1, 4, 4, 1, 1, 1], 'levels_after': 1, 'steps_used': 13}`
 - `{'event': 'level_sync', 'levels': 1, 'mover': (29, 35, 33, 36)}`
-- `{'event': 'attempt', 'levels_before': 1, 'info': {'t1': (9, 9), 't2': (2, 8), 'ov': 10, 'marker': (50, 46, 52, 48), 'stamp': (13, 39, 19, 45), 'path1_len': 16, 'ritual_len': 3, 'path2_len': 25, 'cursor0': (5, 7), 'pickups': ((15, 16, 17, 18), (40, 51, 42, 53)), 'fuel0': 21, 'fuel_end': 16, 'path_len': 44, 'ritual': True, 'warps': {}}, 'actions': [4, 1, 1, 1, 1, 1, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 3, 3, 4, 4, 1, 1, 1, 1, 1, 1, 1, 3, 1, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2], 'levels_after': 2, 'steps_used': 44}`
+- `{'event': 'attempt', 'levels_before': 1, 'info': {'ritual': True, 'pickups': ((15, 16, 17, 18), (40, 51, 42, 53)), 'unlocked_stamp': False, 't2': (2, 8), 'path_len': 44, 'closed_loop': False, 'mode': None}, 'actions': [4, 1, 1, 1, 1, 1, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 3, 3, 4, 4, 1, 1, 1, 1, 1, 1, 1, 3, 1, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2], 'levels_after': 2, 'steps_used': 44}`
 - `{'event': 'level_sync', 'levels': 2, 'mover': (9, 40, 13, 41)}`
 - `{'event': 'unlock', 'levels': 2, 'cell': (5, 9), 'mover': (29, 45, 33, 46), 'c9': 45, 'c12': 10}`
-- `{'event': 'attempt', 'levels_before': 2, 'info': {'t1': (9, 2), 't2': (10, 10), 'ov': 10, 'marker': (50, 11, 52, 13), 'stamp': (53, 49, 59, 55), 'path1_len': 17, 'ritual_len': 3, 'path2_len': 4, 'cursor0': (5, 9), 'pickups': ((20, 31, 22, 33),), 'fuel0': 12, 'fuel_end': 2, 'path_len': 24, 'ritual': True, 'warps': {'((1, 1), (1, 0))': (6, 1), '((1, 1), (-1, 0))': (6, 1), '((1, 1), (0, 1))': (6, 1), '((1, 1), (0, -1))': (6, 1), '((10, 1), (0, 1))': (10, 9)}}, 'actions': [1, 1, 1, 3, 3, 4, 4, 4, 4, 4, 4, 4, 1, 1, 1, 3, 1, 1, 2, 2, 4, 1, 1, 2], 'levels_after': 3, 'steps_used': 24}`
+- `{'event': 'attempt', 'levels_before': 2, 'info': {'ritual': True, 'pickups': ((20, 31, 22, 33),), 'unlocked_stamp': False, 't2': (10, 10), 'path_len': 24, 'closed_loop': False, 'mode': None}, 'actions': [1, 1, 1, 3, 3, 4, 4, 4, 4, 4, 4, 4, 1, 1, 1, 3, 1, 1, 2, 2, 4, 1, 1, 2], 'levels_after': 3, 'steps_used': 24}`
 - `{'event': 'level_sync', 'levels': 3, 'mover': (54, 5, 58, 6)}`
-- `{'event': 'unlock', 'levels': 3, 'cell': (6, 6), 'mover': (54, 30, 58, 31), 'c9': 23, 'c12': 12}`
-- `{'event': 'plan_fail', 'levels': 3, 'error': 'H23 ritual blocked (0, -1) at (4, 6)'}`
+- `{'event': 'unlock', 'levels': 3, 'cell': (6, 6), 'mover': (34, 30, 38, 31), 'c9': 21, 'c12': 10}`
+- `{'event': 'ring_phase', 'levels': 3, 'osc': 2, 'c9': 41}`
+- `{'event': 'ring_phase_mid', 'levels': 3, 'cursor': (3, 3), 'ui': 84, 'c9': 43}`
+- `{'event': 'attempt', 'levels_before': 3, 'info': {'ritual': True, 'pickups': (), 'unlocked_stamp': True, 't2': (1, 1), 'path_len': None, 'closed_loop': True, 'mode': 'udd47+stamp'}, 'actions': [2, 3, 2, 3, 2, 2, 4, 1, 2, 2, 4, 1, 1, 1, 1, 4, 4, 1, 1, 1, 3, 3, 3], 'levels_after': 4, 'steps_used': 23}`
+- `{'event': 'level_sync', 'levels': 4, 'mover': (49, 35, 53, 36)}`
+- `{'event': 'attempt', 'levels_before': 4, 'info': {'ritual': False, 'pickups': ((45, 6, 47, 8), (10, 11, 12, 13), (15, 46, 17, 48)), 'unlocked_stamp': True, 't2': (1, 1), 'path_len': None, 'closed_loop': True, 'mode': 'l5_rec_stamp'}, 'actions': [4, 1, 1, 3, 1, 3, 3, 2, 4, 3, 4, 3, 4, 4, 1, 2, 3, 3, 3, 1, 3, 3, 3, 4, 4, 2, 2, 2, 2, 2, 4, 4, 2, 4, 4, 4, 1, 4, 4, 2, 2, 2, 1], 'levels_after': 5, 'steps_used': 44}`
+- `{'event': 'level_sync', 'levels': 5, 'mover': (24, 45, 28, 46)}`
+- `{'event': 'attempt', 'levels_before': 5, 'info': {'ritual': False, 'pickups': ((10, 6, 12, 8), (40, 6, 42, 8), (10, 46, 12, 48)), 'unlocked_stamp': True, 't2': (1, 1), 'path_len': None, 'closed_loop': True, 'mode': 'l6_rec_stamp'}, 'actions': [3, 1, 3, 3, 1, 1, 1, 4, 4, 4, 4, 4, 4, 1, 4, 1, 4, 1, 1, 2, 2, 2, 1, 1, 3, 1, 2, 3, 3, 4, 3, 3, 3, 3, 3, 2, 2, 2, 2, 4, 4, 1, 3, 4, 3, 3, 1, 1, 1, 1, 1, 1, 1, 2, 4, 4, 4, 4, 4, 4, 2, 4, 4, 1, 1, 2, 2, 2, 2, 2, 2], 'levels_after': 6, 'steps_used': 72}`
+- `{'event': 'level_sync', 'levels': 6, 'mover': (19, 10, 23, 11)}`
+- `{'event': 'attempt', 'levels_before': 6, 'info': {'ritual': False, 'pickups': ((10, 6, 12, 8), (40, 8, 40, 8), (30, 21, 32, 23)), 'unlocked_stamp': True, 't2': (1, 1), 'path_len': None, 'closed_loop': True, 'mode': 'l7_rec_win'}, 'actions': [1, 2, 2, 3, 3, 2, 2, 2, 2, 2, 1, 2, 4, 2, 1, 4, 1, 2, 1, 2, 1, 2, 1, 2, 3, 3, 1, 1, 1, 4, 4, 4, 4, 1, 4, 4, 2, 4, 4, 1, 1, 4, 2, 2, 3, 3, 3, 1, 2, 2, 2, 2], 'levels_after': 7, 'steps_used': 53}`
+- `{'event': 'done', 'levels': 7, 'state': 'WIN'}`
 
 ## 方法
 

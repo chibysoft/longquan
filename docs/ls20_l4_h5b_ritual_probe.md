@@ -1,0 +1,136 @@
+# ls20 L4 H5b ritual probe
+
+## `c0_udd` → **C0UDD_FAIL**
+
+- `{'tag': 'l4_start', 'snap': {'gate': (1, 1), 'gate_in_walk_u': False, 'gate_in_walk_a': True, 'stamp_c9': 6, 'has_plus': False, 'unlock_cands': [(6, 6)], 'marker': (26, 32, 27, 33)}, 'levels': 3}`
+- `{'tag': 'fuel', 'step': 1, 'action': 3, 'cursor': (9, 1), 'mover': (49, 5, 53, 6), 'levels': 3, 'ui': 80}`
+- `{'tag': 'fuel', 'step': 2, 'action': 3, 'cursor': (8, 1), 'mover': (44, 5, 48, 6), 'levels': 3, 'ui': 78}`
+- `{'tag': 'fuel', 'step': 3, 'action': 3, 'cursor': (7, 1), 'mover': (39, 5, 43, 6), 'levels': 3, 'ui': 76}`
+- `{'tag': 'fuel', 'step': 4, 'action': 2, 'cursor': (7, 2), 'mover': (39, 10, 43, 11), 'levels': 3, 'ui': 74}`
+- `{'tag': 'fuel', 'step': 5, 'action': 3, 'cursor': (6, 2), 'mover': (34, 10, 38, 11), 'levels': 3, 'ui': 72}`
+- `{'tag': 'fuel', 'step': 6, 'action': 2, 'cursor': (6, 3), 'mover': (34, 15, 38, 16), 'levels': 3, 'ui': 70}`
+- `{'tag': 'fuel', 'step': 7, 'action': 3, 'cursor': (5, 3), 'mover': (29, 15, 33, 16), 'levels': 3, 'ui': 68}`
+- `{'tag': 'fuel', 'step': 8, 'action': 3, 'cursor': (4, 3), 'mover': (24, 15, 28, 16), 'levels': 3, 'ui': 66}`
+- `{'tag': 'fuel', 'step': 9, 'action': 3, 'cursor': (3, 3), 'mover': (19, 15, 23, 16), 'levels': 3, 'ui': 84}`
+- `{'tag': 'c0_hits', 'hits': [(4, 6)]}`
+- `{'tag': 'to_c0', 'step': 1, 'action': 2, 'cursor': (3, 4), 'mover': (19, 20, 23, 21), 'levels': 3, 'ui': 82}`
+- `{'tag': 'to_c0', 'step': 2, 'action': 3, 'cursor': (2, 4), 'mover': (14, 20, 18, 21), 'levels': 3, 'ui': 80}`
+- `{'tag': 'to_c0', 'step': 3, 'action': 2, 'cursor': (2, 5), 'mover': (14, 25, 18, 26), 'levels': 3, 'ui': 78}`
+- `{'tag': 'to_c0', 'step': 4, 'action': 3, 'cursor': (1, 5), 'mover': (9, 25, 13, 26), 'levels': 3, 'ui': 76}`
+- `{'tag': 'to_c0', 'step': 5, 'action': 2, 'cursor': (1, 6), 'mover': (9, 30, 13, 31), 'levels': 3, 'ui': 74}`
+- `{'tag': 'to_c0', 'step': 6, 'action': 2, 'cursor': (1, 7), 'mover': (9, 35, 13, 36), 'levels': 3, 'ui': 72}`
+- `{'tag': 'to_c0', 'step': 7, 'action': 1, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 70}`
+- `{'tag': 'c0_at', 'cursor': (4, 6), 'snap': {'gate': (1, 1), 'gate_in_walk_u': False, 'gate_in_walk_a': True, 'stamp_c9': 6, 'has_plus': False, 'unlock_cands': [(6, 6)], 'marker': None}}`
+- `{'tag': 'c0_ritual_start', 'cursor': (4, 6), 'ritual': [(0, -1), (0, 1), (0, 1)]}`
+- `{'tag': 'c0_ritual', 'step': 1, 'action': 1, 'before': (4, 6), 'after': (4, 6), 'moved': False, 'levels': 3, 'ui': 68}`
+- `{'tag': 'c0_ritual', 'step': 2, 'action': 2, 'before': (4, 6), 'after': (4, 7), 'moved': True, 'levels': 3, 'ui': 66}`
+- `{'tag': 'c0_ritual', 'step': 3, 'action': 2, 'before': (4, 7), 'after': (4, 8), 'moved': True, 'levels': 3, 'ui': 64}`
+- `{'tag': 'post_ritual_snap', 'snap': {'gate': (1, 1), 'gate_in_walk_u': False, 'gate_in_walk_a': True, 'stamp_c9': 6, 'has_plus': False, 'unlock_cands': [(6, 6)], 'marker': (26, 32, 27, 33)}}`
+- `{'tag': 'c0udd_plan', 'ok': True, 'info': {'t2': (1, 1), 'fuel_end': 7, 'path_len': 14, 'stamp': (8, 4, 14, 10), 'cursor0': (4, 8)}, 'snap': {'gate': (1, 1), 'gate_in_walk_u': False, 'gate_in_walk_a': True, 'stamp_c9': 6, 'has_plus': False, 'unlock_cands': [(6, 6)], 'marker': (26, 32, 27, 33)}}`
+- `{'tag': 'c0udd_stamp', 'step': 1, 'action': 3, 'cursor': (1, 8), 'mover': (9, 40, 13, 41), 'levels': 3, 'ui': 62}`
+- `{'tag': 'c0udd_stamp', 'step': 2, 'action': 3, 'cursor': (1, 8), 'mover': (9, 40, 13, 41), 'levels': 3, 'ui': 60}`
+- `{'tag': 'c0udd_stamp', 'step': 3, 'action': 1, 'cursor': (1, 7), 'mover': (9, 35, 13, 36), 'levels': 3, 'ui': 58}`
+- `{'tag': 'c0udd_stamp', 'step': 4, 'action': 1, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 56}`
+- `{'tag': 'c0udd_stamp', 'step': 5, 'action': 1, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 54}`
+- `{'tag': 'c0udd_stamp', 'step': 6, 'action': 1, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 52}`
+- `{'tag': 'c0udd_stamp', 'step': 7, 'action': 4, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 50}`
+- `{'tag': 'c0udd_stamp', 'step': 8, 'action': 4, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 48}`
+- `{'tag': 'c0udd_stamp', 'step': 9, 'action': 1, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 46}`
+- `{'tag': 'c0udd_stamp', 'step': 10, 'action': 1, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 44}`
+- `{'tag': 'c0udd_stamp', 'step': 11, 'action': 1, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 42}`
+- `{'tag': 'c0udd_stamp', 'step': 12, 'action': 3, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 40}`
+- `{'tag': 'c0udd_stamp', 'step': 13, 'action': 3, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 38}`
+- `{'tag': 'c0udd_stamp', 'step': 14, 'action': 3, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 36}`
+- `{'tag': 'RESULT', 'verdict': 'C0UDD_FAIL', 'levels': 3, 'snap': {'gate': (1, 1), 'gate_in_walk_u': False, 'gate_in_walk_a': True, 'stamp_c9': 6, 'has_plus': False, 'unlock_cands': [(6, 6)], 'marker': None}}`
+
+## `gate_udd` → **GATEUDD_FAIL**
+
+- `{'tag': 'l4_start', 'snap': {'gate': (1, 1), 'gate_in_walk_u': False, 'gate_in_walk_a': True, 'stamp_c9': 6, 'has_plus': False, 'unlock_cands': [(6, 6)], 'marker': (26, 32, 27, 33)}, 'levels': 3}`
+- `{'tag': 'fuel', 'step': 1, 'action': 3, 'cursor': (9, 1), 'mover': (49, 5, 53, 6), 'levels': 3, 'ui': 80}`
+- `{'tag': 'fuel', 'step': 2, 'action': 3, 'cursor': (8, 1), 'mover': (44, 5, 48, 6), 'levels': 3, 'ui': 78}`
+- `{'tag': 'fuel', 'step': 3, 'action': 3, 'cursor': (7, 1), 'mover': (39, 5, 43, 6), 'levels': 3, 'ui': 76}`
+- `{'tag': 'fuel', 'step': 4, 'action': 2, 'cursor': (7, 2), 'mover': (39, 10, 43, 11), 'levels': 3, 'ui': 74}`
+- `{'tag': 'fuel', 'step': 5, 'action': 3, 'cursor': (6, 2), 'mover': (34, 10, 38, 11), 'levels': 3, 'ui': 72}`
+- `{'tag': 'fuel', 'step': 6, 'action': 2, 'cursor': (6, 3), 'mover': (34, 15, 38, 16), 'levels': 3, 'ui': 70}`
+- `{'tag': 'fuel', 'step': 7, 'action': 3, 'cursor': (5, 3), 'mover': (29, 15, 33, 16), 'levels': 3, 'ui': 68}`
+- `{'tag': 'fuel', 'step': 8, 'action': 3, 'cursor': (4, 3), 'mover': (24, 15, 28, 16), 'levels': 3, 'ui': 66}`
+- `{'tag': 'fuel', 'step': 9, 'action': 3, 'cursor': (3, 3), 'mover': (19, 15, 23, 16), 'levels': 3, 'ui': 84}`
+- `{'tag': 'to_21', 'step': 1, 'action': 4, 'cursor': (4, 3), 'mover': (24, 15, 28, 16), 'levels': 3, 'ui': 82}`
+- `{'tag': 'to_21', 'step': 2, 'action': 1, 'cursor': (4, 2), 'mover': (24, 10, 28, 11), 'levels': 3, 'ui': 80}`
+- `{'tag': 'to_21', 'step': 3, 'action': 1, 'cursor': (4, 1), 'mover': (24, 5, 28, 6), 'levels': 3, 'ui': 78}`
+- `{'tag': 'to_21', 'step': 4, 'action': 3, 'cursor': (3, 1), 'mover': (19, 5, 23, 6), 'levels': 3, 'ui': 76}`
+- `{'tag': 'to_21', 'step': 5, 'action': 3, 'cursor': (2, 1), 'mover': (14, 5, 18, 6), 'levels': 3, 'ui': 74}`
+- `{'tag': 'at_21', 'cursor': (2, 1), 'snap': {'gate': (1, 1), 'gate_in_walk_u': False, 'gate_in_walk_a': True, 'stamp_c9': 9, 'has_plus': False, 'unlock_cands': [(6, 6)], 'marker': (26, 32, 27, 33)}}`
+- `{'tag': 'gate_ritual_start', 'cursor': (2, 1), 'ritual': [(0, -1), (0, 1), (0, 1)]}`
+- `{'tag': 'gate_ritual', 'step': 1, 'action': 1, 'before': (2, 1), 'after': (2, 1), 'moved': False, 'levels': 3, 'ui': 72}`
+- `{'tag': 'gate_ritual', 'step': 2, 'action': 2, 'before': (2, 1), 'after': (2, 1), 'moved': False, 'levels': 3, 'ui': 70}`
+- `{'tag': 'gate_ritual', 'step': 3, 'action': 2, 'before': (2, 1), 'after': (2, 1), 'moved': False, 'levels': 3, 'ui': 68}`
+- `{'tag': 'post_gate_ritual', 'cursor': (2, 1), 'snap': {'gate': (1, 1), 'gate_in_walk_u': False, 'gate_in_walk_a': True, 'stamp_c9': 9, 'has_plus': False, 'unlock_cands': [(6, 6)], 'marker': (26, 32, 27, 33)}}`
+- `{'tag': 'gate_left', 'before': (2, 1), 'after': (2, 1), 'levels': 3, 'snap': {'gate': (1, 1), 'gate_in_walk_u': False, 'gate_in_walk_a': True, 'stamp_c9': 9, 'has_plus': True, 'unlock_cands': [(6, 6)], 'marker': (26, 32, 27, 33)}}`
+- `{'tag': 'gateudd_plan', 'ok': True, 'info': {'t2': (1, 1), 'fuel_end': 20, 'path_len': 1, 'stamp': (8, 4, 14, 10), 'cursor0': (2, 1)}, 'snap': {'gate': (1, 1), 'gate_in_walk_u': False, 'gate_in_walk_a': True, 'stamp_c9': 9, 'has_plus': True, 'unlock_cands': [(6, 6)], 'marker': (26, 32, 27, 33)}}`
+- `{'tag': 'gateudd_stamp', 'step': 1, 'action': 3, 'cursor': (2, 1), 'mover': (14, 5, 18, 6), 'levels': 3, 'ui': 68}`
+- `{'tag': 'RESULT', 'verdict': 'GATEUDD_FAIL', 'levels': 3, 'snap': {'gate': (1, 1), 'gate_in_walk_u': False, 'gate_in_walk_a': True, 'stamp_c9': 9, 'has_plus': True, 'unlock_cands': [(6, 6)], 'marker': (26, 32, 27, 33)}}`
+
+## `combo` → **COMBO_FAIL**
+
+- `{'tag': 'l4_start', 'snap': {'gate': (1, 1), 'gate_in_walk_u': False, 'gate_in_walk_a': True, 'stamp_c9': 6, 'has_plus': False, 'unlock_cands': [(6, 6)], 'marker': (26, 32, 27, 33)}, 'levels': 3}`
+- `{'tag': 'fuel', 'step': 1, 'action': 3, 'cursor': (9, 1), 'mover': (49, 5, 53, 6), 'levels': 3, 'ui': 80}`
+- `{'tag': 'fuel', 'step': 2, 'action': 3, 'cursor': (8, 1), 'mover': (44, 5, 48, 6), 'levels': 3, 'ui': 78}`
+- `{'tag': 'fuel', 'step': 3, 'action': 3, 'cursor': (7, 1), 'mover': (39, 5, 43, 6), 'levels': 3, 'ui': 76}`
+- `{'tag': 'fuel', 'step': 4, 'action': 2, 'cursor': (7, 2), 'mover': (39, 10, 43, 11), 'levels': 3, 'ui': 74}`
+- `{'tag': 'fuel', 'step': 5, 'action': 3, 'cursor': (6, 2), 'mover': (34, 10, 38, 11), 'levels': 3, 'ui': 72}`
+- `{'tag': 'fuel', 'step': 6, 'action': 2, 'cursor': (6, 3), 'mover': (34, 15, 38, 16), 'levels': 3, 'ui': 70}`
+- `{'tag': 'fuel', 'step': 7, 'action': 3, 'cursor': (5, 3), 'mover': (29, 15, 33, 16), 'levels': 3, 'ui': 68}`
+- `{'tag': 'fuel', 'step': 8, 'action': 3, 'cursor': (4, 3), 'mover': (24, 15, 28, 16), 'levels': 3, 'ui': 66}`
+- `{'tag': 'fuel', 'step': 9, 'action': 3, 'cursor': (3, 3), 'mover': (19, 15, 23, 16), 'levels': 3, 'ui': 84}`
+- `{'tag': 'to_c0', 'step': 1, 'action': 2, 'cursor': (3, 4), 'mover': (19, 20, 23, 21), 'levels': 3, 'ui': 82}`
+- `{'tag': 'to_c0', 'step': 2, 'action': 3, 'cursor': (2, 4), 'mover': (14, 20, 18, 21), 'levels': 3, 'ui': 80}`
+- `{'tag': 'to_c0', 'step': 3, 'action': 2, 'cursor': (2, 5), 'mover': (14, 25, 18, 26), 'levels': 3, 'ui': 78}`
+- `{'tag': 'to_c0', 'step': 4, 'action': 3, 'cursor': (1, 5), 'mover': (9, 25, 13, 26), 'levels': 3, 'ui': 76}`
+- `{'tag': 'to_c0', 'step': 5, 'action': 2, 'cursor': (1, 6), 'mover': (9, 30, 13, 31), 'levels': 3, 'ui': 74}`
+- `{'tag': 'to_c0', 'step': 6, 'action': 2, 'cursor': (1, 7), 'mover': (9, 35, 13, 36), 'levels': 3, 'ui': 72}`
+- `{'tag': 'to_c0', 'step': 7, 'action': 1, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 70}`
+- `{'tag': 'combo_c0_ritual_start', 'cursor': (4, 6), 'ritual': [(0, -1), (0, 1), (0, 1)]}`
+- `{'tag': 'combo_c0_ritual', 'step': 1, 'action': 1, 'before': (4, 6), 'after': (4, 6), 'moved': False, 'levels': 3, 'ui': 68}`
+- `{'tag': 'combo_c0_ritual', 'step': 2, 'action': 2, 'before': (4, 6), 'after': (4, 7), 'moved': True, 'levels': 3, 'ui': 66}`
+- `{'tag': 'combo_c0_ritual', 'step': 3, 'action': 2, 'before': (4, 7), 'after': (4, 8), 'moved': True, 'levels': 3, 'ui': 64}`
+- `{'tag': 'to_21', 'step': 1, 'action': 3, 'cursor': (1, 8), 'mover': (9, 40, 13, 41), 'levels': 3, 'ui': 62}`
+- `{'tag': 'to_21', 'step': 2, 'action': 3, 'cursor': (1, 8), 'mover': (9, 40, 13, 41), 'levels': 3, 'ui': 60}`
+- `{'tag': 'to_21', 'step': 3, 'action': 1, 'cursor': (1, 7), 'mover': (9, 35, 13, 36), 'levels': 3, 'ui': 58}`
+- `{'tag': 'to_21', 'step': 4, 'action': 1, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 56}`
+- `{'tag': 'to_21', 'step': 5, 'action': 1, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 54}`
+- `{'tag': 'to_21', 'step': 6, 'action': 1, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 52}`
+- `{'tag': 'to_21', 'step': 7, 'action': 4, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 50}`
+- `{'tag': 'to_21', 'step': 8, 'action': 4, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 48}`
+- `{'tag': 'to_21', 'step': 9, 'action': 1, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 46}`
+- `{'tag': 'to_21', 'step': 10, 'action': 1, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 44}`
+- `{'tag': 'to_21', 'step': 11, 'action': 1, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 42}`
+- `{'tag': 'to_21', 'step': 12, 'action': 3, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 40}`
+- `{'tag': 'to_21', 'step': 13, 'action': 3, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 38}`
+- `{'tag': 'combo_left', 'before': (4, 6), 'after': (4, 6), 'levels': 3, 'snap': {'gate': (1, 1), 'gate_in_walk_u': False, 'gate_in_walk_a': True, 'stamp_c9': 6, 'has_plus': False, 'unlock_cands': [(6, 6)], 'marker': None}}`
+- `{'tag': 'combo_plan', 'ok': True, 'info': {'t2': (1, 1), 'fuel_end': 3, 'path_len': 24, 'stamp': (8, 4, 14, 10), 'cursor0': (4, 6)}, 'snap': {'gate': (1, 1), 'gate_in_walk_u': False, 'gate_in_walk_a': True, 'stamp_c9': 6, 'has_plus': False, 'unlock_cands': [(6, 6)], 'marker': None}}`
+- `{'tag': 'combo_stamp', 'step': 1, 'action': 2, 'cursor': (4, 7), 'mover': (24, 35, 28, 36), 'levels': 3, 'ui': 34}`
+- `{'tag': 'combo_stamp', 'step': 2, 'action': 2, 'cursor': (4, 8), 'mover': (24, 40, 28, 41), 'levels': 3, 'ui': 32}`
+- `{'tag': 'combo_stamp', 'step': 3, 'action': 2, 'cursor': (1, 8), 'mover': (9, 40, 13, 41), 'levels': 3, 'ui': 30}`
+- `{'tag': 'combo_stamp', 'step': 4, 'action': 4, 'cursor': (2, 8), 'mover': (14, 40, 18, 41), 'levels': 3, 'ui': 28}`
+- `{'tag': 'combo_stamp', 'step': 5, 'action': 4, 'cursor': (3, 8), 'mover': (19, 40, 23, 41), 'levels': 3, 'ui': 26}`
+- `{'tag': 'combo_stamp', 'step': 6, 'action': 2, 'cursor': (3, 9), 'mover': (19, 45, 23, 46), 'levels': 3, 'ui': 24}`
+- `{'tag': 'combo_stamp', 'step': 7, 'action': 3, 'cursor': (2, 9), 'mover': (14, 45, 18, 46), 'levels': 3, 'ui': 22}`
+- `{'tag': 'combo_stamp', 'step': 8, 'action': 3, 'cursor': (2, 9), 'mover': (14, 45, 18, 46), 'levels': 3, 'ui': 20}`
+- `{'tag': 'combo_stamp', 'step': 9, 'action': 1, 'cursor': (2, 8), 'mover': (14, 40, 18, 41), 'levels': 3, 'ui': 18}`
+- `{'tag': 'combo_stamp', 'step': 10, 'action': 3, 'cursor': (1, 8), 'mover': (9, 40, 13, 41), 'levels': 3, 'ui': 16}`
+- `{'tag': 'combo_stamp', 'step': 11, 'action': 3, 'cursor': (1, 8), 'mover': (9, 40, 13, 41), 'levels': 3, 'ui': 14}`
+- `{'tag': 'combo_stamp', 'step': 12, 'action': 1, 'cursor': (1, 7), 'mover': (9, 35, 13, 36), 'levels': 3, 'ui': 12}`
+- `{'tag': 'combo_stamp', 'step': 13, 'action': 1, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 10}`
+- `{'tag': 'combo_stamp', 'step': 14, 'action': 1, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 8}`
+- `{'tag': 'combo_stamp', 'step': 15, 'action': 1, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 6}`
+- `{'tag': 'combo_stamp', 'step': 16, 'action': 1, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 4}`
+- `{'tag': 'combo_stamp', 'step': 17, 'action': 4, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 2}`
+- `{'tag': 'combo_stamp', 'step': 18, 'action': 4, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 0}`
+- `{'tag': 'combo_stamp', 'step': 19, 'action': 1, 'cursor': (10, 1), 'mover': (54, 5, 58, 6), 'levels': 3, 'ui': 84}`
+- `{'tag': 'combo_stamp', 'step': 20, 'action': 1, 'cursor': (10, 1), 'mover': (54, 5, 58, 6), 'levels': 3, 'ui': 82}`
+- `{'tag': 'combo_stamp', 'step': 21, 'action': 1, 'cursor': (10, 1), 'mover': (54, 5, 58, 6), 'levels': 3, 'ui': 80}`
+- `{'tag': 'combo_stamp', 'step': 22, 'action': 3, 'cursor': (9, 1), 'mover': (49, 5, 53, 6), 'levels': 3, 'ui': 78}`
+- `{'tag': 'combo_stamp', 'step': 23, 'action': 3, 'cursor': (8, 1), 'mover': (44, 5, 48, 6), 'levels': 3, 'ui': 76}`
+- `{'tag': 'combo_stamp', 'step': 24, 'action': 3, 'cursor': (7, 1), 'mover': (39, 5, 43, 6), 'levels': 3, 'ui': 74}`
+- `{'tag': 'RESULT', 'verdict': 'COMBO_FAIL', 'levels': 3, 'snap': {'gate': (1, 1), 'gate_in_walk_u': False, 'gate_in_walk_a': True, 'stamp_c9': 6, 'has_plus': False, 'unlock_cands': [(6, 6)], 'marker': (26, 32, 27, 33)}}`

@@ -1,0 +1,47 @@
+# L4 path inferred from lingjingsolo cursors
+
+> rows 97..139
+
+- `{'i': 97, 'lv': 3, 'cursor': (9, 1), 'ui': 82, 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'inferred': None, 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 98, 'lv': 3, 'cursor': (8, 1), 'ui': 80, 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'inferred': 'U', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 99, 'lv': 3, 'cursor': (7, 1), 'ui': 78, 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'inferred': 'U', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 100, 'lv': 3, 'cursor': (7, 2), 'ui': 76, 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'inferred': 'R', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 101, 'lv': 3, 'cursor': (7, 3), 'ui': 74, 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'inferred': 'R', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 102, 'lv': 3, 'cursor': (7, 4), 'ui': 72, 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'inferred': 'R', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 103, 'lv': 3, 'cursor': (6, 4), 'ui': 70, 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'inferred': 'U', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 104, 'lv': 3, 'cursor': (10, 5), 'ui': 68, 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'inferred': 'MISMATCH from (6, 4)', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 105, 'lv': 3, 'cursor': (10, 6), 'ui': 66, 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'inferred': 'R', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 106, 'lv': 3, 'cursor': (9, 6), 'ui': 64, 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'inferred': 'U', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 107, 'lv': 3, 'cursor': (8, 6), 'ui': 62, 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'inferred': 'U', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 108, 'lv': 3, 'cursor': (8, 5), 'ui': 60, 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'inferred': 'MISMATCH from (8, 6)', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 109, 'lv': 3, 'cursor': (6, 6), 'ui': 58, 'gate_u': False, 'armed_only': [(1, 1)], 'inferred': 'MISMATCH from (8, 5)', 'n_warps': 28, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 110, 'lv': 3, 'cursor': (6, 5), 'ui': 56, 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'inferred': 'MISMATCH from (6, 6)', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 111, 'lv': 3, 'cursor': (6, 6), 'ui': 54, 'gate_u': False, 'armed_only': [(1, 1)], 'inferred': 'MISMATCH from (6, 5)', 'n_warps': 28, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 112, 'lv': 3, 'cursor': (6, 5), 'ui': 52, 'gate_u': False, 'armed_only': [(1, 1), (6, 6)], 'inferred': 'MISMATCH from (6, 6)', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 113, 'lv': 3, 'cursor': (6, 6), 'ui': 50, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1)], 'inferred': 'MISMATCH from (6, 5)', 'n_warps': 28, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 114, 'lv': 3, 'cursor': (6, 5), 'ui': 48, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'MISMATCH from (6, 6)', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 115, 'lv': 3, 'cursor': (6, 4), 'ui': 46, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'L', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 116, 'lv': 3, 'cursor': (9, 4), 'ui': 44, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'MISMATCH from (6, 4)', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 117, 'lv': 3, 'cursor': (8, 4), 'ui': 42, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'U', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 118, 'lv': 3, 'cursor': (8, 8), 'ui': 40, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'MISMATCH from (8, 4)', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 119, 'lv': 3, 'cursor': (6, 9), 'ui': 38, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'MISMATCH from (8, 8)', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 120, 'lv': 3, 'cursor': (5, 9), 'ui': 36, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'U', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 121, 'lv': 3, 'cursor': (4, 9), 'ui': 34, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'U', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 122, 'lv': 3, 'cursor': (4, 8), 'ui': 32, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'L', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 123, 'lv': 3, 'cursor': (1, 7), 'ui': 30, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'MISMATCH from (4, 8)', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 124, 'lv': 3, 'cursor': (4, 6), 'ui': 28, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'L', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 125, 'lv': 3, 'cursor': (4, 7), 'ui': 26, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'R', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 126, 'lv': 3, 'cursor': (4, 8), 'ui': 24, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'R', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 127, 'lv': 3, 'cursor': (2, 8), 'ui': 22, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'MISMATCH from (4, 8)', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 128, 'lv': 3, 'cursor': (2, 7), 'ui': 20, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'L', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 129, 'lv': 3, 'cursor': (2, 6), 'ui': 18, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'L', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 130, 'lv': 3, 'cursor': (2, 5), 'ui': 16, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'L', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 131, 'lv': 3, 'cursor': (2, 4), 'ui': 14, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'L', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 132, 'lv': 3, 'cursor': (3, 4), 'ui': 12, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'D', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 133, 'lv': 3, 'cursor': (3, 3), 'ui': 84, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'L', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 134, 'lv': 3, 'cursor': (4, 3), 'ui': 82, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'D', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 135, 'lv': 3, 'cursor': (4, 2), 'ui': 80, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'L', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 136, 'lv': 3, 'cursor': (4, 1), 'ui': 78, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'L', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 137, 'lv': 3, 'cursor': (3, 1), 'ui': 76, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'U', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 138, 'lv': 3, 'cursor': (2, 1), 'ui': 74, 'gate_u': False, 'armed_only': [(0, 11), (0, 12), (1, 1), (6, 6)], 'inferred': 'U', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`
+- `{'i': 139, 'lv': 4, 'cursor': (1, 1), 'ui': 72, 'gate_u': True, 'armed_only': [(0, 11), (0, 12), (6, 6)], 'inferred': 'MISMATCH from (2, 1)', 'n_warps': 24, 'w64D': (10, 5), 'w75U': (7, 1)}`

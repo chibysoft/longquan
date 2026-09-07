@@ -210,17 +210,29 @@ def carrying_near_mover(frame, mover_bbox: Optional[BBox] = None):
 
 
 def detect_warps(frame, offset: Optional[Tuple[int, int]] = None, walkable=None):
-    """Live-probed L3+: portal cells (horizontal + vertical).
+    """Live-probed L3+: portal cells (horizontal + vertical + L4 eject).
 
-    Horizontal: walkable cell with no UP neighbor, color-1 strip immediately
-    west of the 5x2 footprint, and a contiguous same-row run to the right. Any
-    action from that cell teleports to the rightmost cell of the run.
-    L3: {(1,1), *DIRS} -> (6,1).
+    Horizontal: walkable cell with a color-1 strip immediately west of the 5x2
+    footprint, and a contiguous same-row run to the right. Any action (including
+    UP) teleports to the rightmost cell of the run, then applies the action once
+    (blocked => stay on land). Exception: if the cell north is the L4 ring-hop
+    pad, UP walks normally ((8,6)→(8,5), H5ab). L3 top-of-shaft / L4 corridor.
 
-    Vertical (live-probed E2): a color-1 HORIZONTAL bar directly above the 5x2
-    footprint (x-aligned). A DOWN action teleports down the SAME COLUMN to the
-    bottom of the contiguous walkable run (the stamp-gate approach cell).
-    L3: {(10,1), DOWN} -> (10,9).  L1/L2: empty.
+    Vertical (live-probed E2 + L4 H5w): a color-1 HORIZONTAL bar directly above
+    the 5x2 footprint. Any action teleports to the bottom of the contiguous
+    column run, then applies the action once (blocked => stay on bottom).
+    Dirs already claimed by a horizontal portal on the same cell are kept.
+    L3: {(10,1), DOWN} -> (10,9).  L4: {(3,7), LEFT} -> (2,9), etc.  L1/L2: empty.
+
+    Vertical eject (live-probed L4 H6 + L5): bottom of a contiguous column run
+    of length >= 5 whose footprint has a color-1 OR color-4 rail within ~6px
+    to the EAST. Any action teleports to the TOP of that run, then applies the
+    action once (blocked => stay on top). L4: (7,5) east-1. L5: (7,5) east-4
+    and (10,10) east-4 long shaft → (10,1) stamp.
+
+    Ring hop (live H5ab + (8,8)/(4,8)): rightmost cell of a horizontal
+    walkable run with an east color-1 rail; ANY action teleports to the
+    leftmost cell of that run, then applies the action. Mid may be walkable.
     """
     if offset is None:
         offset = grid_offset(frame)
@@ -230,28 +242,162 @@ def detect_warps(frame, offset: Optional[Tuple[int, int]] = None, walkable=None)
     H, W = g.shape
     mw = MOVE_SHAPE[0]
     warps = {}
+
+    # --- vertical eject FIRST (L4/L5): needed so ring-hop mid=(7,5) is known
+    # before horizontal UP-exemption checks the hop pad at (8,5).
+    walk_a_eject = build_walkable(frame, offset, armed=True)
+    cols: dict[int, list[int]] = {}
+    for (cx, cy) in walkable:
+        cols.setdefault(cx, []).append(cy)
+    for cx, ys in cols.items():
+        ys = sorted(ys)
+        seg_start = prev = ys[0]
+        segments = []
+        for y in ys[1:]:
+            if y == prev + 1:
+                prev = y
+                continue
+            segments.append((seg_start, prev))
+            seg_start = prev = y
+        segments.append((seg_start, prev))
+        for y0, y1 in segments:
+            if y1 - y0 + 1 < 5:
+                continue
+            bottom = (cx, y1)
+            top = (cx, y0)
+            if bottom == top:
+                continue
+            px, py = cursor_to_pixel(bottom, offset)
+            x1 = min(px + 20, W)
+            if px + mw >= W:
+                continue
+            east = g[py:py + 2, px + mw:x1]
+            # L4: color-1 rail. L5 east-4:
+            #   - short shaft len==5: first non-floor within 6px is color-4
+            #     ((7,5)→(7,1)); wider padding ((6,5)) rejected.
+            #   - long shaft on rightmost cols (cx>=10): IMMEDIATE east
+            #     column all color-4 ((10,10)→(10,1) stamp). Do NOT apply
+            #     to mid cols — L2 false ejects (6,8)/(2,7).
+            has_e1 = bool(np.any(east == 1))
+            has_e4 = False
+            if not has_e1:
+                seg_len = y1 - y0 + 1
+                if seg_len == 5:
+                    for xi in range(min(6, east.shape[1])):
+                        col = east[:, xi]
+                        if np.all(col == 3):
+                            continue
+                        has_e4 = bool(np.any(col == 4) and not np.any(col == 12))
+                        break
+                elif (
+                    cx >= 10
+                    and east.shape[1] > 0
+                    and np.all(east[:, 0] == 4)
+                ):
+                    has_e4 = True
+            if not (has_e1 or has_e4):
+                continue
+            # Shaft truncated above an armed-only cell (L6 stamp gate (10,10)):
+            # walk_u ends at (10,9) and short east-4 falsely ejects → (10,5),
+            # blocking the live DOWN to (10,10). Skip mid-shaft ejects.
+            below = (cx, y1 + 1)
+            if below not in walkable and below in walk_a_eject:
+                continue
+            # L4 post-ring-crush: (6,6) gains east color-1 smear + color-9/12
+            # footprint → false eject. Live: only UP to (6,5). Real pads are
+            # clean when the mover is elsewhere; color-12 on-pad is handled
+            # by ignoring 12 only for rightmost long east-4 shafts (L5).
+            foot = g[py:py + 2, px:px + mw]
+            if has_e4 and cx >= 10:
+                if np.any(foot == 9):
+                    continue
+            elif np.any((foot == 9) | (foot == 12)):
+                continue
+            for d in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                warps[(bottom, d)] = top
+
+    def _ring_hop_source(cx, cy) -> bool:
+        """True if (cx,cy) is an L4 ring-hop pad.
+
+        Live: rightmost cell of a horizontal walkable run with an east color-1
+        rail. ANY action teleports to the LEFTMOST cell of that run, then
+        applies the action. Mid may be walkable ((8,8)/(4,8)). Skip color-9
+        (post-crush (6,6) false positive). Color-12 alone is the mover on pad
+        (L5 (10,6) live hop must still fire while standing there).
+        """
+        if (cx, cy) not in walkable:
+            return False
+        if (cx + 1, cy) in walkable:
+            return False  # only rightmost of the run hops
+        px, py = cursor_to_pixel((cx, cy), offset)
+        if px + mw >= W or py + 1 >= H:
+            return False
+        foot = g[py:py + 2, px:px + mw]
+        if np.any(foot == 9):
+            return False
+        if not np.any(g[py:py + 2, px + mw:min(px + 8, W)] == 1):
+            return False
+        x = cx
+        while (x - 1, cy) in walkable:
+            x -= 1
+        land = (x, cy)
+        if land == (cx, cy):
+            return False
+        return True
+
+    def _ring_hop_land(cx, cy):
+        x = cx
+        while (x - 1, cy) in walkable:
+            x -= 1
+        return (x, cy)
+
     for (cx, cy) in walkable:
         px, py = cursor_to_pixel((cx, cy), offset)
         if px < 0 or py < 0 or py + 1 >= H:
             continue
         # --- horizontal portal: color-1 strip west + same-row run ---
-        if (cx, cy - 1) not in walkable and px > 0 and np.any(g[py:py + 2, px - 1] == 1):
+        # Warps store RAW land; `_step_cell` applies the action after teleport.
+        # UP normally triggers (live post-unlock (6,4) UP → (10,3)).
+        # Exception: north is ring-hop pad — (8,6) UP walks to (8,5) (H5ab).
+        if px > 0 and int(np.sum(g[py:py + 2, px - 1] == 1)) >= 2:
             x = cx
             while (x + 1, cy) in walkable:
                 x += 1
             land = (x, cy)
             if land != (cx, cy):
-                for d in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                dirs_h = [(1, 0), (-1, 0), (0, 1), (0, -1)]  # R L D U
+                if _ring_hop_source(cx, cy - 1):
+                    dirs_h = [(1, 0), (-1, 0), (0, 1)]  # not UP
+                for d in dirs_h:
+                    # do not overwrite eject on the same (cell,dir)
+                    if ((cx, cy), d) in warps:
+                        continue
                     warps[((cx, cy), d)] = land
         # --- vertical portal: color-1 HORIZONTAL bar directly above ---
-        # (>=2 px: reject single-pixel vline/plus fragments above a footprint)
         if py - 1 >= 0 and px + mw <= W and int(np.sum(g[py - 1, px:px + mw] == 1)) >= 2:
             y = cy
             while (cx, y + 1) in walkable:
                 y += 1
             land = (cx, y)
             if land != (cx, cy):
-                warps[((cx, cy), (0, 1))] = land
+                for d in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                    if ((cx, cy), d) in warps:
+                        continue
+                    warps[((cx, cy), d)] = land
+
+    # --- L4 ring approach (live H5ab + (8,8)/(4,8)): east color-1 rail on the
+    # rightmost cell of a horizontal run. ANY action teleports to the LEFTMOST
+    # cell of that run, then applies the action (blocked => stay on land).
+    # Post-crush (6,6) color-9/12 + east smear → skipped (false hop).
+    for (cx, cy) in list(walkable):
+        if any(((cx, cy), d) in warps for d in ((1, 0), (-1, 0), (0, 1), (0, -1))):
+            continue
+        if not _ring_hop_source(cx, cy):
+            continue
+        land = _ring_hop_land(cx, cy)
+        for d in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+            warps[((cx, cy), d)] = land
+
     return warps
 
 

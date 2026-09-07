@@ -1,0 +1,129 @@
+- `{'tag': 'fuel', 'step': 1, 'action': 3, 'cursor': (9, 1), 'mover': (49, 5, 53, 6), 'levels': 3, 'ui': 80}`
+- `{'tag': 'fuel', 'step': 2, 'action': 3, 'cursor': (8, 1), 'mover': (44, 5, 48, 6), 'levels': 3, 'ui': 78}`
+- `{'tag': 'fuel', 'step': 3, 'action': 3, 'cursor': (7, 1), 'mover': (39, 5, 43, 6), 'levels': 3, 'ui': 76}`
+- `{'tag': 'fuel', 'step': 4, 'action': 2, 'cursor': (7, 2), 'mover': (39, 10, 43, 11), 'levels': 3, 'ui': 74}`
+- `{'tag': 'fuel', 'step': 5, 'action': 3, 'cursor': (6, 2), 'mover': (34, 10, 38, 11), 'levels': 3, 'ui': 72}`
+- `{'tag': 'fuel', 'step': 6, 'action': 2, 'cursor': (6, 3), 'mover': (34, 15, 38, 16), 'levels': 3, 'ui': 70}`
+- `{'tag': 'fuel', 'step': 7, 'action': 3, 'cursor': (5, 3), 'mover': (29, 15, 33, 16), 'levels': 3, 'ui': 68}`
+- `{'tag': 'fuel', 'step': 8, 'action': 3, 'cursor': (4, 3), 'mover': (24, 15, 28, 16), 'levels': 3, 'ui': 66}`
+- `{'tag': 'fuel', 'step': 9, 'action': 3, 'cursor': (3, 3), 'mover': (19, 15, 23, 16), 'levels': 3, 'ui': 84}`
+- `{'tag': 'start', 'n_targets': 63, 'snap': {'gate': (1, 1), 'gate_in_walk_u': False, 'gate_in_walk_a': True, 'stamp_c9': 6, 'has_plus': False, 'unlock_cands': [], 'marker': (26, 32, 27, 33), 'c9': 23, 'c12': 12, 'c14': 22, 'c0': 5, 'c8': 14, 'c11': 92, 'ui': 84, 'cursor': (3, 3), 'mover': (19, 15, 23, 16)}, 'targets_head': [(1, 5), (1, 6), (1, 7), (1, 8), (2, 1), (2, 4), (2, 5), (2, 6), (2, 7), (2, 8), (2, 9), (3, 1)]}`
+- `{'tag': 'v0_(2, 1)', 'step': 1, 'action': 4, 'cursor': (4, 3), 'mover': (24, 15, 28, 16), 'levels': 3, 'ui': 82}`
+- `{'tag': 'v0_(2, 1)', 'step': 2, 'action': 1, 'cursor': (4, 2), 'mover': (24, 10, 28, 11), 'levels': 3, 'ui': 80}`
+- `{'tag': 'v0_(2, 1)', 'step': 3, 'action': 1, 'cursor': (4, 1), 'mover': (24, 5, 28, 6), 'levels': 3, 'ui': 78}`
+- `{'tag': 'v0_(2, 1)', 'step': 4, 'action': 3, 'cursor': (3, 1), 'mover': (19, 5, 23, 6), 'levels': 3, 'ui': 76}`
+- `{'tag': 'v0_(2, 1)', 'step': 5, 'action': 3, 'cursor': (2, 1), 'mover': (14, 5, 18, 6), 'levels': 3, 'ui': 74}`
+- `{'tag': 'v1_(3, 1)', 'step': 1, 'action': 4, 'cursor': (3, 1), 'mover': (19, 5, 23, 6), 'levels': 3, 'ui': 72}`
+- `{'tag': 'v2_(4, 1)', 'step': 1, 'action': 4, 'cursor': (4, 1), 'mover': (24, 5, 28, 6), 'levels': 3, 'ui': 70}`
+- `{'tag': 'v3_(1, 7)', 'step': 1, 'action': 2, 'cursor': (4, 2), 'mover': (24, 10, 28, 11), 'levels': 3, 'ui': 68}`
+- `{'tag': 'v3_(1, 7)', 'step': 2, 'action': 2, 'cursor': (4, 3), 'mover': (24, 15, 28, 16), 'levels': 3, 'ui': 66}`
+- `{'tag': 'v3_(1, 7)', 'step': 3, 'action': 3, 'cursor': (3, 3), 'mover': (19, 15, 23, 16), 'levels': 3, 'ui': 64}`
+- `{'tag': 'v3_(1, 7)', 'step': 4, 'action': 2, 'cursor': (3, 4), 'mover': (19, 20, 23, 21), 'levels': 3, 'ui': 62}`
+- `{'tag': 'v3_(1, 7)', 'step': 5, 'action': 3, 'cursor': (2, 4), 'mover': (14, 20, 18, 21), 'levels': 3, 'ui': 60}`
+- `{'tag': 'v3_(1, 7)', 'step': 6, 'action': 2, 'cursor': (2, 5), 'mover': (14, 25, 18, 26), 'levels': 3, 'ui': 58}`
+- `{'tag': 'v3_(1, 7)', 'step': 7, 'action': 3, 'cursor': (1, 5), 'mover': (9, 25, 13, 26), 'levels': 3, 'ui': 56}`
+- `{'tag': 'v3_(1, 7)', 'step': 8, 'action': 2, 'cursor': (1, 6), 'mover': (9, 30, 13, 31), 'levels': 3, 'ui': 54}`
+- `{'tag': 'v3_(1, 7)', 'step': 9, 'action': 2, 'cursor': (1, 7), 'mover': (9, 35, 13, 36), 'levels': 3, 'ui': 52}`
+- `{'tag': 'v4_(3, 7)', 'step': 1, 'action': 3, 'cursor': (3, 7), 'mover': (19, 35, 23, 36), 'levels': 3, 'ui': 50}`
+- `{'tag': 'v5_(3, 9)', 'step': 1, 'action': 2, 'cursor': (3, 9), 'mover': (19, 45, 23, 46), 'levels': 3, 'ui': 48}`
+- `{'tag': 'v6_(4, 6)', 'step': 1, 'action': 4, 'cursor': (4, 9), 'mover': (24, 45, 28, 46), 'levels': 3, 'ui': 46}`
+- `{'tag': 'v6_(4, 6)', 'step': 2, 'action': 1, 'cursor': (4, 8), 'mover': (24, 40, 28, 41), 'levels': 3, 'ui': 44}`
+- `{'tag': 'v6_(4, 6)', 'step': 3, 'action': 1, 'cursor': (1, 7), 'mover': (9, 35, 13, 36), 'levels': 3, 'ui': 42}`
+- `{'tag': 'v6_(4, 6)', 'step': 4, 'action': 1, 'cursor': (4, 6), 'mover': (24, 30, 28, 31), 'levels': 3, 'ui': 40}`
+- `{'tag': 'v7_(4, 7)', 'step': 1, 'action': 2, 'cursor': (4, 7), 'mover': (24, 35, 28, 36), 'levels': 3, 'ui': 38}`
+- `{'tag': 'v8_(6, 4)', 'step': 1, 'action': 2, 'cursor': (4, 8), 'mover': (24, 40, 28, 41), 'levels': 3, 'ui': 36}`
+- `{'tag': 'v8_(6, 4)', 'step': 2, 'action': 2, 'cursor': (1, 8), 'mover': (9, 40, 13, 41), 'levels': 3, 'ui': 34}`
+- `{'tag': 'v8_(6, 4)', 'step': 3, 'action': 4, 'cursor': (2, 8), 'mover': (14, 40, 18, 41), 'levels': 3, 'ui': 32}`
+- `{'tag': 'v8_(6, 4)', 'step': 4, 'action': 4, 'cursor': (3, 8), 'mover': (19, 40, 23, 41), 'levels': 3, 'ui': 30}`
+- `{'tag': 'v8_(6, 4)', 'step': 5, 'action': 2, 'cursor': (3, 9), 'mover': (19, 45, 23, 46), 'levels': 3, 'ui': 28}`
+- `{'tag': 'v8_(6, 4)', 'step': 6, 'action': 1, 'cursor': (3, 8), 'mover': (19, 40, 23, 41), 'levels': 3, 'ui': 26}`
+- `{'tag': 'v8_(6, 4)', 'step': 7, 'action': 1, 'cursor': (3, 7), 'mover': (19, 35, 23, 36), 'levels': 3, 'ui': 24}`
+- `{'tag': 'v8_(6, 4)', 'step': 8, 'action': 4, 'cursor': (4, 9), 'mover': (24, 45, 28, 46), 'levels': 3, 'ui': 22}`
+- `{'tag': 'v8_(6, 4)', 'step': 9, 'action': 4, 'cursor': (5, 9), 'mover': (29, 45, 33, 46), 'levels': 3, 'ui': 20}`
+- `{'tag': 'v8_(6, 4)', 'step': 10, 'action': 1, 'cursor': (5, 9), 'mover': (29, 45, 33, 46), 'levels': 3, 'ui': 18}`
+- `{'tag': 'v8_(6, 4)', 'step': 11, 'action': 1, 'cursor': (5, 9), 'mover': (29, 45, 33, 46), 'levels': 3, 'ui': 16}`
+- `{'tag': 'v8_(6, 4)', 'step': 12, 'action': 1, 'cursor': (5, 9), 'mover': (29, 45, 33, 46), 'levels': 3, 'ui': 14}`
+- `{'tag': 'v8_(6, 4)', 'step': 13, 'action': 1, 'cursor': (5, 9), 'mover': (29, 45, 33, 46), 'levels': 3, 'ui': 12}`
+- `{'tag': 'v8_(6, 4)', 'step': 14, 'action': 3, 'cursor': (4, 9), 'mover': (24, 45, 28, 46), 'levels': 3, 'ui': 10}`
+- `{'tag': 'v8_(6, 4)', 'step': 15, 'action': 3, 'cursor': (3, 9), 'mover': (19, 45, 23, 46), 'levels': 3, 'ui': 8}`
+- `{'tag': 'v8_(6, 4)', 'step': 16, 'action': 3, 'cursor': (2, 9), 'mover': (14, 45, 18, 46), 'levels': 3, 'ui': 6}`
+- `{'tag': 'v8_(6, 4)', 'step': 17, 'action': 3, 'cursor': (2, 9), 'mover': (14, 45, 18, 46), 'levels': 3, 'ui': 4}`
+- `{'tag': 'skip', 'locus': (8, 4)}`
+- `{'tag': 'skip', 'locus': (8, 6)}`
+- `{'tag': 'skip', 'locus': (8, 9)}`
+- `{'tag': 'skip', 'locus': (6, 8)}`
+- `{'tag': 'skip', 'locus': (6, 9)}`
+- `{'tag': 'skip', 'locus': (6, 10)}`
+- `{'tag': 'skip', 'locus': (10, 4)}`
+- `{'tag': 'skip', 'locus': (10, 6)}`
+- `{'tag': 'skip', 'locus': (7, 5)}`
+- `{'tag': 'skip', 'locus': (5, 3)}`
+- `{'tag': 'skip', 'locus': (1, 5)}`
+- `{'tag': 'skip', 'locus': (1, 6)}`
+- `{'tag': 'skip', 'locus': (1, 8)}`
+- `{'tag': 'skip', 'locus': (2, 4)}`
+- `{'tag': 'skip', 'locus': (2, 5)}`
+- `{'tag': 'skip', 'locus': (2, 6)}`
+- `{'tag': 'skip', 'locus': (2, 7)}`
+- `{'tag': 'v27_(2, 8)', 'step': 1, 'action': 1, 'cursor': (2, 8), 'mover': (14, 40, 18, 41), 'levels': 3, 'ui': 2}`
+- `{'tag': 'skip', 'locus': (3, 3)}`
+- `{'tag': 'skip', 'locus': (3, 4)}`
+- `{'tag': 'v30_(3, 8)', 'step': 1, 'action': 4, 'cursor': (3, 8), 'mover': (19, 40, 23, 41), 'levels': 3, 'ui': 0}`
+- `{'tag': 'refuel_31', 'step': 1, 'action': 4, 'cursor': (10, 1), 'mover': (54, 5, 58, 6), 'levels': 3, 'ui': 84}`
+- `{'tag': 'refuel_31', 'step': 2, 'action': 2, 'cursor': (10, 1), 'mover': (54, 5, 58, 6), 'levels': 3, 'ui': 82}`
+- `{'tag': 'refuel_31', 'step': 3, 'action': 4, 'cursor': (10, 1), 'mover': (54, 5, 58, 6), 'levels': 3, 'ui': 80}`
+- `{'tag': 'refuel_31', 'step': 4, 'action': 4, 'cursor': (10, 1), 'mover': (54, 5, 58, 6), 'levels': 3, 'ui': 78}`
+- `{'tag': 'refuel_31', 'step': 5, 'action': 2, 'cursor': (10, 1), 'mover': (54, 5, 58, 6), 'levels': 3, 'ui': 76}`
+- `{'tag': 'v31_(4, 2)', 'step': 1, 'action': 3, 'cursor': (9, 1), 'mover': (49, 5, 53, 6), 'levels': 3, 'ui': 74}`
+- `{'tag': 'v31_(4, 2)', 'step': 2, 'action': 3, 'cursor': (8, 1), 'mover': (44, 5, 48, 6), 'levels': 3, 'ui': 72}`
+- `{'tag': 'v31_(4, 2)', 'step': 3, 'action': 3, 'cursor': (7, 1), 'mover': (39, 5, 43, 6), 'levels': 3, 'ui': 70}`
+- `{'tag': 'v31_(4, 2)', 'step': 4, 'action': 2, 'cursor': (7, 2), 'mover': (39, 10, 43, 11), 'levels': 3, 'ui': 68}`
+- `{'tag': 'v31_(4, 2)', 'step': 5, 'action': 3, 'cursor': (6, 2), 'mover': (34, 10, 38, 11), 'levels': 3, 'ui': 66}`
+- `{'tag': 'v31_(4, 2)', 'step': 6, 'action': 2, 'cursor': (6, 3), 'mover': (34, 15, 38, 16), 'levels': 3, 'ui': 64}`
+- `{'tag': 'v31_(4, 2)', 'step': 7, 'action': 3, 'cursor': (5, 3), 'mover': (29, 15, 33, 16), 'levels': 3, 'ui': 62}`
+- `{'tag': 'v31_(4, 2)', 'step': 8, 'action': 3, 'cursor': (4, 3), 'mover': (24, 15, 28, 16), 'levels': 3, 'ui': 60}`
+- `{'tag': 'v31_(4, 2)', 'step': 9, 'action': 1, 'cursor': (4, 2), 'mover': (24, 10, 28, 11), 'levels': 3, 'ui': 58}`
+- `{'tag': 'v32_(4, 3)', 'step': 1, 'action': 2, 'cursor': (4, 3), 'mover': (24, 15, 28, 16), 'levels': 3, 'ui': 56}`
+- `{'tag': 'v33_(4, 4)', 'step': 1, 'action': 2, 'cursor': (4, 4), 'mover': (24, 20, 28, 21), 'levels': 3, 'ui': 54}`
+- `{'tag': 'v34_(4, 8)', 'step': 1, 'action': 3, 'cursor': (3, 4), 'mover': (19, 20, 23, 21), 'levels': 3, 'ui': 52}`
+- `{'tag': 'v34_(4, 8)', 'step': 2, 'action': 3, 'cursor': (2, 4), 'mover': (14, 20, 18, 21), 'levels': 3, 'ui': 50}`
+- `{'tag': 'v34_(4, 8)', 'step': 3, 'action': 2, 'cursor': (2, 5), 'mover': (14, 25, 18, 26), 'levels': 3, 'ui': 48}`
+- `{'tag': 'v34_(4, 8)', 'step': 4, 'action': 3, 'cursor': (1, 5), 'mover': (9, 25, 13, 26), 'levels': 3, 'ui': 46}`
+- `{'tag': 'v34_(4, 8)', 'step': 5, 'action': 2, 'cursor': (1, 6), 'mover': (9, 30, 13, 31), 'levels': 3, 'ui': 44}`
+- `{'tag': 'v34_(4, 8)', 'step': 6, 'action': 2, 'cursor': (1, 7), 'mover': (9, 35, 13, 36), 'levels': 3, 'ui': 42}`
+- `{'tag': 'v34_(4, 8)', 'step': 7, 'action': 2, 'cursor': (4, 8), 'mover': (24, 40, 28, 41), 'levels': 3, 'ui': 40}`
+- `{'tag': 'v35_(4, 9)', 'step': 1, 'action': 2, 'cursor': (1, 8), 'mover': (9, 40, 13, 41), 'levels': 3, 'ui': 38}`
+- `{'tag': 'v36_(4, 10)', 'step': 1, 'action': 1, 'cursor': (1, 7), 'mover': (9, 35, 13, 36), 'levels': 3, 'ui': 36}`
+- `{'tag': 'v36_(4, 10)', 'step': 2, 'action': 2, 'cursor': (4, 8), 'mover': (24, 40, 28, 41), 'levels': 3, 'ui': 34}`
+- `{'tag': 'v36_(4, 10)', 'step': 3, 'action': 2, 'cursor': (1, 8), 'mover': (9, 40, 13, 41), 'levels': 3, 'ui': 32}`
+- `{'tag': 'v36_(4, 10)', 'step': 4, 'action': 2, 'cursor': (1, 8), 'mover': (9, 40, 13, 41), 'levels': 3, 'ui': 30}`
+- `{'tag': 'v37_(5, 9)', 'step': 1, 'action': 1, 'cursor': (1, 7), 'mover': (9, 35, 13, 36), 'levels': 3, 'ui': 28}`
+- `{'tag': 'v37_(5, 9)', 'step': 2, 'action': 2, 'cursor': (4, 8), 'mover': (24, 40, 28, 41), 'levels': 3, 'ui': 26}`
+- `{'tag': 'v37_(5, 9)', 'step': 3, 'action': 2, 'cursor': (1, 8), 'mover': (9, 40, 13, 41), 'levels': 3, 'ui': 24}`
+- `{'tag': 'v37_(5, 9)', 'step': 4, 'action': 4, 'cursor': (2, 8), 'mover': (14, 40, 18, 41), 'levels': 3, 'ui': 22}`
+- `{'tag': 'skip', 'locus': (5, 10)}`
+- `{'tag': 'skip', 'locus': (6, 2)}`
+- `{'tag': 'skip', 'locus': (6, 3)}`
+- `{'tag': 'skip', 'locus': (7, 1)}`
+- `{'tag': 'skip', 'locus': (7, 2)}`
+- `{'tag': 'skip', 'locus': (7, 3)}`
+- `{'tag': 'skip', 'locus': (7, 4)}`
+- `{'tag': 'skip', 'locus': (7, 8)}`
+- `{'tag': 'skip', 'locus': (8, 1)}`
+- `{'tag': 'skip', 'locus': (8, 7)}`
+- `{'tag': 'skip', 'locus': (8, 8)}`
+- `{'tag': 'skip', 'locus': (9, 1)}`
+- `{'tag': 'skip', 'locus': (9, 3)}`
+- `{'tag': 'skip', 'locus': (9, 4)}`
+- `{'tag': 'skip', 'locus': (9, 6)}`
+- `{'tag': 'skip', 'locus': (9, 7)}`
+- `{'tag': 'skip', 'locus': (9, 9)}`
+- `{'tag': 'skip', 'locus': (9, 10)}`
+- `{'tag': 'skip', 'locus': (10, 1)}`
+- `{'tag': 'skip', 'locus': (10, 3)}`
+- `{'tag': 'skip', 'locus': (10, 5)}`
+- `{'tag': 'skip', 'locus': (10, 7)}`
+- `{'tag': 'skip', 'locus': (10, 8)}`
+- `{'tag': 'skip', 'locus': (10, 9)}`
+- `{'tag': 'skip', 'locus': (10, 10)}`
+- `{'tag': 'RESULT', 'verdict': 'NO_GATE_OPEN', 'visited': 16, 'hits': 0}`

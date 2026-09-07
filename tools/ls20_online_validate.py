@@ -167,14 +167,14 @@ class OnlineSession:
             f"{self.base}/api/scorecard/open",
             headers=self._headers(True),
             json={"tags": tags or ["ls20_move_validate"]},
-            timeout=20,
+            timeout=60,
         )
         r.raise_for_status()
         self.card_id = r.json()["card_id"]
         r = self.s.get(
             f"{self.base}/api/games/ls20",
             headers=self._headers(),
-            timeout=20,
+            timeout=60,
         )
         r.raise_for_status()
         self.game_id = r.json()["game_id"]
@@ -187,7 +187,7 @@ class OnlineSession:
             f"{self.base}/api/cmd/RESET",
             headers=self._headers(True),
             json=body,
-            timeout=20,
+            timeout=60,
         )
         r.raise_for_status()
         data = r.json()
@@ -203,7 +203,7 @@ class OnlineSession:
             f"{self.base}/api/cmd/ACTION{action_id}",
             headers=self._headers(True),
             json=body,
-            timeout=20,
+            timeout=60,
         )
         r.raise_for_status()
         data = r.json()
