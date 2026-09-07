@@ -11,4 +11,7 @@ state-machine contract described in docs/primitive-interface-interactive.md:
     done(state) -> bool
 
 The search here is STATE-SPACE search (BFS / A*), not config-space search.
+
+Mask-flip (ft09) transition ops live in `longquan.interactive.maskflip`
+(`step(grid, action_xy, param)` + sample induction + GF(2) goal planning).
 """

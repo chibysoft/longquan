@@ -18,216 +18,633 @@
     }
   ],
   "l5_levels_start": 4,
-  "l5_levels_end": 4,
-  "cleared": false,
-  "plan": [
-    {
-      "ax": 30,
-      "ay": 4,
-      "polarity": "normal"
+  "l5_levels_end": 5,
+  "cleared": true,
+  "plan": {
+    "patches": [
+      {
+        "origin": [
+          14,
+          4
+        ],
+        "fixed_color": 14,
+        "macro": {
+          "0,0": 3,
+          "0,1": 3,
+          "0,2": 3,
+          "1,0": 3,
+          "1,1": 14,
+          "1,2": 0,
+          "2,0": 3,
+          "2,1": 0,
+          "2,2": 2
+        },
+        "hist": {
+          "3": 20,
+          "14": 4,
+          "0": 8,
+          "2": 4
+        }
+      },
+      {
+        "origin": [
+          38,
+          12
+        ],
+        "fixed_color": 15,
+        "macro": {
+          "0,0": 0,
+          "0,1": 3,
+          "0,2": 3,
+          "1,0": 2,
+          "1,1": 15,
+          "1,2": 3,
+          "2,0": 0,
+          "2,1": 2,
+          "2,2": 0
+        },
+        "hist": {
+          "0": 12,
+          "3": 12,
+          "2": 8,
+          "15": 4
+        }
+      },
+      {
+        "origin": [
+          6,
+          28
+        ],
+        "fixed_color": 15,
+        "macro": {
+          "0,0": 3,
+          "0,1": 2,
+          "0,2": 0,
+          "1,0": 3,
+          "1,1": 15,
+          "1,2": 2,
+          "2,0": 3,
+          "2,1": 2,
+          "2,2": 0
+        },
+        "hist": {
+          "3": 12,
+          "2": 12,
+          "0": 8,
+          "15": 4
+        }
+      },
+      {
+        "origin": [
+          38,
+          28
+        ],
+        "fixed_color": 14,
+        "macro": {
+          "0,0": 2,
+          "0,1": 0,
+          "0,2": 2,
+          "1,0": 0,
+          "1,1": 14,
+          "1,2": 0,
+          "2,0": 2,
+          "2,1": 0,
+          "2,2": 2
+        },
+        "hist": {
+          "2": 16,
+          "0": 16,
+          "14": 4
+        }
+      },
+      {
+        "origin": [
+          54,
+          28
+        ],
+        "fixed_color": 14,
+        "macro": {
+          "0,0": 2,
+          "0,1": 0,
+          "0,2": 3,
+          "1,0": 0,
+          "1,1": 14,
+          "1,2": 3,
+          "2,0": 2,
+          "2,1": 0,
+          "2,2": 3
+        },
+        "hist": {
+          "2": 8,
+          "0": 12,
+          "3": 12,
+          "14": 4
+        }
+      },
+      {
+        "origin": [
+          22,
+          36
+        ],
+        "fixed_color": 14,
+        "macro": {
+          "0,0": 0,
+          "0,1": 2,
+          "0,2": 0,
+          "1,0": 2,
+          "1,1": 14,
+          "1,2": 2,
+          "2,0": 0,
+          "2,1": 3,
+          "2,2": 0
+        },
+        "hist": {
+          "0": 16,
+          "2": 12,
+          "14": 4,
+          "3": 4
+        }
+      },
+      {
+        "origin": [
+          22,
+          44
+        ],
+        "fixed_color": 14,
+        "macro": {
+          "0,0": 2,
+          "0,1": 3,
+          "0,2": 2,
+          "1,0": 0,
+          "1,1": 14,
+          "1,2": 0,
+          "2,0": 2,
+          "2,1": 0,
+          "2,2": 2
+        },
+        "hist": {
+          "2": 16,
+          "3": 4,
+          "0": 12,
+          "14": 4
+        }
+      },
+      {
+        "origin": [
+          46,
+          52
+        ],
+        "fixed_color": 14,
+        "macro": {
+          "0,0": 2,
+          "0,1": 0,
+          "0,2": 3,
+          "1,0": 0,
+          "1,1": 14,
+          "1,2": 3,
+          "2,0": 3,
+          "2,1": 3,
+          "2,2": 3
+        },
+        "hist": {
+          "2": 4,
+          "0": 8,
+          "3": 20,
+          "14": 4
+        }
+      }
+    ],
+    "want": {
+      "22,4": 14,
+      "14,12": 14,
+      "22,12": 15,
+      "30,4": 15,
+      "30,12": 14,
+      "30,20": 15,
+      "38,20": 14,
+      "46,20": 15,
+      "6,20": 14,
+      "14,20": 15,
+      "14,28": 14,
+      "6,36": 14,
+      "14,36": 15,
+      "30,28": 14,
+      "46,28": 14,
+      "30,36": 15,
+      "38,36": 14,
+      "46,36": 15,
+      "54,20": 14,
+      "54,36": 14,
+      "22,28": 15,
+      "14,44": 14,
+      "30,44": 14,
+      "14,52": 15,
+      "22,52": 14,
+      "30,52": 15,
+      "38,44": 15,
+      "46,44": 14,
+      "38,52": 14
     },
-    {
-      "ax": 14,
-      "ay": 20,
-      "polarity": "normal"
+    "checkers": [
+      [
+        22,
+        12
+      ],
+      [
+        22,
+        28
+      ],
+      [
+        38,
+        44
+      ]
+    ],
+    "plus": {
+      "22,12": [
+        [
+          22,
+          12
+        ],
+        [
+          22,
+          4
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          14,
+          12
+        ],
+        [
+          30,
+          12
+        ]
+      ],
+      "22,28": [
+        [
+          22,
+          28
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          14,
+          28
+        ],
+        [
+          30,
+          28
+        ]
+      ],
+      "38,44": [
+        [
+          38,
+          44
+        ],
+        [
+          38,
+          36
+        ],
+        [
+          38,
+          52
+        ],
+        [
+          30,
+          44
+        ],
+        [
+          46,
+          44
+        ]
+      ]
     },
-    {
-      "ax": 30,
-      "ay": 20,
-      "polarity": "normal"
-    },
-    {
-      "ax": 46,
-      "ay": 20,
-      "polarity": "normal"
-    },
-    {
-      "ax": 14,
-      "ay": 36,
-      "polarity": "normal"
-    },
-    {
-      "ax": 30,
-      "ay": 36,
-      "polarity": "inverted"
-    },
-    {
-      "ax": 46,
-      "ay": 36,
-      "polarity": "inverted"
-    },
-    {
-      "ax": 14,
-      "ay": 52,
-      "polarity": "inverted"
-    },
-    {
-      "ax": 30,
-      "ay": 52,
-      "polarity": "inverted"
-    },
-    {
-      "ax": 22,
-      "ay": 12,
-      "polarity": "inverted"
-    },
-    {
-      "ax": 22,
-      "ay": 28,
-      "polarity": "inverted"
-    },
-    {
-      "ax": 38,
-      "ay": 44,
-      "polarity": "inverted"
-    }
-  ],
+    "plan_solids": [
+      [
+        14,
+        12
+      ],
+      [
+        14,
+        20
+      ],
+      [
+        14,
+        28
+      ],
+      [
+        14,
+        36
+      ],
+      [
+        14,
+        52
+      ],
+      [
+        22,
+        4
+      ],
+      [
+        30,
+        4
+      ],
+      [
+        30,
+        12
+      ],
+      [
+        30,
+        20
+      ],
+      [
+        30,
+        28
+      ],
+      [
+        30,
+        36
+      ],
+      [
+        30,
+        44
+      ],
+      [
+        30,
+        52
+      ],
+      [
+        38,
+        36
+      ],
+      [
+        38,
+        52
+      ],
+      [
+        46,
+        20
+      ],
+      [
+        46,
+        36
+      ],
+      [
+        46,
+        44
+      ]
+    ],
+    "plan_checkers": [
+      [
+        22,
+        12
+      ],
+      [
+        22,
+        28
+      ],
+      [
+        38,
+        44
+      ]
+    ]
+  },
   "legend": [],
   "trajectory": [
     {
       "step": 1,
+      "kind": "S",
+      "block_origin": [
+        14,
+        12
+      ],
+      "before": 14,
+      "after": 15,
+      "levels_completed": 4
+    },
+    {
+      "step": 2,
+      "kind": "S",
+      "block_origin": [
+        14,
+        20
+      ],
+      "before": 14,
+      "after": 15,
+      "levels_completed": 4
+    },
+    {
+      "step": 3,
+      "kind": "S",
+      "block_origin": [
+        14,
+        28
+      ],
+      "before": 14,
+      "after": 15,
+      "levels_completed": 4
+    },
+    {
+      "step": 4,
+      "kind": "S",
+      "block_origin": [
+        14,
+        36
+      ],
+      "before": 14,
+      "after": 15,
+      "levels_completed": 4
+    },
+    {
+      "step": 5,
+      "kind": "S",
+      "block_origin": [
+        14,
+        52
+      ],
+      "before": 14,
+      "after": 15,
+      "levels_completed": 4
+    },
+    {
+      "step": 6,
+      "kind": "S",
+      "block_origin": [
+        22,
+        4
+      ],
+      "before": 14,
+      "after": 15,
+      "levels_completed": 4
+    },
+    {
+      "step": 7,
+      "kind": "S",
       "block_origin": [
         30,
         4
       ],
       "before": 14,
       "after": 15,
-      "target": 15,
-      "polarity": "normal",
-      "levels_completed": 4
-    },
-    {
-      "step": 2,
-      "block_origin": [
-        14,
-        20
-      ],
-      "before": 14,
-      "after": 15,
-      "target": 15,
-      "polarity": "normal",
-      "levels_completed": 4
-    },
-    {
-      "step": 3,
-      "block_origin": [
-        30,
-        20
-      ],
-      "before": 14,
-      "after": 15,
-      "target": 15,
-      "polarity": "normal",
-      "levels_completed": 4
-    },
-    {
-      "step": 4,
-      "block_origin": [
-        46,
-        20
-      ],
-      "before": 14,
-      "after": 15,
-      "target": 15,
-      "polarity": "normal",
-      "levels_completed": 4
-    },
-    {
-      "step": 5,
-      "block_origin": [
-        14,
-        36
-      ],
-      "before": 14,
-      "after": 15,
-      "target": 15,
-      "polarity": "normal",
-      "levels_completed": 4
-    },
-    {
-      "step": 6,
-      "block_origin": [
-        30,
-        36
-      ],
-      "before": 14,
-      "after": 15,
-      "target": 15,
-      "polarity": "inverted",
-      "levels_completed": 4
-    },
-    {
-      "step": 7,
-      "block_origin": [
-        46,
-        36
-      ],
-      "before": 14,
-      "after": 15,
-      "target": 15,
-      "polarity": "inverted",
       "levels_completed": 4
     },
     {
       "step": 8,
+      "kind": "S",
       "block_origin": [
-        14,
-        52
+        30,
+        12
       ],
       "before": 14,
       "after": 15,
-      "target": 15,
-      "polarity": "inverted",
       "levels_completed": 4
     },
     {
       "step": 9,
+      "kind": "S",
+      "block_origin": [
+        30,
+        20
+      ],
+      "before": 14,
+      "after": 15,
+      "levels_completed": 4
+    },
+    {
+      "step": 10,
+      "kind": "S",
+      "block_origin": [
+        30,
+        28
+      ],
+      "before": 14,
+      "after": 15,
+      "levels_completed": 4
+    },
+    {
+      "step": 11,
+      "kind": "S",
+      "block_origin": [
+        30,
+        36
+      ],
+      "before": 14,
+      "after": 15,
+      "levels_completed": 4
+    },
+    {
+      "step": 12,
+      "kind": "S",
+      "block_origin": [
+        30,
+        44
+      ],
+      "before": 14,
+      "after": 15,
+      "levels_completed": 4
+    },
+    {
+      "step": 13,
+      "kind": "S",
       "block_origin": [
         30,
         52
       ],
       "before": 14,
       "after": 15,
-      "target": 15,
-      "polarity": "inverted",
       "levels_completed": 4
     },
     {
-      "step": 10,
+      "step": 14,
+      "kind": "S",
+      "block_origin": [
+        38,
+        36
+      ],
+      "before": 14,
+      "after": 15,
+      "levels_completed": 4
+    },
+    {
+      "step": 15,
+      "kind": "S",
+      "block_origin": [
+        38,
+        52
+      ],
+      "before": 14,
+      "after": 15,
+      "levels_completed": 4
+    },
+    {
+      "step": 16,
+      "kind": "S",
+      "block_origin": [
+        46,
+        20
+      ],
+      "before": 14,
+      "after": 15,
+      "levels_completed": 4
+    },
+    {
+      "step": 17,
+      "kind": "S",
+      "block_origin": [
+        46,
+        36
+      ],
+      "before": 14,
+      "after": 15,
+      "levels_completed": 4
+    },
+    {
+      "step": 18,
+      "kind": "S",
+      "block_origin": [
+        46,
+        44
+      ],
+      "before": 14,
+      "after": 15,
+      "levels_completed": 4
+    },
+    {
+      "step": 19,
+      "kind": "C",
       "block_origin": [
         22,
         12
       ],
       "before": 14,
       "after": 15,
-      "target": 15,
-      "polarity": "inverted",
       "levels_completed": 4
     },
     {
-      "step": 11,
+      "step": 20,
+      "kind": "C",
       "block_origin": [
         22,
         28
       ],
       "before": 14,
       "after": 15,
-      "target": 15,
-      "polarity": "inverted",
       "levels_completed": 4
     },
     {
-      "step": 12,
+      "step": 21,
+      "kind": "C",
       "block_origin": [
         38,
         44
       ],
       "before": 14,
       "after": 15,
-      "target": 15,
-      "polarity": "inverted",
-      "levels_completed": 4
+      "levels_completed": 5
     }
   ],
-  "rule": "binary_14_15_polarity"
+  "rule": "l4_like_targets_gf2_checker_plus"
 }

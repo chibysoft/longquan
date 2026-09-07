@@ -3,27 +3,31 @@
 > 脚本：`tools/ft09_l5_click_flip_probe.py`
 > 真帧：`D:/Projects/longquan/tests/fixtures/ft09_l5_frame_live.json`
 > 轨迹：`D:/Projects/longquan/tests/fixtures/ft09_l5_click_flip_trajectory.json`
-> 判据：`levels_completed` `4` → `4`
+> 判据：`levels_completed` `4` → `5`
 
 ## 结论
 
-**FAIL** — L5 二元极性未通关（levels 仍 4）。 patches=8 legend=`[]` hist=`{4: 2632, 14: 1072, 3: 84, 15: 24, 0: 92, 2: 80, 6: 48, 12: 64}`。
+**PASS** — L5：`0→fixed` / `2→other`（二元图例 14/15）+ 色6 checker 十字 XOR；GF(2) 求解后执行；`levels` 4→5；点击 21。
 
-> verdict=`l5_binary_polarity_fail`
+> verdict=`l5_gf2_checker_plus_pass`
 
-## L5 坐实 / 候选规则
+## L5 坐实规则
 
-1. 右上图例 `14 / 15`（x≈56）= 点击二元切换。
-2. 指令宏格字母表 `{0,2,3,14,15}`；**3 = 跳过**（背景/越界/邻接字形）。
-3. 极性：`fixed==15` → 正常 0=翻；`fixed==14` → 反转 2=翻。
-4. 多图案并集，只点 solid-14 一次。
+1. 图例 `14 / 15`：solid 点击二元切换 `14↔15`。
+2. 宏格 `{0,2,3,14,15}`；**3=跳过**。
+3. 目标语义（L4 二元化）：**`0→fixed`，`2→other`**（等价 L3 极性：fixed=15→0=翻；fixed=14→2=翻）。
+4. **色6 棋盘格**不是装饰：点击对十字邻域做 XOR；臂落在 0/2 字形则跳过；自身在 `6/14 ↔ 6/15` 间切换。
+5. 多图案目标一致；固体点击 + checker 算子 → **GF(2)** 求解。
+6. 进度条可刷，**不能**当通关判据；只认 `levels_completed`。
 
 ## 帧摘要
 
 - hist: `{4: 2632, 14: 1072, 3: 84, 15: 24, 0: 92, 2: 80, 6: 48, 12: 64}`
 - legend: `[]`
 - patches: 8
-- plan: `[{'ax': 30, 'ay': 4, 'polarity': 'normal'}, {'ax': 14, 'ay': 20, 'polarity': 'normal'}, {'ax': 30, 'ay': 20, 'polarity': 'normal'}, {'ax': 46, 'ay': 20, 'polarity': 'normal'}, {'ax': 14, 'ay': 36, 'polarity': 'normal'}, {'ax': 30, 'ay': 36, 'polarity': 'inverted'}, {'ax': 46, 'ay': 36, 'polarity': 'inverted'}, {'ax': 14, 'ay': 52, 'polarity': 'inverted'}, {'ax': 30, 'ay': 52, 'polarity': 'inverted'}, {'ax': 22, 'ay': 12, 'polarity': 'inverted'}, {'ax': 22, 'ay': 28, 'polarity': 'inverted'}, {'ax': 38, 'ay': 44, 'polarity': 'inverted'}]`
+- plan_solids: `[[14, 12], [14, 20], [14, 28], [14, 36], [14, 52], [22, 4], [30, 4], [30, 12], [30, 20], [30, 28], [30, 36], [30, 44], [30, 52], [38, 36], [38, 52], [46, 20], [46, 36], [46, 44]]`
+- plan_checkers: `[[22, 12], [22, 28], [38, 44]]`
+- plus: `{'22,12': [[22, 12], [22, 4], [22, 20], [14, 12], [30, 12]], '22,28': [[22, 28], [22, 20], [14, 28], [30, 28]], '38,44': [[38, 44], [38, 36], [38, 52], [30, 44], [46, 44]]}`
 
 - patch[0] origin=`[14, 4]` fixed=`14` macro=`{'0,0': 3, '0,1': 3, '0,2': 3, '1,0': 3, '1,1': 14, '1,2': 0, '2,0': 3, '2,1': 0, '2,2': 2}`
 - patch[1] origin=`[38, 12]` fixed=`15` macro=`{'0,0': 0, '0,1': 3, '0,2': 3, '1,0': 2, '1,1': 15, '1,2': 3, '2,0': 0, '2,1': 2, '2,2': 0}`
@@ -36,18 +40,27 @@
 
 ## 轨迹
 
-- step 1 block=[30, 4] 14→15 (normal) lv=4
-- step 2 block=[14, 20] 14→15 (normal) lv=4
-- step 3 block=[30, 20] 14→15 (normal) lv=4
-- step 4 block=[46, 20] 14→15 (normal) lv=4
-- step 5 block=[14, 36] 14→15 (normal) lv=4
-- step 6 block=[30, 36] 14→15 (inverted) lv=4
-- step 7 block=[46, 36] 14→15 (inverted) lv=4
-- step 8 block=[14, 52] 14→15 (inverted) lv=4
-- step 9 block=[30, 52] 14→15 (inverted) lv=4
-- step 10 block=[22, 12] 14→15 (inverted) lv=4
-- step 11 block=[22, 28] 14→15 (inverted) lv=4
-- step 12 block=[38, 44] 14→15 (inverted) lv=4
+- step 1 S block=[14, 12] 14→15 lv=4
+- step 2 S block=[14, 20] 14→15 lv=4
+- step 3 S block=[14, 28] 14→15 lv=4
+- step 4 S block=[14, 36] 14→15 lv=4
+- step 5 S block=[14, 52] 14→15 lv=4
+- step 6 S block=[22, 4] 14→15 lv=4
+- step 7 S block=[30, 4] 14→15 lv=4
+- step 8 S block=[30, 12] 14→15 lv=4
+- step 9 S block=[30, 20] 14→15 lv=4
+- step 10 S block=[30, 28] 14→15 lv=4
+- step 11 S block=[30, 36] 14→15 lv=4
+- step 12 S block=[30, 44] 14→15 lv=4
+- step 13 S block=[30, 52] 14→15 lv=4
+- step 14 S block=[38, 36] 14→15 lv=4
+- step 15 S block=[38, 52] 14→15 lv=4
+- step 16 S block=[46, 20] 14→15 lv=4
+- step 17 S block=[46, 36] 14→15 lv=4
+- step 18 S block=[46, 44] 14→15 lv=4
+- step 19 C block=[22, 12] 14→15 lv=4
+- step 20 C block=[22, 28] 14→15 lv=4
+- step 21 C block=[38, 44] 14→15 lv=5
 
 ## 产物
 

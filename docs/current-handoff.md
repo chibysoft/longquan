@@ -2,13 +2,13 @@
 
 > 2026-09-07 · 给 Cursor 接手的当前状态快照，不是设计文档。
 > **口径（与 verify-games.md 第三版对齐）**：ls20 = move+match；copy 撤回未验证。
-> **并行线**：ft09 L1–L4 通关；L4 为三态循环 mask-flip（0→fixed，2→8）。
+> **并行线**：ft09 **全关 WIN** + **结构归纳路径B**（`maskflip` 库；见 `docs/structure-induction-ft09.md`）。
 
 ---
 
 ## 当前进度
 
-**关键路径仍是 ls20 L3 武装；ft09 为验收线并行探路。**
+**关键路径仍是 ls20 L3 武装；ft09 验收与结构归纳骨架已落地。**
 
 ```
 ① 交互族坐实（ls20 = move+match）
@@ -16,7 +16,8 @@
    ├── match 通关（H19/H20/H21/H23）← ✅ L1+L2 seated clear PASS
    └── ls20 L3–L7 / 全关          ← ⏳ L3 能走到 stamp 门前，武装未迁移
 …
-⑤ 阶段4：ft09 迁移               ← ⏳ L1–L4 ✅；L4 三态规则已锁
+⑤ 阶段4：ft09 迁移               ← ✅ L1–L6 全关 WIN（无 L7）
+⑥ 结构归纳（路径B）               ← ✅ 转移诱导 + 目标 GF(2) 库通关
 ```
 
 mate（m0r0）**不并行**。
@@ -27,14 +28,12 @@ mate（m0r0）**不并行**。
 
 | 项 | 状态 |
 |----|------|
-| L1 | ✅ base9→8；0=翻；单 3×3 |
-| L2 | ✅ base9→12；双层 3×3 并集 |
-| L3 | ✅ base8→12；十字 4 图案；fixed==base 极性反转 |
-| L4 | ✅ **三态** `9→8→12→9`；宏格 `0→fixed色`、`2→8`；三图案一致；21 点 levels 3→4 |
-| 图例 | 右上 4×4 堆叠 9/8/12 = 循环次序 |
-| 产物 | `ft09_l4_click_flip_probe.py` · `ft09_l4_frame_live.json` · `ft09_l4_click_flip_trajectory.json` · `docs/ft09-l4-click-flip-probe.md` |
+| L1–L6 / 全关 | ✅ `win_levels=6` → `state=WIN`；报告 `docs/ft09-full-clear-report.md` |
+| 路径B 库 | ✅ `longquan/interactive/maskflip/`；`tools/ft09_maskflip_clear.py` 复验 WIN |
+| 转移诱导 | ✅ L5=`branch_appearance`；L6=`xor_north`；holdout OK |
+| 产物 | `docs/structure-induction-ft09.md` · `docs/ft09-maskflip-clear-report.md` |
 
-**ft09 下一步**：L5 拉帧+闭环（检验三态规则是否再迁）。
+**下一步（主线）**：ls20 L3 武装可证伪假设。ft09 侧可补 L4 三态转移原语或选择器接入。
 
 ---
 

@@ -1,10 +1,15 @@
-"""ft09 L5 probe: climb L1–L4, then clear L5 with binary 14↔15 + polarity.
+"""ft09 L5 probe: climb L1–L4, then clear L5.
 
-L5 rules (discovered):
-  - Legend top-right (x≈56): 14 then 15 — click toggles solid blocks 14↔15.
-  - Instruction 6×6 macros use {0,2,3,14,15}; color 3 = skip (bg / OOB / other glyph).
-  - Polarity (L3-style): fixed==15 → normal (0=flip); fixed==14 → inverted (2=flip).
-  - Only click solid majority-14 blocks once (union).
+L5 seated rules:
+  - Legend 14/15; solid click toggles 14↔15.
+  - Macro labs {0,2,3,14,15}; 3=skip.
+  - Target: L4-like on binary palette — 0→fixed, 2→other
+    (≡ L3 polarity: fixed==15 → 0=flip; fixed==14 → 2=flip).
+  - Color-6 checker blocks are operators: click XORs plus (center+NSEW);
+    skip an arm if that neighbor is a 0/2 glyph block. Checker itself
+    toggles phase 6/14 ↔ 6/15.
+  - Multi-patch targets are consistent; solve solid+checker clicks in GF(2).
+  - Win oracle: levels_completed only (progress bar is farmable).
 
 Usage:
   python tools/ft09_l5_click_flip_probe.py
@@ -13,7 +18,6 @@ from __future__ import annotations
 
 import json
 import sys
-from collections import Counter
 from pathlib import Path
 
 import numpy as np
@@ -40,6 +44,7 @@ REPORT = ROOT / "docs" / "ft09-l5-click-flip-probe.md"
 BASE_COLOR = 14
 FLIP_TO = 15
 SKIP_LAB = 3
+CHECKER_COLOR = 6
 
 
 def legend_swatches(g: np.ndarray) -> list[dict]:
@@ -112,15 +117,59 @@ def is_solid_color(g: np.ndarray, ax: int, ay: int, color: int) -> bool:
     return bool(np.all(patch == color))
 
 
-def union_flip_cells(patches: list[dict]) -> list[dict]:
-    """L3 polarity on L5 palette; skip lab==3."""
-    flips: dict[tuple[int, int], dict] = {}
+def is_glyph_block(g: np.ndarray, ax: int, ay: int) -> bool:
+    patch = g[ay:ay + BLOCK, ax:ax + BLOCK]
+    if patch.shape != (BLOCK, BLOCK):
+        return False
+    return bool(np.any(np.isin(patch, [0, 2])))
+
+
+def is_checker_block(g: np.ndarray, ax: int, ay: int) -> bool:
+    patch = g[ay:ay + BLOCK, ax:ax + BLOCK]
+    if patch.shape != (BLOCK, BLOCK):
+        return False
+    return bool(np.any(patch == CHECKER_COLOR) and np.all(np.isin(patch, [CHECKER_COLOR, BASE_COLOR, FLIP_TO])))
+
+
+def checker_phase(g: np.ndarray, ax: int, ay: int) -> int:
+    """14 = base phase (6/14), 15 = flipped phase (6/15)."""
+    patch = g[ay:ay + BLOCK, ax:ax + BLOCK]
+    n14 = int(np.sum(patch == BASE_COLOR))
+    n15 = int(np.sum(patch == FLIP_TO))
+    return FLIP_TO if n15 > n14 else BASE_COLOR
+
+
+def find_checker_blocks(g: np.ndarray) -> list[tuple[int, int]]:
+    """Scan even origins — L5 grid offset is (6,4), not (0,0)."""
+    out = []
+    for ay in range(0, g.shape[0] - BLOCK + 1, 2):
+        for ax in range(0, g.shape[1] - BLOCK + 1, 2):
+            if is_checker_block(g, ax, ay):
+                out.append((ax, ay))
+    return out
+
+
+def checker_plus_arms(g: np.ndarray, cx: int, cy: int) -> list[tuple[int, int]]:
+    """Plus neighborhood; skip glyph arms (0/2 instruction cells)."""
+    arms = [(cx, cy)]
+    for dx, dy in ((0, -GAP), (0, GAP), (-GAP, 0), (GAP, 0)):
+        nx, ny = cx + dx, cy + dy
+        if nx < 0 or ny < 0 or nx + BLOCK > g.shape[1] or ny + BLOCK > g.shape[0]:
+            continue
+        if is_glyph_block(g, nx, ny):
+            continue
+        arms.append((nx, ny))
+    return arms
+
+
+def l4_like_targets(patches: list[dict]) -> dict[tuple[int, int], int]:
+    """0→fixed, 2→other; require multi-patch agreement."""
+    votes: dict[tuple[int, int], list[int]] = {}
     for p in patches:
         ix, iy = p["origin"]
         ox, oy = ix - GAP, iy - GAP
         fixed = int(p["fixed_color"])
-        inverted = fixed == BASE_COLOR and fixed != FLIP_TO
-        polarity = "inverted" if inverted else "normal"
+        other = FLIP_TO if fixed == BASE_COLOR else BASE_COLOR
         for r in range(3):
             for c in range(3):
                 if (r, c) == (1, 1):
@@ -128,35 +177,102 @@ def union_flip_cells(patches: list[dict]) -> list[dict]:
                 lab = p["macro"].get(f"{r},{c}")
                 if lab == SKIP_LAB:
                     continue
-                if inverted:
-                    should = lab == 2
-                else:
-                    should = lab == 0
-                if not should:
-                    continue
                 ax, ay = ox + GAP * c, oy + GAP * r
-                flips.setdefault((ax, ay), {
-                    "ax": ax, "ay": ay,
-                    "cx": ax + BLOCK // 2,
-                    "cy": ay + BLOCK // 2,
-                    "polarity": polarity,
-                    "fixed_color": fixed,
-                    "instr": [ix, iy],
-                })
-    return sorted(flips.values(), key=lambda t: (t["ay"], t["ax"]))
+                des = fixed if lab == 0 else other
+                votes.setdefault((ax, ay), []).append(des)
+    want = {}
+    for cell, cols in votes.items():
+        if len(set(cols)) != 1:
+            raise RuntimeError(f"L5 target conflict at {cell}: {cols}")
+        want[cell] = cols[0]
+    return want
+
+
+def gf2_solve(A: np.ndarray, b: np.ndarray) -> np.ndarray | None:
+    """Return one particular solution over GF(2), or None if inconsistent."""
+    A = (A.copy() % 2).astype(int)
+    b = (b.copy() % 2).astype(int)
+    m, n = A.shape
+    M = np.concatenate([A, b.reshape(-1, 1)], axis=1)
+    row = 0
+    pivots = [-1] * n
+    for col in range(n):
+        piv = None
+        for i in range(row, m):
+            if M[i, col] == 1:
+                piv = i
+                break
+        if piv is None:
+            continue
+        M[[row, piv]] = M[[piv, row]]
+        for i in range(m):
+            if i != row and M[i, col] == 1:
+                M[i] = (M[i] + M[row]) % 2
+        pivots[col] = row
+        row += 1
+    for i in range(row, m):
+        if M[i, -1] == 1 and not np.any(M[i, :-1]):
+            return None
+    x = np.zeros(n, dtype=int)
+    for col in range(n):
+        if pivots[col] >= 0:
+            x[col] = M[pivots[col], -1]
+    return x
+
+
+def plan_l5_gf2(g: np.ndarray) -> dict:
+    patches = find_l5_instr_patches(g)
+    want = l4_like_targets(patches)
+    checkers = find_checker_blocks(g)
+    plus = {c: checker_plus_arms(g, c[0], c[1]) for c in checkers}
+
+    affected = set(want)
+    for arms in plus.values():
+        affected.update(arms)
+    solids = sorted(c for c in affected if c not in set(checkers))
+    vars_list = [("S", c) for c in solids] + [("C", c) for c in checkers]
+    idx = {v: i for i, v in enumerate(vars_list)}
+    n = len(vars_list)
+
+    rows = []
+    bb = []
+    for t, w in sorted(want.items()):
+        row = [0] * n
+        if ("S", t) in idx:
+            row[idx[("S", t)]] = 1
+        for c, arms in plus.items():
+            if t in arms:
+                row[idx[("C", c)]] = 1
+        rows.append(row)
+        bb.append(1 if w == FLIP_TO else 0)
+
+    A = np.array(rows, dtype=int)
+    x = gf2_solve(A, np.array(bb, dtype=int))
+    if x is None:
+        raise RuntimeError("L5 GF(2) system inconsistent")
+
+    plan_s = [c for (k, c), bit in zip(vars_list, x) if k == "S" and bit]
+    plan_c = [c for (k, c), bit in zip(vars_list, x) if k == "C" and bit]
+    return {
+        "patches": patches,
+        "want": {f"{a},{b}": v for (a, b), v in want.items()},
+        "checkers": [[a, b] for a, b in checkers],
+        "plus": {f"{a},{b}": [[x, y] for x, y in arms] for (a, b), arms in plus.items()},
+        "plan_solids": [[a, b] for a, b in plan_s],
+        "plan_checkers": [[a, b] for a, b in plan_c],
+        "ordered": [("S", c) for c in plan_s] + [("C", c) for c in plan_c],
+    }
 
 
 def clear_l5_binary(sess: Ft09Session, frame, lv_expect: int = 4):
     g = _plane(frame)
-    patches = find_l5_instr_patches(g)
-    plan = union_flip_cells(patches)
-    # Prefer solid base blocks; keep non-solid as optional (checkers) after solids.
-    solids = [c for c in plan if is_solid_color(g, c["ax"], c["ay"], BASE_COLOR)]
-    others = [c for c in plan if c not in solids]
-    ordered = solids + others
+    planned = plan_l5_gf2(g)
+    patches = planned["patches"]
+    ordered = planned["ordered"]
     print(
-        f"L5 binary: patches={len(patches)} plan={len(plan)} "
-        f"solid14={len(solids)} other={len(others)} "
+        f"L5 GF2: patches={len(patches)} "
+        f"solids={len(planned['plan_solids'])} "
+        f"checkers={len(planned['plan_checkers'])} "
         f"hist={color_hist(g)} legend={legend_swatches(g)}"
     )
     for p in patches:
@@ -164,31 +280,36 @@ def clear_l5_binary(sess: Ft09Session, frame, lv_expect: int = 4):
             f"  patch @{p['origin']} fixed={p['fixed_color']} "
             f"macro={p['macro']}"
         )
-    print("  flips:", [(c["ax"], c["ay"], c["polarity"]) for c in ordered])
+    print("  plan_S:", planned["plan_solids"])
+    print("  plan_C:", planned["plan_checkers"])
+    print("  plus:", planned["plus"])
 
     trajectory = []
     cur = frame
     step = 0
-    for cell in ordered:
-        ax, ay = cell["ax"], cell["ay"]
-        maj = block_majority(_plane(cur), ax, ay)
-        if maj != BASE_COLOR:
-            print(f"  skip ({ax},{ay}) maj={maj}")
-            continue
+    lv = lv_expect
+    for kind, (ax, ay) in ordered:
         step += 1
-        before = maj
-        resp = sess.click(cell["cx"], cell["cy"])
+        before = (
+            checker_phase(_plane(cur), ax, ay)
+            if kind == "C"
+            else block_majority(_plane(cur), ax, ay)
+        )
+        resp = sess.click(ax + BLOCK // 2, ay + BLOCK // 2)
         nf = resp["frame"]
         lv = int(resp.get("levels_completed") or 0)
-        after = block_majority(_plane(nf), ax, ay)
-        print(f"  click {step} ({ax},{ay}) {before}->{after} lv={lv}")
+        after = (
+            checker_phase(_plane(nf), ax, ay)
+            if kind == "C"
+            else block_majority(_plane(nf), ax, ay)
+        )
+        print(f"  click {step} {kind} ({ax},{ay}) {before}->{after} lv={lv}")
         trajectory.append({
             "step": step,
+            "kind": kind,
             "block_origin": [ax, ay],
             "before": before,
             "after": after,
-            "target": FLIP_TO,
-            "polarity": cell["polarity"],
             "levels_completed": lv,
         })
         cur = nf
@@ -198,30 +319,22 @@ def clear_l5_binary(sess: Ft09Session, frame, lv_expect: int = 4):
                 "cleared": True,
                 "levels_end": lv,
                 "patches": patches,
-                "plan": [
-                    {"ax": c["ax"], "ay": c["ay"], "polarity": c["polarity"]}
-                    for c in ordered
-                ],
+                "plan": planned,
                 "trajectory": trajectory,
                 "legend": legend_swatches(g),
                 "hist": color_hist(g),
-                "rule": "binary_14_15_polarity",
+                "rule": "l4_like_targets_gf2_checker_plus",
             }
 
-    return cur, lv_expect, {
+    return cur, lv, {
         "cleared": False,
-        "levels_end": (
-            trajectory[-1]["levels_completed"] if trajectory else lv_expect
-        ),
+        "levels_end": lv,
         "patches": patches,
-        "plan": [
-            {"ax": c["ax"], "ay": c["ay"], "polarity": c["polarity"]}
-            for c in ordered
-        ],
+        "plan": planned,
         "trajectory": trajectory,
         "legend": legend_swatches(g),
         "hist": color_hist(g),
-        "rule": "binary_14_15_polarity",
+        "rule": "l4_like_targets_gf2_checker_plus",
     }
 
 
@@ -231,13 +344,17 @@ def climb_to_level(sess: Ft09Session, target_lv: int):
     frame = sess.action("ACTION1")["frame"]
     history = []
     while lv < target_lv:
+        label = f"L{lv + 1}"
         if lv < 3:
-            label = f"L{lv + 1}"
             frame, lv, info = clear_level_discovered(sess, frame, lv, label)
-        else:
-            label = f"L{lv + 1}"
+        elif lv == 3:
             frame, lv, info = clear_l4_ternary(sess, frame, lv)
             info = {**info, "label": label}
+        elif lv == 4:
+            frame, lv, info = clear_l5_binary(sess, frame, lv)
+            info = {**info, "label": label}
+        else:
+            raise RuntimeError(f"climb_to_level: no clearer for lv={lv} (want {target_lv})")
         history.append(info)
         if not info.get("cleared"):
             raise RuntimeError(f"{label} clear failed during climb")
@@ -255,20 +372,21 @@ def write_report(clear_info: dict, meta: dict) -> Path:
     lv0 = meta.get("levels_start", 4)
     lv1 = clear_info.get("levels_end", lv0)
     nclick = len(clear_info.get("trajectory") or [])
+    plan = clear_info.get("plan") or {}
     if cleared:
         headline = (
-            f"**PASS** — L5 二元 mask-flip：`14↔15`，极性同 L3"
-            f"（fixed=15→0=翻；fixed=14→2=翻；lab=3 跳过）；"
+            f"**PASS** — L5：`0→fixed` / `2→other`（二元图例 14/15）+ "
+            f"色6 checker 十字 XOR；GF(2) 求解后执行；"
             f"`levels` {lv0}→{lv1}；点击 {nclick}。"
         )
-        verdict = "l5_binary_polarity_pass"
+        verdict = "l5_gf2_checker_plus_pass"
     else:
         headline = (
-            f"**FAIL** — L5 二元极性未通关（levels 仍 {lv1}）。"
+            f"**FAIL** — L5 GF(2) 未通关（levels 仍 {lv1}）。"
             f" patches={len(clear_info.get('patches') or [])} "
             f"legend=`{clear_info.get('legend')}` hist=`{clear_info.get('hist')}`。"
         )
-        verdict = "l5_binary_polarity_fail"
+        verdict = "l5_gf2_checker_plus_fail"
 
     lines = [
         "# ft09 L5 点击闭环探针",
@@ -284,19 +402,25 @@ def write_report(clear_info: dict, meta: dict) -> Path:
         "",
         f"> verdict=`{verdict}`",
         "",
-        "## L5 坐实 / 候选规则",
+        "## L5 坐实规则",
         "",
-        "1. 右上图例 `14 / 15`（x≈56）= 点击二元切换。",
-        "2. 指令宏格字母表 `{0,2,3,14,15}`；**3 = 跳过**（背景/越界/邻接字形）。",
-        "3. 极性：`fixed==15` → 正常 0=翻；`fixed==14` → 反转 2=翻。",
-        "4. 多图案并集，只点 solid-14 一次。",
+        "1. 图例 `14 / 15`：solid 点击二元切换 `14↔15`。",
+        "2. 宏格 `{0,2,3,14,15}`；**3=跳过**。",
+        "3. 目标语义（L4 二元化）：**`0→fixed`，`2→other`**"
+        "（等价 L3 极性：fixed=15→0=翻；fixed=14→2=翻）。",
+        "4. **色6 棋盘格**不是装饰：点击对十字邻域做 XOR；臂落在 0/2 字形则跳过；"
+        "自身在 `6/14 ↔ 6/15` 间切换。",
+        "5. 多图案目标一致；固体点击 + checker 算子 → **GF(2)** 求解。",
+        "6. 进度条可刷，**不能**当通关判据；只认 `levels_completed`。",
         "",
         "## 帧摘要",
         "",
         f"- hist: `{clear_info.get('hist')}`",
         f"- legend: `{clear_info.get('legend')}`",
         f"- patches: {len(clear_info.get('patches') or [])}",
-        f"- plan: `{clear_info.get('plan')}`",
+        f"- plan_solids: `{plan.get('plan_solids')}`",
+        f"- plan_checkers: `{plan.get('plan_checkers')}`",
+        f"- plus: `{plan.get('plus')}`",
         "",
     ]
     for i, p in enumerate(clear_info.get("patches") or []):
@@ -307,8 +431,9 @@ def write_report(clear_info: dict, meta: dict) -> Path:
     lines += ["", "## 轨迹", ""]
     for step in clear_info.get("trajectory", []):
         lines.append(
-            f"- step {step['step']} block={step['block_origin']} "
-            f"{step['before']}→{step['after']} ({step.get('polarity')}) "
+            f"- step {step['step']} {step.get('kind')} "
+            f"block={step['block_origin']} "
+            f"{step['before']}→{step['after']} "
             f"lv={step['levels_completed']}"
         )
     lines += [
@@ -329,7 +454,7 @@ def main() -> int:
         raise RuntimeError("no ARC_API_KEY")
     sess = Ft09Session(key)
     try:
-        sess.open(tags=["ft09_l5_binary"])
+        sess.open(tags=["ft09_l5_gf2"])
         frame, lv, history = climb_to_level(sess, target_lv=4)
         g = _plane(frame)
         FIXTURE_FRAME.parent.mkdir(parents=True, exist_ok=True)
@@ -341,11 +466,19 @@ def main() -> int:
                 "hist": color_hist(g),
                 "legend": legend_swatches(g),
                 "patches": find_l5_instr_patches(g),
+                "plan": {
+                    k: v for k, v in plan_l5_gf2(g).items()
+                    if k != "ordered"
+                },
             },
         }, indent=2), encoding="utf-8")
         print("saved", FIXTURE_FRAME)
 
         frame2, lv2, clear_info = clear_l5_binary(sess, frame, lv)
+        plan_out = {
+            k: v for k, v in (clear_info.get("plan") or {}).items()
+            if k != "ordered"
+        }
         payload = {
             "game_id": sess.game_id,
             "climb": [
@@ -359,7 +492,7 @@ def main() -> int:
             "l5_levels_start": 4,
             "l5_levels_end": clear_info.get("levels_end"),
             "cleared": clear_info.get("cleared"),
-            "plan": clear_info.get("plan"),
+            "plan": plan_out,
             "legend": clear_info.get("legend"),
             "trajectory": clear_info.get("trajectory"),
             "rule": clear_info.get("rule"),

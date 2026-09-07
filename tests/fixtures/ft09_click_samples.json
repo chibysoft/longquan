@@ -1,0 +1,107 @@
+{
+  "samples": [
+    {
+      "id": "l5_solid_14_15",
+      "level": 5,
+      "action": [
+        17,
+        15
+      ],
+      "role": "train",
+      "before_shape": [
+        64,
+        64
+      ],
+      "after_shape": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "l5_solid_holdout",
+      "level": 5,
+      "action": [
+        33,
+        7
+      ],
+      "role": "holdout",
+      "before_shape": [
+        64,
+        64
+      ],
+      "after_shape": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "l5_checker_plus",
+      "level": 5,
+      "action": [
+        25,
+        15
+      ],
+      "role": "train",
+      "before_shape": [
+        64,
+        64
+      ],
+      "after_shape": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "l5_checker_skip_glyph",
+      "level": 5,
+      "action": [
+        25,
+        31
+      ],
+      "role": "train",
+      "before_shape": [
+        64,
+        64
+      ],
+      "after_shape": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "l6_north_self_only",
+      "level": 6,
+      "action": [
+        7,
+        9
+      ],
+      "role": "train",
+      "before_shape": [
+        64,
+        64
+      ],
+      "after_shape": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "l6_north_couple",
+      "level": 6,
+      "action": [
+        7,
+        17
+      ],
+      "role": "holdout",
+      "before_shape": [
+        64,
+        64
+      ],
+      "after_shape": [
+        64,
+        64
+      ]
+    }
+  ],
+  "n": 6
+}

@@ -1,0 +1,26 @@
+{
+  "l5": {
+    "kind": "branch_appearance",
+    "complexity": 2,
+    "params": {
+      "kind": "branch_appearance",
+      "color_a": 14,
+      "color_b": 15
+    },
+    "train_ok": true,
+    "holdout_ok": true
+  },
+  "l6": {
+    "kind": "xor_north",
+    "complexity": 1,
+    "params": {
+      "kind": "xor_north",
+      "color_a": 11,
+      "color_b": 14,
+      "family": "pip",
+      "gap": 8
+    },
+    "train_ok": true,
+    "holdout_ok": true
+  }
+}
