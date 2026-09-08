@@ -1,0 +1,1481 @@
+{
+  "steps": [
+    {
+      "x0": 38,
+      "xy": [
+        38,
+        56
+      ],
+      "why": "15",
+      "body": 43,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          49,
+          false
+        ],
+        "11": [
+          29,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 38,
+      "xy": [
+        38,
+        56
+      ],
+      "why": "15",
+      "body": 35,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          47,
+          false
+        ],
+        "11": [
+          29,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 38,
+      "xy": [
+        38,
+        56
+      ],
+      "why": "15",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          47,
+          false
+        ],
+        "11": [
+          29,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 24,
+      "xy": [
+        24,
+        56
+      ],
+      "why": "env15",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          47,
+          false
+        ],
+        "11": [
+          29,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 38,
+      "xy": [
+        38,
+        56
+      ],
+      "why": "15",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          47,
+          false
+        ],
+        "11": [
+          29,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 28,
+      "xy": [
+        28,
+        56
+      ],
+      "why": "env15b",
+      "body": 20,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          47,
+          false
+        ],
+        "11": [
+          29,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 38,
+      "xy": [
+        38,
+        56
+      ],
+      "why": "15",
+      "body": 35,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          45,
+          false
+        ],
+        "11": [
+          29,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 46,
+      "xy": [
+        46,
+        56
+      ],
+      "why": "11",
+      "body": 50,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          43,
+          false
+        ],
+        "11": [
+          31,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 38,
+      "xy": [
+        38,
+        56
+      ],
+      "why": "15",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          43,
+          false
+        ],
+        "11": [
+          31,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 24,
+      "xy": [
+        24,
+        56
+      ],
+      "why": "env15",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          43,
+          false
+        ],
+        "11": [
+          31,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 38,
+      "xy": [
+        38,
+        56
+      ],
+      "why": "15",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          43,
+          false
+        ],
+        "11": [
+          31,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 28,
+      "xy": [
+        28,
+        56
+      ],
+      "why": "env15b",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          43,
+          false
+        ],
+        "11": [
+          31,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 38,
+      "xy": [
+        38,
+        56
+      ],
+      "why": "15",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          43,
+          false
+        ],
+        "11": [
+          31,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 46,
+      "xy": [
+        46,
+        56
+      ],
+      "why": "11",
+      "body": 50,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          41,
+          false
+        ],
+        "11": [
+          33,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 38,
+      "xy": [
+        38,
+        56
+      ],
+      "why": "15",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          41,
+          false
+        ],
+        "11": [
+          33,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 24,
+      "xy": [
+        24,
+        56
+      ],
+      "why": "env15",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          41,
+          false
+        ],
+        "11": [
+          33,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 38,
+      "xy": [
+        38,
+        56
+      ],
+      "why": "15",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          41,
+          false
+        ],
+        "11": [
+          33,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 28,
+      "xy": [
+        28,
+        56
+      ],
+      "why": "env15b",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          41,
+          false
+        ],
+        "11": [
+          33,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 38,
+      "xy": [
+        38,
+        56
+      ],
+      "why": "15",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          41,
+          false
+        ],
+        "11": [
+          33,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 46,
+      "xy": [
+        46,
+        56
+      ],
+      "why": "11",
+      "body": 50,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          39,
+          true
+        ],
+        "11": [
+          35,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 46,
+      "xy": [
+        46,
+        56
+      ],
+      "why": "11",
+      "body": 50,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          37,
+          false
+        ],
+        "11": [
+          37,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 34,
+      "xy": [
+        34,
+        56
+      ],
+      "why": "15",
+      "body": 35,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          39,
+          true
+        ],
+        "11": [
+          37,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 46,
+      "xy": [
+        46,
+        56
+      ],
+      "why": "11",
+      "body": 50,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          37,
+          false
+        ],
+        "11": [
+          39,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 34,
+      "xy": [
+        34,
+        56
+      ],
+      "why": "15",
+      "body": 43,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          39,
+          true
+        ],
+        "11": [
+          39,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 46,
+      "xy": [
+        46,
+        56
+      ],
+      "why": "11",
+      "body": 50,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          37,
+          false
+        ],
+        "11": [
+          41,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 34,
+      "xy": [
+        34,
+        56
+      ],
+      "why": "15",
+      "body": 43,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          39,
+          true
+        ],
+        "11": [
+          41,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 46,
+      "xy": [
+        46,
+        56
+      ],
+      "why": "11",
+      "body": 50,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          37,
+          false
+        ],
+        "11": [
+          43,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 34,
+      "xy": [
+        34,
+        56
+      ],
+      "why": "15",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          37,
+          false
+        ],
+        "11": [
+          43,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 28,
+      "xy": [
+        28,
+        56
+      ],
+      "why": "env15",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          37,
+          false
+        ],
+        "11": [
+          43,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 34,
+      "xy": [
+        34,
+        56
+      ],
+      "why": "15",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          37,
+          false
+        ],
+        "11": [
+          43,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 24,
+      "xy": [
+        24,
+        56
+      ],
+      "why": "env15b",
+      "body": 28,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          37,
+          false
+        ],
+        "11": [
+          43,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 34,
+      "xy": [
+        34,
+        56
+      ],
+      "why": "15",
+      "body": 43,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          39,
+          true
+        ],
+        "11": [
+          43,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 46,
+      "xy": [
+        46,
+        56
+      ],
+      "why": "11",
+      "body": 50,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          37,
+          false
+        ],
+        "11": [
+          45,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 34,
+      "xy": [
+        34,
+        56
+      ],
+      "why": "15",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          37,
+          false
+        ],
+        "11": [
+          45,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 28,
+      "xy": [
+        28,
+        56
+      ],
+      "why": "env15",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          37,
+          false
+        ],
+        "11": [
+          45,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 34,
+      "xy": [
+        34,
+        56
+      ],
+      "why": "15",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          37,
+          false
+        ],
+        "11": [
+          45,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 24,
+      "xy": [
+        24,
+        56
+      ],
+      "why": "env15b",
+      "body": 36,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          37,
+          false
+        ],
+        "11": [
+          45,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 34,
+      "xy": [
+        34,
+        56
+      ],
+      "why": "15",
+      "body": 43,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          39,
+          true
+        ],
+        "11": [
+          45,
+          false
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 46,
+      "xy": [
+        46,
+        56
+      ],
+      "why": "11",
+      "body": 50,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          37,
+          false
+        ],
+        "11": [
+          47,
+          true
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 34,
+      "xy": [
+        34,
+        56
+      ],
+      "why": "15",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          37,
+          false
+        ],
+        "11": [
+          47,
+          true
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 28,
+      "xy": [
+        28,
+        56
+      ],
+      "why": "env15",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          37,
+          false
+        ],
+        "11": [
+          47,
+          true
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 34,
+      "xy": [
+        34,
+        56
+      ],
+      "why": "15",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          37,
+          false
+        ],
+        "11": [
+          47,
+          true
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 24,
+      "xy": [
+        24,
+        56
+      ],
+      "why": "env15b",
+      "body": 36,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          37,
+          false
+        ],
+        "11": [
+          47,
+          true
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 34,
+      "xy": [
+        34,
+        56
+      ],
+      "why": "15",
+      "body": 43,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          53,
+          false
+        ],
+        "15": [
+          39,
+          true
+        ],
+        "11": [
+          47,
+          true
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 12,
+      "xy": [
+        12,
+        56
+      ],
+      "why": "14",
+      "body": 43,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          51,
+          false
+        ],
+        "15": [
+          39,
+          true
+        ],
+        "11": [
+          47,
+          true
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 12,
+      "xy": [
+        12,
+        56
+      ],
+      "why": "14",
+      "body": 43,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          49,
+          false
+        ],
+        "15": [
+          39,
+          true
+        ],
+        "11": [
+          47,
+          true
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 12,
+      "xy": [
+        12,
+        56
+      ],
+      "why": "14",
+      "body": 35,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          47,
+          false
+        ],
+        "15": [
+          39,
+          true
+        ],
+        "11": [
+          47,
+          true
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 12,
+      "xy": [
+        12,
+        56
+      ],
+      "why": "14",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          47,
+          false
+        ],
+        "15": [
+          39,
+          true
+        ],
+        "11": [
+          47,
+          true
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 24,
+      "xy": [
+        24,
+        56
+      ],
+      "why": "env24",
+      "body": 28,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          47,
+          false
+        ],
+        "15": [
+          39,
+          true
+        ],
+        "11": [
+          47,
+          true
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 12,
+      "xy": [
+        12,
+        56
+      ],
+      "why": "14",
+      "body": 35,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          45,
+          false
+        ],
+        "15": [
+          39,
+          true
+        ],
+        "11": [
+          47,
+          true
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 12,
+      "xy": [
+        12,
+        56
+      ],
+      "why": "14",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          45,
+          false
+        ],
+        "15": [
+          39,
+          true
+        ],
+        "11": [
+          47,
+          true
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 24,
+      "xy": [
+        24,
+        56
+      ],
+      "why": "env24",
+      "body": 28,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          45,
+          false
+        ],
+        "15": [
+          39,
+          true
+        ],
+        "11": [
+          47,
+          true
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 12,
+      "xy": [
+        12,
+        56
+      ],
+      "why": "14",
+      "body": 35,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          43,
+          false
+        ],
+        "15": [
+          39,
+          true
+        ],
+        "11": [
+          47,
+          true
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 12,
+      "xy": [
+        12,
+        56
+      ],
+      "why": "14",
+      "body": 0,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          43,
+          false
+        ],
+        "15": [
+          39,
+          true
+        ],
+        "11": [
+          47,
+          true
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 24,
+      "xy": [
+        24,
+        56
+      ],
+      "why": "env24",
+      "body": 20,
+      "levels": 2,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          43,
+          false
+        ],
+        "15": [
+          39,
+          true
+        ],
+        "11": [
+          47,
+          true
+        ]
+      },
+      "error": null
+    },
+    {
+      "x0": 12,
+      "xy": [
+        12,
+        56
+      ],
+      "why": "14",
+      "body": 35,
+      "levels": 3,
+      "state": "NOT_FINISHED",
+      "after": {
+        "14": [
+          41,
+          true
+        ],
+        "15": [
+          39,
+          true
+        ],
+        "11": [
+          47,
+          true
+        ]
+      },
+      "error": null
+    }
+  ],
+  "cleared": true,
+  "final": {
+    "14": {
+      "acc_y": 41,
+      "gap_y": 41,
+      "dy": 0,
+      "aligned": true
+    },
+    "15": {
+      "acc_y": 39,
+      "gap_y": 39,
+      "dy": 0,
+      "aligned": true
+    },
+    "11": {
+      "acc_y": 47,
+      "gap_y": 47,
+      "dy": 0,
+      "aligned": true
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "setup-worktree": [
+    "python -m pip install -e . -q || true"
+  ]
+}

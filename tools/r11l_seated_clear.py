@@ -39,7 +39,9 @@ def act6(sess: OnlineSession, x: int, y: int):
         timeout=60,
     ).json()
     if "frame" not in data:
-        raise RuntimeError(f"ACTION6 failed: {data}")
+        # Soft-fail so callers can skip bad clicks without killing the run.
+        data.setdefault("error", data.get("error", "NO_FRAME"))
+        return data
     sess.guid = data.get("guid", sess.guid)
     return data
 

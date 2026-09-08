@@ -35,6 +35,12 @@ python -m longquan.synth_gold --check
 
 ---
 
+## 并行索引（非第二套求解树）
+
+- `games/INDEX.md` + `games/<id>/AGENTS.md`：按游戏状态卡，指向现有 `tools/` / `docs/`
+- `.cursor/agents/*.md`：真实 Subagent（r11l-l3 / pending recon）；**不是** JSON 导入
+- 再生：`python scripts/setup_game_index.py`
+
 ## 下一步（库外 / 可选）
 
 1. **r11l L3 收口**（chrome14 四 wp；15 sync 已通）——见 `docs/r11l-recon.md` / `tools/r11l_l3_sync_probe.py`

@@ -52,12 +52,32 @@
 | 目标 | 14→(55,53)；15→(34,57) |
 | 通关 | 两船同时盖住各自目标 |
 | 险区 | 色10 大片；15 的净空路径先东再南，走廊极窄 |
-| 步数 | L3 约 63；停 15 约耗 25，留给 14 偏紧 |
+| 步数 | L3 约 63；西廊两 hop 后稳定 bud≈32 |
 
-**已通**：chrome15 用固定东侧偏移 `OFFS=((5,0),(5,6))` 同步平移整条细路径 → 稳定停在目标（`tools/r11l_l3_sync_probe.py`）。  
-**断点**：chrome14 四 wp；默认净空先西绕，编队/sync 易丢 wp 或 `centroid_path_ok` 卡死；预算不足。
+**已通**：chrome15 用 `OFFS=((5,0),(5,6))` 同步；`clear_l3` 交错 leap14 / wave15（`tools/r11l_l3_sync_probe.py`）。  
+**L2 回归**：2-wp 先 `park_compact`；3-wp 旧环垫；`formation_pads` 4-wp 强制足迹+禁 greedy 南冲。  
+**L3 chrome14 进展**（2026-09-08 续 · Auto）：
+- 西廊两 hop（max_moves=5）稳定到 **(18,28) bud≈32**；压到 4 会中途 wp-merge。
+- **必先 `clear15_corridor`**：入场 (37,34) 封印；东撤到 (42,41)。勿 seal-jump（28→42）——线上会把 4wp 收成 1。
+- **lead dx 上限 4–6**：dx≥8 同样丢西侧 wp；落地勿进封印 cheb≤5（会并进 15）。
+- **浅北毒质心**：y∈[28,32] 钉船在 ~(20,32)；须 lift/north 到 y≥33 后东拉才合法。
+- 最佳未通关线：early-clear15 → 西廊两 hop → south 种 lead → **collapse y≤32 straggler** → lift → lead+lag；曾到船 **(29,34) d14≈45 bud≈2–3**。`r11l_l3_sync_probe` 本轮回归约 **(26,35) d14≈47 bud≈3**。
+- 入场立刻 collapse→2wp 会烧预算且编队更差；颈口对 **y≤32** straggler 的 collapse **必要**（跳过会卡死东廊）。
+- `west_south` 瘦身：**已停用**（易误 2wp + lead 独跳 GAME_OVER at y=33）。
+- 忌：noop 连烧；y≤32 时东拉 → GAME_OVER；**lift 与 lead 同回合**易丢中段 wp；wave15 解封空转；`free_wps_for(15)` 偷 lead。
 
-下一刀：给 14 做「目标距离加权」净空 / 或 4-wp 可行偏移全路径 sync；控制停 15 后预算 ≥45。
+**2wp 最小探针**（`tools/r11l_l3_2wp_probe.py`，2026-09-09）：
+- 成功门：船 x≥28 y≥34、free14==2、bud≥28、无 GAME_OVER。
+- 已做到：hop1+plant 后 corridor 双点 + bud≈34；西绕浅点 `(19,24)→(14,24)→(14,32)`；曾压到 **n=2 bud≈23**（门限差 5）。
+- 未过门：hazard 北浅点必须西绕再南；同列 merge `(14,32)→(14,34)` 易 noop；2wp 后乱 lift 会 GO。
+- 纪律：gap>8 只拉 lag；整队同位移；y≥34 才东拉；noop 停。
+
+**断点**：
+1. 西+南+clear 后东廊常只剩 bud≈10–16，到 (29,34) 后 bud 耗尽，距目标仍 d14≈45 且 15 未动。
+2. 4wp 东拉效率低；**2wp 长跨**：能成形但到东廊中段时 bud 常 <28。
+3. 目标仍是 **东廊中段 2wp 且 bud≥28**（再谈通关与 15）。
+
+下一刀：只收紧 2wp 探针（plant 避 x=14 叠柱；merge 用 cheb2–3 斜向靠；禁 2wp 后 noop-lift）。
 
 ## 选择器
 

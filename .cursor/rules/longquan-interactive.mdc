@@ -1,0 +1,13 @@
+---
+description: 龙泉交互族探路红线（帧+API 闭卷）
+alwaysApply: true
+---
+
+# 龙泉交互探路红线
+
+- 不读游戏引擎源码；只用帧、`available_actions`、线上 API 响应。
+- 不背罐头轨迹；不硬编码整关坐标表当「解」。
+- 通关只认 `levels_completed` 严格递增（或 WIN）；副作用（清标记等）单独记账。
+- 求解权威在 `tools/*_seated_clear.py` / `tools/*_probe.py` + `docs/*-recon.md`；`games/` 只是索引。
+- 多游戏并行时各自独立 scorecard；不要共用一个 online 会话硬撞。
+- r11l L3：禁 seal-jump / lead dx≥8；浅北 y≤32 勿东拉；noop 立刻停；先 clear15 再东进。
