@@ -12,13 +12,13 @@
 |------|----------|------------------|------------------|-----------------|
 | **ar25** | reflect L1–L3 levels=3 | 沿轴反射补全 | **reflect** | ✅ A 族 |
 | **ls20** | seated clear L1–L7 WIN | 移动 + 接触/盖印匹配 | **move + match** | ✅ E 族 |
-| **ft09** | maskflip 全关 WIN | 点击翻转宏格 / GF(2) 目标 | **maskflip**（点击态转移） | ❌ **未单列** |
+| **ft09** | maskflip 全关 WIN | 点击翻转宏格 / GF(2) 目标 | **toggle**（maskflip） | ✅ E 族 |
+| **m0r0** | seated clear L1–L6 WIN | 双块镜像/同向移动 + 贴合压缩 | **move + mate** | ✅ E 族 |
 
 非 WIN、仅探路标注（不计入 1.5 验收，但作边界参考）：
 
 | 游戏 | 探路主导 | taxonomy |
 |------|----------|----------|
-| m0r0 | move + mate | E 已列，**未坐实** |
 | r11l | waypoint + match | E 已列，未坐实 |
 | tr87 | sequence + match | E 已列，未坐实 |
 | vc33 | gravity | E 已列，未坐实 |
@@ -80,21 +80,21 @@
 
 遗留（不阻塞阶段 2 开工，记入 STATUS）：
 - E 族尚未统一 `score/cover/backproject`
-- 1a 选择器分流未收口
-- fixtures / verify-games「ls20=copy」残留表述
+- fixtures / verify-games「ls20=copy」残留表述（fixtures README 已更正；execution-plan 等处仍有旧口径）
 
 ---
 
 ## 4. 收口动作（已做）
 
 1. ✅ taxonomy E 族增加 **toggle**，验证游戏 = ft09 → `interactive/maskflip/`
-2. 可选遗留见上「遗留」三条
-3. → 阶段 2 程序表示
+2. ✅ m0r0 mate 坐实（库外，L1–L6 WIN）→ `interactive/m0r0.py` + `tools/m0r0_seated_clear.py`
+3. 可选遗留见上「遗留」；下一库外关 = **r11l**
+4. → 阶段 2 程序表示
 
 ---
 
 ## 5. 非目标（本阶段不做）
 
-- 不并行坐实 m0r0/mate  
+- ~~不并行坐实 m0r0/mate~~（已完成后移出）
 - 不把 L5–L7 recording 航点「升格」为 waypoint 原语（除非另开可证伪假设）  
 - 不重开 copy→ls20 假说

@@ -61,3 +61,24 @@ def test_find_mate_path_ends_with_compress():
     assert path is not None
     assert path[-1] in (1, 2, 4)
     assert len(path) <= 20
+
+
+L3_FIX = os.path.join(os.path.dirname(__file__), "fixtures", "m0r0_l3_live_now.json")
+
+
+def test_l3_markers_block_mate_until_ablated():
+    data = json.loads(open(L3_FIX, encoding="utf-8").read())
+    fr = data["frame"]
+    assert m0r0.find_mate_path(fr) is None
+    ms = m0r0.color_blobs(fr, m0r0.MARKER)
+    assert len(ms) == 3
+    blockers = m0r0.markers_blocking_mate(fr)
+    # At least one home marker is a sole blocker, or ablation of all would unlock —
+    # on the spawn fixture, wiping all 9s unlocks mate.
+    g = __import__("numpy").asarray(fr[0]).copy()
+    g[g == 9] = 5
+    assert m0r0.find_mate_path([g.tolist()]) is not None
+    # steer path exists from left home toward a bottom goal on cleared-ghost grid
+    path = m0r0.marker_steer_path(fr, (11, 19), (19, 51))
+    assert path is not None
+    assert path[0] in (1, 2, 3, 4)

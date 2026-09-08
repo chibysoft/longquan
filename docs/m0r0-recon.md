@@ -21,39 +21,62 @@
 
 | 关 | 触发 | 路径例 |
 |----|------|--------|
-| **L1** | 水平贴合（合并为 10×5）+ **ACTION4** | `find_mate_path` 15 步；`levels=1`，n10 50→25 |
-| **L1 另解** | 竖直叠放 + A1/A2 | 亦通 |
-| **L2** | 避色8；水平贴合 + **ACTION4** | ~25 步；`levels=2`，n10 32→16 |
-| **L2 注意** | 同关竖直叠放 + A1/A2 **未**升关 | 压缩只平移/拆开 |
+| **L3** | 挪开 2×2 色9 障碍后水平贴合+A4 | seated_clear；n10 32→16 |
+| **L4** | 挪开 **3×3** 色9（step=5）后水平贴合+A4 | seated_clear；选中态色11与墙同色，靠紧凑块识别 |
+| **L5** | 黄金态破守恒→右按 c12 垫→左穿门→顶缝贴合+**A3** | `clear_l5`；live A3/A4 对调 |
+| **L6** | 垫 HOLD+桥→底带 h-merge→**A1 离垫**→**A3** | `clear_l6`；Y 同向；垫上压不过 |
 
 过关后残留单块；下一 ACTION 刷出下一关双块。
 
+### L3/L4 标记机制
+
+| 事实 | 证据 |
+|------|------|
+| A6 点色9 → 选中；棋子→色1 幽灵 | 线上 |
+| A1–4 驾驭标记（step=piece_w）；A6 点幽灵落子 | 线上 |
+| 色9 挡棋子配置空间；挪到解锁落点后 `find_mate_path` 恢复 | 消融+线上 |
+| L4 墙亦为色11：用边长 2–5 的紧凑色11 块识别选中标记 | `selected_marker_bbox` |
+
 ### 代码
 
-- `longquan/interactive/m0r0.py` — 独立运动学 / 避险 BFS / `find_mate_path`（偏水平+A4）
-- `tools/m0r0_seated_clear.py` — 坐实清关
-- 测：`tests/test_m0r0.py`（含 mate path）
-- 夹具：`m0r0_l1_frame_live.json`、`m0r0_l2_spawn.json`、`m0r0_l3_enter_a*.json`
+- `longquan/interactive/m0r0.py` — 独立运动学 / 避险 BFS / `find_mate_path` / 标记驾驭
+- `tools/m0r0_seated_clear.py` — 坐实清关（标记挪开 + 闭环 mate）
+- 测：`tests/test_m0r0.py`
+- 夹具：`m0r0_l1_frame_live.json`、`m0r0_l2_spawn.json`、`m0r0_l3_enter_a*.json`、`m0r0_l4_enter.json`
 
 ```bash
 python -m pytest tests/test_m0r0.py -v
-python tools/m0r0_seated_clear.py --max-levels 2
+python tools/m0r0_seated_clear.py --max-levels 6
 ```
 
 ---
 
-## 断点：L3
+## L5（已通关）
 
-- 进入：L2 残留后 A1–4 均可刷出双 4×4（色9 标记 12px 出现）。
-- 离线 BFS ≈2140 态：**无**正交贴合态（网格奇偶 + 中缝墙使 gap 最小为 4）。
-- gap=4 时 A4 为空操作；色9 不可被块覆盖；随机 80 步无 `levels++`。
-- baseline_actions L3≈203 → 可能是新机制，不是 L1/L2 的 flush+compress。
+详设：`docs/m0r0-l5-hypotheses.md`。`clear_l5` 写入 `tools/m0r0_seated_clear.py`。
 
-### L3 下一步假设
+| 坐实 | 要点 |
+|------|------|
+| 布局 | 6\|7 分缝；色15 右桥；色12/14 左门；无色9 |
+| 运动 | **live A3=内收、A4=外扩**（相对 L1–4 模型对调） |
+| 压力板 | HOLD：色15 开右桥；c12/c14 垫开左门 |
+| 通关 | 黄金 `(10,42)+(58,26)` → A1 穿门 → 顶 `(26,6)|(30,6)` 贴合 → **A3** 压缩 |
 
-1. 非贴合 mate（隔一格 / 对角 / 对齐色9）  
-2. A5/A6 在新锚点（色9 或中缝）  
-3. 色9/其它色为可交互目标，需先「解锁」再贴合  
+夹具：`tests/fixtures/m0r0_l5_enter.json`。
+
+---
+
+## L6（已通关）
+
+详设：`docs/m0r0-l6-hypotheses.md`。`clear_l6` 写入 `tools/m0r0_seated_clear.py`。
+
+| 坐实 | 要点 |
+|------|------|
+| 布局 | 色8 险区；色9 一块；c12/c14 垫开 BR12/BR14 |
+| 运动 | **Y 同向**；X 镜像同 L1–4（A3 外扩 / A4 内收） |
+| 通关 | 底带水平合并 `(18,42,25,45)` → **A1 离垫** → **A3** 压缩（垫上压不动） |
+
+夹具：`tests/fixtures/m0r0_l6_enter.json`。`seated_clear --max-levels 6` → WIN。
 
 ---
 

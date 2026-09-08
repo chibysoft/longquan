@@ -1,32 +1,31 @@
 # 当前断点交接（Handoff）
 
-> 2026-09-08 · 主线已闭环；m0r0 **L1–L2 坐实通关**；**L3 断点**。
+> 2026-09-08 · r11l **L1–L2 ✅**；**L3 部分坐实（chrome15 sync 停稳），chrome14 未达**。
 
 ---
 
 ## 进度
 
 ```
-阶段 0–4 + ls20/ft09 WIN + 1a     ← ✅
-m0r0 L1 mate（水平贴合+A4）       ← ✅
-m0r0 L2 mate（避色8+水平+A4）     ← ✅
-m0r0 L3 … WIN                     ← ❌ 断点
+m0r0 L1–L6 WIN                    ← ✅
+r11l L1                           ← ✅
+r11l L2                           ← ✅
+r11l L3                           ← ❌ 断点（15 已停，14 四 wp 南迁未达）
 ```
 
 ### 复跑
 
 ```bash
-python -m pytest tests/test_m0r0.py tests/test_selector.py -v
-python tools/m0r0_seated_clear.py --max-levels 2
+python -m pytest tests/test_r11l.py -v
+python tools/r11l_seated_clear.py --max-levels 2
+# L3 探针（15 sync 已通，14 未通）：
+python tools/r11l_l3_sync_probe.py
 ```
 
-### L3 断点摘要
+### r11l L3 下一刀
 
-- 双 4×4 仍在，但可达集内**无法正交贴合**（最小 gap=4）。  
-- 详见 `docs/m0r0-recon.md` · 夹具 `tests/fixtures/m0r0_l3_enter_a4.json`
+1. chrome15：保持 `OFFS=((5,0),(5,6))` 同步波，尽量 ≤3 波省预算  
+2. chrome14：目标距离加权 BFS，避免先西绕；或找 4-wp 全路径偏移  
+3. 停 15 后预算力争 ≥45  
 
----
-
-## 主线（已归档）
-
-选择器：`reflect|toggle|move|mate` ← `longquan/selector.py`
+详见 `docs/r11l-recon.md`。
