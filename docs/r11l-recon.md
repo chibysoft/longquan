@@ -42,7 +42,7 @@
 `python tools/r11l_seated_clear.py --max-levels 2` → PASS。  
 实现：`tools/r11l_l2_clear_probe.py` · `tools/r11l_l2_core.py`。
 
-## L3（部分坐实，未通关）
+## L3（chrome15 已通；chrome14 中东门已通）
 
 夹具：`tests/fixtures/r11l_l3_enter.json`（L2 通关后帧，勿乱点空白）。
 
@@ -61,23 +61,23 @@
 - **必先 `clear15_corridor`**：入场 (37,34) 封印；东撤到 (42,41)。勿 seal-jump（28→42）——线上会把 4wp 收成 1。
 - **lead dx 上限 4–6**：dx≥8 同样丢西侧 wp；落地勿进封印 cheb≤5（会并进 15）。
 - **浅北毒质心**：y∈[28,32] 钉船在 ~(20,32)；须 lift/north 到 y≥33 后东拉才合法。
-- 最佳未通关线：early-clear15 → 西廊两 hop → south 种 lead → **collapse y≤32 straggler** → lift → lead+lag；曾到船 **(29,34) d14≈45 bud≈2–3**。`r11l_l3_sync_probe` 本轮回归约 **(26,35) d14≈47 bud≈3**。
-- 入场立刻 collapse→2wp 会烧预算且编队更差；颈口对 **y≤32** straggler 的 collapse **必要**（跳过会卡死东廊）。
-- `west_south` 瘦身：**已停用**（易误 2wp + lead 独跳 GAME_OVER at y=33）。
-- 忌：noop 连烧；y≤32 时东拉 → GAME_OVER；**lift 与 lead 同回合**易丢中段 wp；wave15 解封空转；`free_wps_for(15)` 偷 lead。
+- 入场立刻 collapse→2wp 会烧预算且编队更差；颈口对 **y≤32** straggler 的 collapse **必要**。
+- 忌：noop 连烧；y≤32 时东拉 → GAME_OVER；**lift 与 lead 同回合**易丢中段 wp；wave15 解封空转。
 
-**2wp 最小探针**（`tools/r11l_l3_2wp_probe.py`，2026-09-09）：
-- 成功门：船 x≥28 y≥34、free14==2、bud≥28、无 GAME_OVER。
-- 已做到：hop1+plant 后 corridor 双点 + bud≈34；西绕浅点 `(19,24)→(14,24)→(14,32)`；曾压到 **n=2 bud≈23**（门限差 5）。
-- 未过门：hazard 北浅点必须西绕再南；同列 merge `(14,32)→(14,34)` 易 noop；2wp 后乱 lift 会 GO。
-- 纪律：gap>8 只拉 lag；整队同位移；y≥34 才东拉；noop 停。
+**2wp 中东门 PASS** (`tools/r11l_l3_2wp_probe.py`，2026-09-09 · v67，复跑 bud=32)：
+- 门：船 x≥28 y≥34、free14==2、bud≥28、非 GAME_OVER → **已过**。
+- **成形**：reshape cap3 → plant `(26,36)+(20,36)` → collapse `(23,36)/(29,36)` → 2wp `(19,36)/(29,36)`，船 `(24,36)`，**bud≈37**。（旧 24/18 起步船仅 22，双移后卡 26。）
+- **双移**：lead `+5→(34,36)` + lag same-row → 船 **(28,36)** n=2 **bud≈32**。
+- **硬约束**：lead 单跳 +5 安全、≥+7 掉 flock；禁 lead-only/lead2 二次大跳；lag 不能越过船（同排/对角皆 noop 或夹死）；禁 plant `(28/30,36)`（collapse dead→GO）。
+- **复跑**：`python tools/r11l_l3_2wp_probe.py`
 
-**断点**：
-1. 西+南+clear 后东廊常只剩 bud≈10–16，到 (29,34) 后 bud 耗尽，距目标仍 d14≈45 且 15 未动。
-2. 4wp 东拉效率低；**2wp 长跨**：能成形但到东廊中段时 bud 常 <28。
-3. 目标仍是 **东廊中段 2wp 且 bud≥28**（再谈通关与 15）。
-
-下一刀：只收紧 2wp 探针（plant 避 x=14 叠柱；merge 用 cheb2–3 斜向靠；禁 2wp 后 noop-lift）。
+**断点（2026-09-09 续 · Auto）**：西绕 y44 口袋已弃。**frog-ny + SE + Ne** 已接入 `clear_l3`。
+- **当前最佳 14**：**Ny(46,36)/(45,36)/(44,36)** → S(48,42) → 船 **(37,37) d14=34** **bud≈10**（跳过 Ne）。Ny48 后 S4842 noop。
+- **坐实链**：deep15 `(58,42)→(42,50)→(58,50)` → frog → **Ny≤46** → S(48,42)。旧 Ny40+Ne 同 d14 但 bud≈6。
+- **硬约束**：必须 `east@(58,50)`；N44 后再 vac west15→(38,54) 会把 `(48,42)` 翻给 15（n=1）。y36 dual-east 门后死；Y40 lead 单跳易 n=1。
+- **15**：d15≈23。
+- **A/B 结案**：再砍 deep15 / 先清15 → 否。
+- **换几何**：非 frog 东进否。突破在 frog 内 **Ny 更东**（46/45/44）省 Ne，bud 6→10。Ny46 后续 14 SE / haul15 全 noop；vac west15 翻归属。卡点转门前省步或 15 另通道。
 
 ## 选择器
 
@@ -85,4 +85,4 @@
 
 ## 下一步
 
-L3 chrome14 收口；勿背罐头轨迹。
+`Ny(46,36)+S(48,42)` 已接入 `clear_l3`（d14=34 bud≈10）。勿在 stack-east 烧 noop；下一刀找门前省步或换 15 路径。

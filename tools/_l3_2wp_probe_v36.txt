@@ -1,0 +1,9 @@
+﻿python :   File "D:\Projects\longquan\tools\r11l_l3_2wp_probe.py", line 527
+所在位置 C:\Users\ai.sunsi.cn\AppData\Local\Temp\ps-script-17a73106-2df1-48b3-87a1-363d73f00fdf.ps1:81 字符: 33
++ ... ols/_patch_prehaul.py; python tools/r11l_l3_2wp_probe.py 2>&1 | Out-F ...
++                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  File "D:\Proj...e.py", line 527:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    haul = min(5, gap - 5)
+IndentationError: unexpected indent

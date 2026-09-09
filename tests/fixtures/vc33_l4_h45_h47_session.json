@@ -1,0 +1,134 @@
+{
+  "hypotheses": [
+    "enter_scan",
+    "H45",
+    "H46",
+    "H47"
+  ],
+  "parts": {
+    "scan": {
+      "H46_verdict": {
+        "baseline_sig": [
+          [
+            9,
+            0.0,
+            -3.0,
+            89
+          ],
+          [
+            15,
+            0.0,
+            3.0,
+            98
+          ],
+          [
+            39,
+            0.0,
+            0.0,
+            63
+          ],
+          [
+            45,
+            0.0,
+            0.0,
+            63
+          ],
+          [
+            51,
+            0.0,
+            0.0,
+            48
+          ],
+          [
+            57,
+            0.0,
+            0.0,
+            48
+          ]
+        ],
+        "mode_sig": [
+          [
+            9,
+            0.0,
+            -3.0,
+            89
+          ],
+          [
+            15,
+            0.0,
+            3.0,
+            98
+          ],
+          [
+            39,
+            0.0,
+            0.0,
+            63
+          ],
+          [
+            45,
+            0.0,
+            0.0,
+            63
+          ],
+          [
+            51,
+            0.0,
+            0.0,
+            48
+          ],
+          [
+            57,
+            0.0,
+            0.0,
+            48
+          ]
+        ],
+        "sigs_equal": true,
+        "acts_changed": false,
+        "levels_up": false
+      },
+      "enter_hist": {
+        "0": 450,
+        "1": 72,
+        "3": 3068,
+        "4": 16,
+        "5": 354,
+        "7": 64,
+        "9": 54,
+        "11": 18
+      },
+      "after_c7_hist": {
+        "0": 450,
+        "1": 72,
+        "3": 3068,
+        "4": 80,
+        "5": 354,
+        "9": 54,
+        "11": 18
+      },
+      "c7_n": 64,
+      "c5_nonzero": 0,
+      "odd_n": 0,
+      "CLEARED": null
+    },
+    "remodel": {
+      "H45_verdict": {
+        "levels_up": false,
+        "max_h12": 36,
+        "any_x_overlap": false,
+        "min_dx": 19
+      },
+      "H47_verdict": {
+        "any_y44_45_x30plus_zero": false,
+        "max_zero_x_y44": null,
+        "max_zero_x_y45": null,
+        "tunnel_hits": 0,
+        "levels_up": false,
+        "min_dx": 19
+      },
+      "CLEARED": null
+    }
+  },
+  "game_id": "vc33-5430563c"
+}

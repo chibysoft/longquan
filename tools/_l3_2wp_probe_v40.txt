@@ -1,0 +1,112 @@
+﻿  L1 round 0: ship=(17, 47) goals=[(39, 21)] wps=[((27, 59), 'I'), ((7, 36), 'S')]
+    move (39, 21) -> ship=(17, 47) lv=0
+    move (39, 21) -> ship=(33, 40) lv=0
+    select (27, 59) lv=0
+    move2 (36, 21) -> ship=(33, 40) lv=1
+=== L2 ===
+  L2 settle [{'c': (24, 12), 'chrome': 12}, {'c': (49, 41), 'chrome': 15}]
+  L2 enter ships [{'c': (24, 12), 'chrome': 12}, {'c': (49, 41), 'chrome': 15}] goals {12: (40, 51), 15: (57, 18)} owned {15: [(45, 35), (54, 48)], 12: [(8, 21), (49, 9), (17, 6)]}
+  freeze chrome12 [(8, 21), (49, 9), (17, 6)]
+  park15 dist=31 spread=33 ship=(49, 41) wps=[(45, 35), (54, 48)]
+    (54, 48)->(52, 22) moved->(52, 22) ships=[((24, 12), 12), ((48, 28), 15)]
+  park15 dist=19 spread=29 ship=(48, 28) wps=[(45, 35), (52, 22)]
+    (45, 35)->(52, 14) moved->(52, 13) ships=[((24, 12), 12), ((52, 18), 15)]
+  park15 dist=5 spread=10 ship=(52, 18) wps=[(52, 22), (52, 13)]
+    (52, 13)->(62, 14) moved->(61, 14) ships=[((24, 12), 12), ((57, 18), 15)]
+  park15 dist=0 spread=9 ship=(57, 18) wps=[(52, 22), (61, 14)]
+  early-park15 ok=True dist=0 [{'c': (24, 12), 'chrome': 12}, {'c': (57, 18), 'chrome': 15}]
+  migrate-park15 ok=True dist=0 [{'c': (24, 12), 'chrome': 12}, {'c': (57, 18), 'chrome': 15}]
+  park15 dist=0 spread=9 ship=(57, 18) wps=[(52, 22), (61, 14)]
+  park15 ok=True [{'c': (24, 12), 'chrome': 12}, {'c': (57, 18), 'chrome': 15}] [(52, 22), (61, 14)]
+  locked chrome15 [(52, 22), (61, 14)]
+migrate12 from=(24, 12) goal=(40, 51) path=[(24, 12), (38, 12), (41, 23), (40, 36), (40, 48)] budget=54
+  hop#1 rnd0 hop=(38, 12) ship=(24, 12) d_hop=14 d_goal=55 bud=54 wps=[(8, 21), (17, 6), (49, 9)]
+    (17, 6)->(35, 6) (pad(38, 7)) moved->(35, 6) ships=[((30, 12), 12), ((57, 18), 15)] lv=1 bud=51
+  hop#1 rnd1 hop=(38, 12) ship=(30, 12) d_hop=8 d_goal=49 bud=51 wps=[(8, 21), (49, 9), (35, 6)]
+    (8, 21)->(20, 15) (pad(33, 7)) moved->(20, 15) ships=[((34, 10), 12), ((57, 18), 15)] lv=1 bud=48
+  hop#1 rnd2 hop=(38, 12) ship=(34, 10) d_hop=6 d_goal=47 bud=48 wps=[(49, 9), (35, 5), (20, 15)]
+    (35, 5)->(38, 7) (pad(38, 7)) moved->(38, 7) ships=[((35, 10), 12), ((57, 18), 15)] lv=1 bud=45
+  hop#1 rnd3 hop=(38, 12) ship=(35, 10) d_hop=5 d_goal=46 bud=45 wps=[(20, 15), (49, 9), (38, 7)]
+  no formation step
+  after hop#1 ship=(35, 10) dist_goal=46 bud=45
+  hop#2 rnd0 hop=(41, 23) ship=(35, 10) d_hop=19 d_goal=46 bud=45 wps=[(20, 15), (49, 9), (38, 7)]
+    (20, 15)->(36, 17) (pad(36, 18)) moved->(36, 17) ships=[((41, 11), 12), ((57, 18), 15)] lv=1 bud=42
+  hop#2 rnd1 hop=(41, 23) ship=(41, 11) d_hop=12 d_goal=41 bud=42 wps=[(38, 7), (49, 9), (36, 17)]
+    (49, 9)->(46, 23) (pad(46, 23)) moved->(46, 23) ships=[((40, 15), 12), ((57, 18), 15)] lv=1 bud=38
+  hop#2 rnd2 hop=(41, 23) ship=(40, 15) d_hop=9 d_goal=36 bud=38 wps=[(36, 17), (38, 7), (46, 23)]
+    (36, 17)->(36, 26) (pad(36, 26)) moved->(36, 26) ships=[((40, 18), 12), ((57, 18), 15)] lv=1 bud=35
+  hop#2 rnd3 hop=(41, 23) ship=(40, 18) d_hop=6 d_goal=33 bud=35 wps=[(38, 7), (46, 23), (36, 26)]
+    (38, 7)->(43, 18) (pad(43, 18)) moved->(43, 18) ships=[((57, 18), 15), ((41, 22), 12)] lv=1 bud=32
+  hop#2 rnd4 hop=(41, 23) ship=(41, 22) d_hop=1 d_goal=30 bud=32 wps=[(36, 26), (46, 23), (43, 18)]
+  after hop#2 ship=(41, 22) dist_goal=30 bud=32
+  hop#3 rnd0 hop=(40, 36) ship=(41, 22) d_hop=15 d_goal=30 bud=32 wps=[(36, 26), (46, 23), (43, 18)]
+    (43, 18)->(40, 31) (pad(40, 31)) noop->(43, 18) ships=[((57, 18), 15), ((41, 22), 12)] lv=1 bud=30
+  hop#3 rnd1 hop=(40, 36) ship=(41, 22) d_hop=15 d_goal=30 bud=30 wps=[(36, 26), (46, 23), (43, 18)]
+    (46, 23)->(45, 31) (pad(45, 31)) moved->(45, 31) ships=[((57, 18), 15), ((41, 25), 12)] lv=1 bud=27
+  hop#3 rnd2 hop=(40, 36) ship=(41, 25) d_hop=12 d_goal=27 bud=27 wps=[(36, 26), (43, 18), (45, 31)]
+    (36, 26)->(35, 31) (pad(35, 31)) moved->(35, 31) ships=[((57, 18), 15), ((41, 26), 12)] lv=1 bud=23
+  hop#3 rnd3 hop=(40, 36) ship=(41, 26) d_hop=11 d_goal=26 bud=23 wps=[(43, 18), (45, 31), (35, 31)]
+    (35, 31)->(35, 36) (pad(35, 36)) moved->(35, 36) ships=[((57, 18), 15), ((41, 28), 12)] lv=1 bud=21
+  hop#3 rnd4 hop=(40, 36) ship=(41, 28) d_hop=9 d_goal=24 bud=21 wps=[(43, 18), (45, 31), (35, 36)]
+  no formation step
+  after hop#3 ship=(41, 28) dist_goal=24 bud=21
+  hop#4 rnd0 hop=(40, 48) ship=(41, 28) d_hop=21 d_goal=24 bud=21 wps=[(43, 18), (45, 31), (35, 36)]
+    (45, 31)->(45, 43) (pad(45, 43)) moved->(45, 43) ships=[((57, 18), 15), ((41, 32), 12)] lv=1 bud=18
+  hop#4 rnd1 hop=(40, 48) ship=(41, 32) d_hop=17 d_goal=20 bud=18 wps=[(35, 36), (43, 18), (45, 43)]
+    (43, 18)->(45, 34) (pad(40, 43)) moved->(45, 34) ships=[((57, 18), 15), ((41, 37), 12)] lv=1 bud=15
+  hop#4 rnd2 hop=(40, 48) ship=(41, 37) d_hop=12 d_goal=15 bud=15 wps=[(35, 36), (45, 43), (45, 34)]
+    (35, 36)->(35, 43) (pad(35, 43)) moved->(35, 43) ships=[((57, 18), 15), ((41, 40), 12)] lv=1 bud=12
+  hop#4 rnd3 hop=(40, 48) ship=(41, 40) d_hop=9 d_goal=12 bud=12 wps=[(45, 34), (45, 43), (35, 43)]
+    (35, 43)->(35, 48) (pad(35, 48)) moved->(35, 48) ships=[((57, 18), 15), ((41, 41), 12)] lv=1 bud=10
+  hop#4 rnd4 hop=(40, 48) ship=(41, 41) d_hop=8 d_goal=11 bud=10 wps=[(45, 34), (45, 43), (35, 48)]
+    (45, 34)->(35, 42) (pad(35, 43)) moved->(34, 42) ships=[((57, 18), 15), ((38, 44), 12)] lv=1 bud=6
+  hop#4 rnd5 hop=(40, 48) ship=(38, 44) d_hop=6 d_goal=9 bud=6 wps=[(35, 48), (45, 43), (34, 42)]
+  budget low, stop migrate
+  last-mile wps12 [(35, 48), (45, 43), (34, 42)] bud 6
+  park12 dist=9 spread=15 ship=(38, 44) wps=[(35, 48), (45, 43), (34, 42)]
+    (34, 42)->(40, 62) moved->(37, 34) ships=[((27, 15), 14), ((44, 37), 15)]
+  final park12 ok=True [{'c': (27, 15), 'chrome': 14}, {'c': (44, 37), 'chrome': 15}]
+=== L3 2wp probe ===
+  clear15_corridor (37, 34)->(42, 41) moved->(42, 41) ship15=(47, 40) bud=60
+early-clear15=True bud=60
+  reshape 14@(19, 19) pads=[(19, 14), (24, 19), (19, 24), (14, 19)] bud=60
+    (34, 9)->(22, 9) moved->(22, 9) ships=[((24, 15), 14), ((47, 40), 15)] bud=57
+    (39, 16)->(28, 17) moved->(28, 17) ships=[((21, 15), 14), ((47, 40), 15)] bud=53
+    (22, 9)->(19, 14) moved->(19, 13) ships=[((21, 17), 14), ((47, 40), 15)] bud=50
+    (23, 21)->(19, 24) moved->(19, 24) ships=[((20, 17), 14), ((47, 40), 15)] bud=47
+    (28, 17)->(24, 19) moved->(24, 19) ships=[((19, 18), 14), ((47, 40), 15)] bud=44
+  reshape move cap
+  leap14 ship=(19, 18) dist=71 ok=True moved=True bud=44
+  [after-hop1] ship=(19, 18) free14=[(14, 16), (19, 24), (19, 13), (24, 19)] n=4 d14=71 bud=44 state=NOT_FINISHED
+  plant (19, 24)->(24, 36) moved->(24, 36) ship=(20, 21) bud=41
+  plant (24, 19)->(18, 36) moved->(18, 36) ship=(18, 25) bud=37
+  south-tug (14, 16)->(16, 22) moved->(16, 22) ship=(19, 27) bud=34
+  plant enough corridor=[(18, 36), (24, 36)] ship=(19, 27) moves=3
+  [after-plant] ship=(19, 27) free14=[(18, 36), (19, 14), (24, 36), (16, 22)] n=4 d14=62 bud=34 state=NOT_FINISHED
+  [west-done] ship=(19, 27) free14=[(18, 36), (19, 14), (24, 36), (16, 22)] n=4 d14=62 bud=34 state=NOT_FINISHED
+  [pre-lift] ship=(19, 27) free14=[(18, 36), (19, 14), (24, 36), (16, 22)] n=4 d14=62 bud=34 state=NOT_FINISHED
+  skip-lift corridor=[(18, 36), (24, 36)] ship=(19, 27) bud=34
+  collapse keepers=[(24, 36), (18, 36)] stragglers=[(19, 14), (16, 22)]
+    collapse-direct (19, 14)->(21, 36) (→(18, 36)) moved->(21, 36) n=4 bud=31
+    collapse-direct (16, 22)->(27, 36) (→(24, 36)) moved->(27, 36) n=2 bud=28
+  collapse end n=2 cur=[(17, 36), (27, 36)]
+  [collapsed-0] ship=(22, 36) free14=[(17, 36), (27, 36)] n=2 d14=50 bud=28 state=NOT_FINISHED
+  [pre-relift] ship=(22, 36) free14=[(17, 36), (27, 36)] n=2 d14=50 bud=28 state=NOT_FINISHED
+  skip-relift already 2wp
+  [pre-unwrap] ship=(22, 36) free14=[(17, 36), (27, 36)] n=2 d14=50 bud=28 state=NOT_FINISHED
+  [pre-translate] ship=(22, 36) free14=[(17, 36), (27, 36)] n=2 d14=50 bud=28 state=NOT_FINISHED
+--- translate round0 dx=5 ---
+  translate2 ship-between — lead-only lead=(27, 36) lag=(17, 36)
+  translate2-lead (27, 36)->(32, 36) moved->(32, 36) ship=(23, 36) bud=26
+  [after-dx5] ship=(23, 36) free14=[(18, 36), (32, 36)] n=2 d14=49 bud=26 state=NOT_FINISHED
+--- translate round1 dx=5 ---
+  translate2 ship-between — lead-only lead=(32, 36) lag=(18, 36)
+  translate2-lead (32, 36)->(37, 36) moved->(37, 36) ship=(25, 36) bud=23
+  [after-dx5] ship=(25, 36) free14=[(37, 36)] n=1 d14=47 bud=23 state=NOT_FINISHED
+--- translate round2 dx=5 ---
+  translate2 need exactly 2, got [(37, 36)]
+  [after-dx5] ship=(25, 36) free14=[(37, 36)] n=1 d14=47 bud=23 state=NOT_FINISHED
+translate dx=5 soft-fail — stop translate (save bud)
+=== RESULT ===
+{'ship': (25, 36), 'free14': [(37, 36)], 'n': 1, 'd14': 47, 'bud': 23, 'state': 'NOT_FINISHED'}
+FAIL gate: need ship x>=28 y>=34 n=2 bud>=28; got ship=(25, 36) n=1 bud=23

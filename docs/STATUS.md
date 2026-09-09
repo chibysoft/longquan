@@ -43,9 +43,10 @@ python -m longquan.synth_gold --check
 
 ## 下一步（库外 / 可选）
 
-1. **r11l L3 收口**（chrome14 四 wp；15 sync 已通）——见 `docs/r11l-recon.md` / `tools/r11l_l3_sync_probe.py`
-2. 扩大合成黄金集；接 retry-loop 预算
-3. 文档纠偏：`execution-plan.md` 等处 copy→ls20 旧口径残留
+1. **r11l L3**：2wp 中东门已 PASS（船≥28/y≥34/n=2/bud≥28）；下一步接入 `clear_l3` 并推到目标——见 `docs/r11l-recon.md` / `tools/r11l_l3_2wp_probe.py`
+2. **vc33 L4**（L1–L3 PASS；H55 a/b 双线空 → 候选 c 东进或 d 旁路 mid12）——见 `docs/vc33-recon.md`
+3. 扩大合成黄金集；接 retry-loop 预算
+4. 文档纠偏：`execution-plan.md` 等处 copy→ls20 旧口径残留
 
 ---
 

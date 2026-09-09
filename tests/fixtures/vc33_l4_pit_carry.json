@@ -1,0 +1,20 @@
+{
+  "probe": "vc33_l4_ceil_break + vc33_l4_pit_carry",
+  "levels_always": 3,
+  "hits": [],
+  "facts": {
+    "soft_ceiling": "body y0=40; cells above y34-39 x17-24 all color3; pad15 noop",
+    "zeros_le45_bay1": 0,
+    "crit_ceil": {
+      "(26,44)": 3,
+      "(26,45)": 3,
+      "(26,46)": 0,
+      "tops24-26": 46,
+      "tops30": 52
+    },
+    "pit_carry": "REFUTED \u2014 convert flank zeros at y45 do not land at x24-26; hop39 land tops=55, hop15 land tops=52 then climb locks at 46",
+    "left_only_levels": "REFUTED",
+    "left_convert_flank": "at convert, color0 at x10/x16 y45-52 beside c12; mid ceiling lacks flank at y45"
+  },
+  "next_knife": "Induce mid-flank color0 at y<=45 (mirror left-convert flank), or extend convert-time y45 zeros east before hop"
+}
