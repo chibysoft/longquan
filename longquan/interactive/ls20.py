@@ -39,7 +39,7 @@ BBox = Tuple[int, int, int, int]
 MOVE_COLOR = 12                  # the controllable 5x2 block
 GOAL_MARKER_COLORS = (0, 1)      # static 3x3 marker (target location)
 OBSTACLE_COLORS = frozenset({4, 9})  # 4 = wall, 9 = goal-slot marker
-STEP = 5                         # pixel step per action
+STEP = 5                         # pixel step per action (px)
 MOVE_SHAPE = (5, 2)              # moving-object footprint (width, height)
 STEPS_LIMIT = 42                 # ls20 StepCounter (reverse-engineered, see fixtures/README)
 

@@ -1,0 +1,296 @@
+{
+  "cycle_lens": [
+    7,
+    7,
+    7,
+    7,
+    7
+  ],
+  "nearest": {
+    "phases": [
+      4,
+      3,
+      0,
+      0,
+      3
+    ],
+    "hams": [
+      6,
+      12,
+      6,
+      10,
+      8
+    ],
+    "lv": 0,
+    "nact": 14
+  },
+  "gestures": [
+    {
+      "name": "lap4",
+      "lv": 0,
+      "nact": 19
+    },
+    {
+      "name": "lap3",
+      "lv": 0,
+      "nact": 19
+    },
+    {
+      "name": "lap4_2",
+      "lv": 0,
+      "nact": 24
+    },
+    {
+      "name": "zig",
+      "lv": 0,
+      "nact": 19
+    },
+    {
+      "name": "all1",
+      "lv": 0,
+      "nact": 19
+    },
+    {
+      "name": "all2",
+      "lv": 0,
+      "nact": 19
+    },
+    {
+      "name": "12",
+      "lv": 0,
+      "nact": 16
+    },
+    {
+      "name": "21",
+      "lv": 0,
+      "nact": 16
+    },
+    {
+      "name": "to0_1",
+      "lv": 0,
+      "nact": 16
+    },
+    {
+      "name": "full_period_each",
+      "lv": 0,
+      "nact": 54
+    }
+  ],
+  "remaps": [
+    {
+      "name": "id",
+      "ok": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "n": 0
+    },
+    {
+      "name": "inv",
+      "ok": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "n": 0
+    },
+    {
+      "name": "flipud",
+      "ok": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "n": 0
+    },
+    {
+      "name": "fliplr",
+      "ok": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "n": 0
+    },
+    {
+      "name": "T",
+      "ok": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "n": 0
+    },
+    {
+      "name": "rollrow1",
+      "ok": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "n": 0
+    },
+    {
+      "name": "rollcol1",
+      "ok": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "n": 0
+    },
+    {
+      "name": "rollrow2",
+      "ok": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "n": 0
+    },
+    {
+      "name": "rollcol2",
+      "ok": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "n": 0
+    },
+    {
+      "name": "rollrow3",
+      "ok": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "n": 0
+    },
+    {
+      "name": "rollcol3",
+      "ok": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "n": 0
+    },
+    {
+      "name": "rollrow4",
+      "ok": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "n": 0
+    },
+    {
+      "name": "rollcol4",
+      "ok": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "n": 0
+    }
+  ],
+  "best_rowperm": {
+    "n": 0,
+    "perm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "ok": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "best_colperm": {
+    "n": 0,
+    "perm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "ok": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "pair_mask": {
+    "chosen": [
+      3,
+      4,
+      0,
+      3,
+      2
+    ],
+    "hams": [
+      11,
+      4,
+      0,
+      11,
+      11
+    ],
+    "lv": 0,
+    "actions": [
+      1,
+      1,
+      1,
+      1,
+      4,
+      1,
+      1,
+      1,
+      1,
+      1,
+      4,
+      1,
+      1,
+      1,
+      4,
+      4,
+      1,
+      1
+    ]
+  },
+  "reading": "SUBMIT_REMAP_PARTIAL"
+}

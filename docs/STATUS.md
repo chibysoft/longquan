@@ -43,15 +43,19 @@ python -m longquan.synth_gold --check
 
 ## 下一步（库外 / 可选）
 
-1. **r11l L3**：2wp 中东门已 PASS（船≥28/y≥34/n=2/bud≥28）；下一步接入 `clear_l3` 并推到目标——见 `docs/r11l-recon.md` / `tools/r11l_l3_2wp_probe.py`
-2. **vc33 L4**（L1–L3 PASS；H55 a/b 双线空 → 候选 c 东进或 d 旁路 mid12）——见 `docs/vc33-recon.md`
-3. 扩大合成黄金集；接 retry-loop 预算
-4. 文档纠偏：`execution-plan.md` 等处 copy→ls20 旧口径残留
+1. **r11l L3**：另有会话并行中——**本路勿抢**；见 `docs/r11l-recon.md`
+2. **tr87**（L1 **PARK**清关判据；机制坐实）——见 `docs/tr87-recon.md`
+3. **g50t**（**L1–L3 PASS**；L4 持久36+可达(10,40)/(52,28)，卡 y46/色15）——见 `docs/g50t-recon.md`
+
+4. **vc33 L4**（L1–L3 PASS；H53–H59 全空，**暂停**）——见 `docs/vc33-recon.md`
+5. 扩大合成黄金集；接 retry-loop 预算
+5. 文档纠偏：`execution-plan.md` 等处 copy→ls20 旧口径残留
 
 ---
 
 ## 环境备忘
 
+- **VM 测试不可信**：FUSE 挂载不同步，VM 里 `pytest`/`python import` 读到的是旧文件（实测 ls20.py 挂载侧 101 行旧版 vs 本机 545 行完整版，时间戳停在 09-05），失败多为假失败。**收口判定以 Windows 直连代码（Read/Edit/Write 走 `D:\`）+ 本机 git/pytest 为准；VM 测试结果仅供参考，不得据此判定缺口或改口径。**
 - FUSE 写中文会损坏；删旧+Write  
 - git 在本机 Windows  
 - 线上：`three.arcprize.org`

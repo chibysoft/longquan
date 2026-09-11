@@ -9,7 +9,7 @@
 | L1 | **PASS** | 水平冲量；accent11 对齐梁缝 x |
 | L2 | **PASS** | 开路垫+平移垫交替；accent14 对齐缝 x |
 | L3 | **PASS** | 三精灵竖直对齐；accent y == gap y |
-| L4 | 探路中 | H55 cy51+c12 相位亦无；a/b 双线空 |
+| L4 | 探路中 | H59 (f) 无隐色；a–f 全空；僵局 |
 
 ## L1–L2（摘要）
 
@@ -130,12 +130,20 @@
 | 90 击：mid_kind/n4/levels **无**；唯一 novel12=左窗 sink 再转化（非中） | postclear VERDICT |
 | **cy51+左c12 相位/多步**（不爬）：U env/双臂；A arm→env/mid/gap；H bay1 env/再武装/摆渡/flank；M mid当跳 | `vc33_l4_c12_phase` |
 | 18 序：mid_kind/n4/levels/novel/local_mid **全空**；h12 始终保持；仅 ±15 平跳 | c12_phase VERDICT |
+| **微东进**（深坑色0/顶棚东脸/垫四角/bay0 东脸；禁洪水点） | `vc33_l4_micro_east` |
+| max_cx 仍 **20.5**；max_x1=23；odd_dx=0；levels 恒 3；仅垫角 ±3y | micro_east VERDICT |
+| **旁路 mid12 清关**：G 顶棚 gap 仪式 / L bay0 c12+gap / S 摆渡 / F 深坑 / N 禁左 / C 转化后 gap | `vc33_l4_bypass_mid` |
+| 6 族：mid 始终 kind=1；levels 恒 3；min dx 锁 19；无 CLEAR | bypass VERDICT |
+| **左转化副作用再挖**：预路径 plain/oneup/env/wiggle；双转化；col26 上拔；y45 东链 | `vc33_l4_flank_grow` |
+| 预路径 y45 零点恒 [10,16]；c26_45 恒 3；c26_55=0（深坑已到 x26）；上拔/东链 **无** xmax45 增长 | flank_grow VERDICT |
+| **最后手段 (f)**：跨态 hist 并集；同格×1–8；顶棚 mid↔gap/dig 交替；稀有连通块；API meta | `vc33_l4_last_resort` |
+| odd_colors=[]；acts 恒 `[6]`；win_levels=7；无计数器；dig26_46×8 → `GAME_OVER`（H48 忽略） | last_resort VERDICT |
 
 ### 卡点 / 下一刀
 
-H55 **NO_SIGNAL**：(a) 在 cy≈51 保左12 的 env 相位、武装、廊跃、再武装、mid-as-hop、flank 多步均不能开中窗。  
-叠加 H53/H54：保12爬升不可达；清12后非 dig 不开中；cy51+c12 相位也不开中。  
-下一刀候选：**(c)** 在 bay1 顶棚（已清12）找 **未知东进/微 x**（非 mid12 前提）；或 **(d)** 重新检验「中窗是第二门」——找不经 mid1→12 的 3→4 路径。
+H59 **NO_LAST_RESORT**：(f) 未发现隐色、新动作、多击计数器或可用 meta 通道。  
+**a–f 全空**。L4 在现有帧交互模型下无已知前进路径。  
+下一刀需换假设层级（例如：通关条件根本不是 mid 门 / 需要对齐尚未观测到的第三缝 / 或接受暂时卡死换并行游戏）。
 
 ## 红线
 

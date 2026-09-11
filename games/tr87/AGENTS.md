@@ -2,27 +2,22 @@
 
 | 字段 | 值 |
 |------|-----|
-| 状态 | **pending** |
-| 机制 | 序列/匹配 |
-| 验证 | `尚未坐实` |
-| 下一刀 | 闭卷帧探路；独立 scorecard |
+| 状态 | **L1 PARK（清关判据）**；机制坐实；中带/词典/校验和均否证 |
+| 机制 | 选槽+周期7 翻形；上/中静态；y63=步数条 |
+| 验证 | 线上 `levels_completed` 递增 |
+| 下一刀 | 旁路 g50t/cd82；或仅打「纯动作密码」类非终态假设 |
 
-## 权威资产（勿在本目录另起求解器）
+## 权威资产
 
 ### Docs
-- `docs/verify-games.md`
+- `docs/tr87-recon.md` · `docs/tr87-hypotheses.md`
 
-### Tools
-- （尚无）
-
-### Fixtures
-- （尚无）
+### Tools / Fixtures
+- `tools/tr87_l1_*.py` · `tests/fixtures/tr87_l1_*.json`
 
 ## Cursor
 - Subagent: `.cursor/agents/tr87-recon.md`
 
 ## 红线
-- 不读引擎源码
-- 不背罐头轨迹 / 不硬编码通关坐标表
-- 只认 `levels_completed` 递增
-- 线上探路用**独立 scorecard tags**，勿与其他游戏 Agent 抢同一会话
+- 不读引擎；不背轨迹；只认 `levels_completed`↑
+- tags=`["tr87_recon"]`；**勿抢 r11l**

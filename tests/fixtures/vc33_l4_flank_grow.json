@@ -1,0 +1,90 @@
+{
+  "hits": [],
+  "reading": "NO_FLANK_GROW",
+  "a_summary": {
+    "A/plain": {
+      "xmax45": 16,
+      "z45": [
+        10,
+        16
+      ],
+      "deep_xmax": 63,
+      "delta_y45": [
+        [
+          10,
+          45
+        ],
+        [
+          16,
+          45
+        ]
+      ]
+    },
+    "A/oneup": {
+      "xmax45": 16,
+      "z45": [
+        10,
+        16
+      ],
+      "deep_xmax": 63,
+      "delta_y45": [
+        [
+          10,
+          45
+        ],
+        [
+          16,
+          45
+        ]
+      ]
+    },
+    "A/env_pre": {
+      "xmax45": 16,
+      "z45": [
+        10,
+        16
+      ],
+      "deep_xmax": 63,
+      "delta_y45": [
+        [
+          10,
+          45
+        ],
+        [
+          16,
+          45
+        ]
+      ]
+    },
+    "A/wiggle": {
+      "xmax45": 16,
+      "z45": [
+        10,
+        16
+      ],
+      "deep_xmax": 63,
+      "delta_y45": [
+        [
+          10,
+          45
+        ],
+        [
+          16,
+          45
+        ]
+      ]
+    },
+    "D/double": {
+      "xmax45": 16,
+      "z45": [
+        10,
+        16
+      ],
+      "deep_xmax": 63,
+      "delta_y45": null
+    }
+  },
+  "n_rows": 66,
+  "rows_signal": [],
+  "hypothesis": "H58 convert flank/dig grow toward mid y45"
+}

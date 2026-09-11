@@ -9,10 +9,10 @@
 | [ft09](ft09/AGENTS.md) | done | toggle / maskflip | — |
 | [m0r0](m0r0/AGENTS.md) | done | move+mate | — |
 | [r11l](r11l/AGENTS.md) | partial | waypoint；L1–L2 ✅，L3 卡住 | `r11l-l3.md` |
-| [vc33](vc33/AGENTS.md) | pending | 重力/点选（非 translate） | `vc33-recon.md` |
-| [tr87](tr87/AGENTS.md) | pending | 序列/匹配 | `tr87-recon.md` |
-| [g50t](g50t/AGENTS.md) | pending | 移动/躲避 | `g50t-recon.md` |
+| [tr87](tr87/AGENTS.md) | L1 PARK | 序列/匹配；清关判据未破 | `tr87-recon.md` |
+| [g50t](g50t/AGENTS.md) | L1–L3 PASS | 移动/躲避（多收缩+顶廊） | `g50t-recon.md` |
 | [cd82](cd82/AGENTS.md) | pending | 移动/收集 | `cd82-recon.md` |
+| [vc33](vc33/AGENTS.md) | L4 暂停 | 重力/点选；H53–H59 僵局 | `vc33-recon.md` |
 
 ## 并行建议
 

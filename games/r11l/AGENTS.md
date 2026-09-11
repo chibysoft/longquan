@@ -5,7 +5,7 @@
         | 状态 | **partial** |
         | 机制 | waypoint；L1–L2 ✅，L3 卡住 |
         | 验证 | `python tools/r11l_seated_clear.py --max-levels 2  # L3: tools/r11l_l3_sync_probe.py` |
-        | 下一刀 | L3：2wp 可控长跨 + lag 同步 + 给 15 留预算（见 docs/r11l-recon.md） |
+        | 下一刀 | L3：N6038 后 S6248 已 HIT（d14=25/d15=21）；门前省预算或直 S6248（见 docs/r11l-recon.md） |
 
         ## 权威资产（勿在本目录另起求解器）
 

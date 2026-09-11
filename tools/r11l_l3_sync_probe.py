@@ -61,6 +61,21 @@ def lock_other_ship(frame, chrome_self):
         # When moving 14: seal-jump lead stays free for 14 (not frozen as 15's).
         if chrome_self == 14 and _is_14_seal_lead(c):
             continue
+        # Chrome14 SE stack corridor: ship15@(50,50) otherwise steals S via
+        # d15+8<d14. Only exempt pads still plausibly 14's (d14 <= d15+10);
+        # bare rectangle stole chrome15's (52,40) and broke mid-east n=2.
+        # y≤48 keeps post-S6248 (61,48) free; y=50+ still freezes east15@(58,54|50).
+        # Slack +12: at ship~(44,39) vs 15~(50,52), (61,48) is d14=26 vs d15=15
+        # (+10 fails by 1; +12 holds). Mid-east (52,40) still needs d14≤d15+10-ish
+        # but that pad is y=40 and usually closer to 15 until deep — keep +10 for y≤44.
+        _se_slack = 12 if c[1] >= 45 else 10
+        if (
+            chrome_self == 14
+            and c[0] >= 46
+            and 30 <= c[1] <= 48
+            and d_me <= d_other + _se_slack
+        ):
+            continue
         # When moving 15: always freeze 14's seal lead so wave15 can't steal it.
         if chrome_self == 15 and _is_14_seal_lead(c):
             out.append(c)
@@ -81,6 +96,13 @@ def lock_other_ship(frame, chrome_self):
         for w in r11l.waypoints(frame)
         if manh(w["c"], other["c"]) < manh(w["c"], me["c"])
         and not (chrome_self == 14 and _is_14_seal_lead(w["c"]))
+        and not (
+            chrome_self == 14
+            and w["c"][0] >= 46
+            and 30 <= w["c"][1] <= 48
+            and manh(w["c"], me["c"])
+            <= manh(w["c"], other["c"]) + (12 if w["c"][1] >= 45 else 10)
+        )
     ]
     if chrome_self == 15:
         closer = list(dict.fromkeys(out + closer))
@@ -96,6 +118,13 @@ def lock_other_ship(frame, chrome_self):
         for c in ranked
         if manh(c, other["c"]) <= manh(c, me["c"]) + 2
         and not (chrome_self == 14 and _is_14_seal_lead(c))
+        and not (
+            chrome_self == 14
+            and c[0] >= 46
+            and 30 <= c[1] <= 48
+            and manh(c, me["c"])
+            <= manh(c, other["c"]) + (12 if c[1] >= 45 else 10)
+        )
     ]
     if chrome_self == 15:
         rest = list(dict.fromkeys(out + rest))
@@ -2085,12 +2114,9 @@ def haul15_toward(sess, data, goal15, *, max_step=8, label="haul15", _unused=Non
 
 
 def advance_14_frog_ny_stack(sess, data, goal15):
-    """Post mid-east: deep15 → leadS+4 → frog → Ny36 → S40 → N(43,38).
+    """Post mid-east NON-FROG: deep15 → lag(26,44)→(36,44) → Ny≤46 → S(48,42).
 
-    Live-probed:
-      east15 (52,40)→(58,42), west15 (41,40)→(48,42);
-      then frog-ny to free=(43,38)+(40,44), ship~(34,38) d14≈36 bud≈10.
-    N(43,38) works under deep15; same-col south (43,40/42) noop; (42,40/42/45/46) dead.
+    Live (2026-09-09): skips leadS+frog; lands d14=34 bud≈11 (frog path was ≈10).
     """
     if step_budget(data["frame"]) < 16:
         return data, False
@@ -2099,16 +2125,15 @@ def advance_14_frog_ny_stack(sess, data, goal15):
     if len(free) != 2:
         return data, False
 
-    # Deep vacate chrome15: push east wp first so west can reach (48,42).
+    # Deep vacate chrome15: push east wp first so west can reach (42,50).
     freeze14 = lock_other_ship(data["frame"], 15)
     flock15 = list(lock_other_ship(data["frame"], 14))
     if flock15 and step_budget(data["frame"]) >= 8:
         west15 = min(flock15, key=lambda w: w[0])
         east15 = max(flock15, key=lambda w: w[0])
         if west15[0] >= 47 and west15[1] >= 41:
-            print(f"  frog-ny 15deep skip (already {west15})")
+            print(f"  se-ny 15deep skip (already {west15})")
         else:
-            # east first
             if east15[0] < 56:
                 for tgt in ((58, 42), (56, 44), (58, 40)):
                     if max(abs(tgt[0] - west15[0]), abs(tgt[1] - west15[1])) < 5:
@@ -2116,7 +2141,7 @@ def advance_14_frog_ny_stack(sess, data, goal15):
                     if near_any(tgt, list(freeze14), cheb=5):
                         continue
                     data, newc, st = move_wp(sess, data, east15, tgt, freeze14)
-                    print(f"  frog-ny east15 {east15}->{tgt} {st}->{newc}")
+                    print(f"  se-ny east15 {east15}->{tgt} {st}->{newc}")
                     if st == "dead" or data.get("state") == "GAME_OVER" or "frame" not in data:
                         return data, False
                     if st == "moved":
@@ -2125,16 +2150,15 @@ def advance_14_frog_ny_stack(sess, data, goal15):
                         west15 = min(flock15, key=lambda w: w[0])
                         east15 = max(flock15, key=lambda w: w[0])
                         break
-            # Prefer direct west→(42,50) after east@(58,42): skips (48,42) hop,
-            # saves ~2 bud; Ne then lands d14=34 with bud≈6 (live).
             moved15 = False
+            # (41,40)→(34/38,56) is noop/dead; must land (42,50) first then vac.
             for tgt in ((42, 50), (48, 42), (46, 42), (50, 42), (45, 42)):
                 if max(abs(tgt[0] - east15[0]), abs(tgt[1] - east15[1])) < 5:
                     continue
                 if near_any(tgt, list(freeze14), cheb=5):
                     continue
                 data, newc, st = move_wp(sess, data, west15, tgt, freeze14)
-                print(f"  frog-ny west15 {west15}->{tgt} {st}->{newc}")
+                print(f"  se-ny west15 {west15}->{tgt} {st}->{newc}")
                 if st == "dead" or data.get("state") == "GAME_OVER" or "frame" not in data:
                     return data, False
                 if st == "moved":
@@ -2150,10 +2174,6 @@ def advance_14_frog_ny_stack(sess, data, goal15):
                 )
                 if data.get("state") == "GAME_OVER" or "frame" not in data:
                     return data, False
-            # Deeper south vacate (live zigzag toward goal):
-            # Prefer already@(42,50); else (48,42)→(42,50)→east(58,50).
-            # Keep east at x≥56 — east@(48,54) makes mid-corridor leadS DEAD.
-            # Leave ≥12 bud for frog when possible.
             if step_budget(data["frame"]) >= 10:
                 freeze14 = lock_other_ship(data["frame"], 15)
                 flock15 = list(lock_other_ship(data["frame"], 14))
@@ -2165,7 +2185,7 @@ def advance_14_frog_ny_stack(sess, data, goal15):
                         tgt, list(freeze14), cheb=5
                     ):
                         data, newc, st = move_wp(sess, data, west15, tgt, freeze14)
-                        print(f"  frog-ny west15b {west15}->{tgt} {st}->{newc}")
+                        print(f"  se-ny west15b {west15}->{tgt} {st}->{newc}")
                         if st == "dead" or data.get("state") == "GAME_OVER" or "frame" not in data:
                             return data, False
                         if st == "moved":
@@ -2173,14 +2193,18 @@ def advance_14_frog_ny_stack(sess, data, goal15):
                             flock15 = list(lock_other_ship(data["frame"], 14))
                             west15 = min(flock15, key=lambda w: w[0])
                             east15 = max(flock15, key=lambda w: w[0])
-                if east15[1] < 48 and step_budget(data["frame"]) >= 6:
-                    for tgt in ((58, 50), (56, 48), (58, 48)):
+                # Skip east15b(58,54): live savebud skip-e54 keeps d14=25 d15=4
+                # with bud=3 (was 1). early15E from (58,42) still lands (40,56).
+                if False and east15[1] < 52 and step_budget(data["frame"]) >= 6:
+                    # Prefer (58,54): same bud as (58,50) but d15 23→21 and
+                    # unseals y48 band (live cdeep 2026-09-10).
+                    for tgt in ((58, 54), (62, 52), (56, 54), (58, 50), (56, 48), (58, 48)):
                         if max(abs(tgt[0] - west15[0]), abs(tgt[1] - west15[1])) < 5:
                             continue
                         if near_any(tgt, list(freeze14), cheb=5):
                             continue
                         data, newc, st = move_wp(sess, data, east15, tgt, freeze14)
-                        print(f"  frog-ny east15b {east15}->{tgt} {st}->{newc}")
+                        print(f"  se-ny east15b {east15}->{tgt} {st}->{newc}")
                         if st == "dead" or data.get("state") == "GAME_OVER" or "frame" not in data:
                             return data, False
                         if st == "moved":
@@ -2189,13 +2213,91 @@ def advance_14_frog_ny_stack(sess, data, goal15):
                             west15 = min(flock15, key=lambda w: w[0])
                             east15 = max(flock15, key=lambda w: w[0])
                             break
-                # Skip deeper zig (38,52)/(42,54): burns ~5 bud; S→(48,42)+Ne
-                # under west@(42,50)+east@(58,50) reaches d14=34 bud≈6.
-                # (38,50)/(34,54) make S40 DEAD — still banned if ever re-enabled.
+                # Early haul from (58,42) or (58,54) → (40,56). y>=42 after E5842.
+                if (
+                    step_budget(data["frame"]) >= 8
+                    and east15[0] >= 56
+                    and east15[1] >= 40
+                ):
+                    for vt in ((40, 56), (44, 56), (48, 56), (36, 56)):
+                        if max(abs(vt[0] - west15[0]), abs(vt[1] - west15[1])) < 5:
+                            continue
+                        if near_any(vt, list(freeze14), cheb=5):
+                            continue
+                        data, newc, st = move_wp(sess, data, east15, vt, freeze14)
+                        print(f"  se-ny early15E {east15}->{vt} {st}->{newc}")
+                        if st == "dead":
+                            print(f"  se-ny early15E {vt} dead — try next")
+                            if data.get("state") == "GAME_OVER" or "frame" not in data:
+                                return data, False
+                            freeze14 = lock_other_ship(data["frame"], 15)
+                            flock15 = list(lock_other_ship(data["frame"], 14))
+                            if not flock15:
+                                break
+                            west15 = min(flock15, key=lambda w: w[0])
+                            east15 = max(flock15, key=lambda w: w[0])
+                            continue
+                        if data.get("state") == "GAME_OVER" or "frame" not in data:
+                            return data, False
+                        if st == "moved":
+                            freeze14 = lock_other_ship(data["frame"], 15)
+                            flock15 = list(lock_other_ship(data["frame"], 14))
+                            west15 = min(flock15, key=lambda w: w[0])
+                            east15 = max(flock15, key=lambda w: w[0])
+                            break
                 print(
-                    f"  frog-ny zig skip (save bud) west={west15} "
+                    f"  se-ny zig skip (save bud) west={west15} "
                     f"bud={step_budget(data['frame'])}"
                 )
+                # Early-dock chrome15 BEFORE SE (live 2026-09-11):
+                # fin15 + west→(28,58) → d15=0 @ (34,57), leftover bud≈17 for 14.
+                if step_budget(data["frame"]) >= 4:
+                    freeze14 = lock_other_ship(data["frame"], 15)
+                    flock15 = list(lock_other_ship(data["frame"], 14))
+                    if flock15:
+                        rem = sorted(
+                            flock15,
+                            key=lambda w: (abs(w[0] - 42) + abs(w[1] - 50), -w[0]),
+                        )[0]
+                        other = next((w for w in flock15 if w != rem), rem)
+                        if rem[0] >= 38 and rem[1] <= 52:
+                            for vt in ((34, 56), (34, 57), (32, 56), (36, 56)):
+                                if max(abs(vt[0] - other[0]), abs(vt[1] - other[1])) < 5:
+                                    continue
+                                if near_any(vt, list(freeze14), cheb=5):
+                                    continue
+                                data, newc, st = move_wp(sess, data, rem, vt, freeze14)
+                                print(f"  se-ny early-fin15 {rem}->{vt} {st}->{newc}")
+                                if st == "dead":
+                                    if data.get("state") == "GAME_OVER" or "frame" not in data:
+                                        return data, False
+                                    break
+                                if data.get("state") == "GAME_OVER" or "frame" not in data:
+                                    return data, False
+                                if st == "moved":
+                                    break
+                    if step_budget(data["frame"]) >= 2 and "frame" in data:
+                        freeze14 = lock_other_ship(data["frame"], 15)
+                        flock15 = list(lock_other_ship(data["frame"], 14))
+                        if flock15:
+                            west = min(flock15, key=lambda w: w[0])
+                            east = max(flock15, key=lambda w: w[0])
+                            if west[0] <= 36 and west[1] >= 54:
+                                for vt in ((28, 58), (28, 56), (30, 56)):
+                                    if max(abs(vt[0] - east[0]), abs(vt[1] - east[1])) < 5:
+                                        continue
+                                    if near_any(vt, list(freeze14), cheb=5):
+                                        continue
+                                    data, newc, st = move_wp(sess, data, west, vt, freeze14)
+                                    print(f"  se-ny early-dock15 {west}->{vt} {st}->{newc}")
+                                    if st == "dead":
+                                        if data.get("state") == "GAME_OVER" or "frame" not in data:
+                                            return data, False
+                                        break
+                                    if data.get("state") == "GAME_OVER" or "frame" not in data:
+                                        return data, False
+                                    if st == "moved":
+                                        break
     if data.get("state") == "GAME_OVER" or "frame" not in data:
         return data, False
 
@@ -2206,146 +2308,394 @@ def advance_14_frog_ny_stack(sess, data, goal15):
     lead = max(free, key=lambda w: w[0])
     lag = min(free, key=lambda w: w[0])
     print(
-        f"--- L3 frog-ny stack ship="
+        f"--- L3 se-ny stack ship="
         f"{next(s for s in ships(data['frame']) if s['chrome']==14)['c']} "
         f"lead={lead} lag={lag} bud={step_budget(data['frame'])} ---"
     )
-    data, newc, st = move_wp(
-        sess, data, lead, (lead[0], lead[1] + 4), freeze15
-    )
-    print(f"  frog-ny leadS {lead}->{(lead[0], lead[1]+4)} {st}->{newc}")
-    if st == "dead" or data.get("state") == "GAME_OVER" or "frame" not in data:
-        return data, False
-    if st != "moved":
-        return data, False
-
+    # NON-FROG SE budget save (2026-09-10 save2):
+    # Prefer lag→(36,44) direct + skip Ny46 → N6038 bud=10 (was 5).
+    # Fallback: lagSE(26,44)→extE(36,44); Ny only if N4832 fails.
     freeze15 = lock_other_ship(data["frame"], 14)
     free = count_free14(data["frame"], freeze15)
-    if len(free) != 2:
+    if len(free) < 2:
         return data, False
-    lead = max(free, key=lambda w: (w[1], w[0]))
-    lag = min(free, key=lambda w: (w[1], w[0]))
-    frog = (lag[0] + 2, lead[1] + 4)
-    data, newc, st = move_wp(sess, data, lag, frog, freeze15)
-    print(f"  frog-ny frog {lag}->{frog} {st}->{newc}")
-    if st == "dead" or data.get("state") == "GAME_OVER" or "frame" not in data:
-        return data, False
-    if st != "moved":
-        return data, False
+    lag = min(free, key=lambda w: w[0])
+    lead = max(free, key=lambda w: w[0])
+    direct_ok = False
+    for dt in ((36, 44), (34, 44), (38, 44)):
+        if max(abs(dt[0] - lead[0]), abs(dt[1] - lead[1])) < 5:
+            continue
+        if near_any(dt, list(freeze15), cheb=5):
+            continue
+        data, newc, st = move_wp(sess, data, lag, dt, freeze15)
+        print(f"  se-ny lagDirect {lag}->{dt} {st}->{newc}")
+        if st == "dead" or data.get("state") == "GAME_OVER" or "frame" not in data:
+            return data, False
+        if st == "moved":
+            direct_ok = True
+            break
+        freeze15 = lock_other_ship(data["frame"], 14)
+        free = count_free14(data["frame"], freeze15)
+        if len(free) < 2:
+            return data, False
+        lag = min(free, key=lambda w: w[0])
+        lead = max(free, key=lambda w: w[0])
+    if not direct_ok:
+        # Fallback: old lagSE + extE
+        data, newc, st = move_wp(sess, data, lag, (26, 44), freeze15)
+        print(f"  se-ny lagSE {lag}->(26,44) {st}->{newc}")
+        if st == "dead" or data.get("state") == "GAME_OVER" or "frame" not in data:
+            return data, False
+        if st != "moved":
+            return data, False
+        freeze15 = lock_other_ship(data["frame"], 14)
+        free = count_free14(data["frame"], freeze15)
+        if len(free) < 2:
+            return data, False
+        src = (26, 44) if (26, 44) in free else max(free, key=lambda w: (w[1], w[0]))
+        others = [w for w in free if w != src]
+        ext = (36, 44)
+        if near_any(ext, list(freeze15), cheb=5) or any(
+            max(abs(ext[0] - o[0]), abs(ext[1] - o[1])) < 5 for o in others
+        ):
+            for alt in ((34, 44), (38, 44), (32, 44)):
+                if near_any(alt, list(freeze15), cheb=5):
+                    continue
+                if any(max(abs(alt[0] - o[0]), abs(alt[1] - o[1])) < 5 for o in others):
+                    continue
+                ext = alt
+                break
+        data, newc, st = move_wp(sess, data, src, ext, freeze15)
+        print(f"  se-ny extE {src}->{ext} {st}->{newc}")
+        if st == "dead" or data.get("state") == "GAME_OVER" or "frame" not in data:
+            return data, False
+        if st != "moved":
+            return data, False
 
+    # Skip Ny46 by default (save ~2–3); N4832 still unlocks from y36 lead.
+    # After lagDirect/extE: N→(48,32) unlocks S-east.
     freeze15 = lock_other_ship(data["frame"], 14)
     free = count_free14(data["frame"], freeze15)
     if len(free) < 2:
         return data, False
     south = max(free, key=lambda w: (w[1], w[0]))
     north = min(free, key=lambda w: (w[1], w[0]))
-    # Prefer Ny(46/45/44,36): with S(48,42) lands d14=34 bud≈10 (skips Ne).
-    # Fallback (42,36)/(40,36) then Ne to reach d14=34 bud≈6.
-    ny_ok = False
-    for nyt in ((46, 36), (45, 36), (44, 36), (42, 36), (40, 36)):
-        if near_any(nyt, list(freeze15), cheb=5):
+    n4832_ok = False
+    for nt in ((48, 32), (50, 32), (46, 32)):
+        if near_any(nt, list(freeze15), cheb=5):
             continue
-        # Ny(48,36) makes S(48,42) noop — keep x≤46
-        if max(abs(nyt[0] - south[0]), abs(nyt[1] - south[1])) < 5:
+        if max(abs(nt[0] - south[0]), abs(nt[1] - south[1])) < 5:
             continue
-        data, newc, st = move_wp(sess, data, north, nyt, freeze15)
-        print(f"  frog-ny Ny {north}->{nyt} {st}->{newc}")
+        data, newc, st = move_wp(sess, data, north, nt, freeze15)
+        print(f"  se-ny N4832 {north}->{nt} {st}->{newc}")
         if st == "dead" or data.get("state") == "GAME_OVER" or "frame" not in data:
             return data, False
         if st == "moved":
-            ny_ok = True
+            n4832_ok = True
             break
-        # soft-fail — try next Ny
+        freeze15 = lock_other_ship(data["frame"], 14)
+        free = count_free14(data["frame"], freeze15)
+        if len(free) < 2:
+            break
+        south = max(free, key=lambda w: (w[1], w[0]))
+        north = min(free, key=lambda w: (w[1], w[0]))
+    if not n4832_ok:
+        # Soft fallback: Ny46 then retry N4832 once
         freeze15 = lock_other_ship(data["frame"], 14)
         free = count_free14(data["frame"], freeze15)
         if len(free) < 2:
             return data, False
         south = max(free, key=lambda w: (w[1], w[0]))
         north = min(free, key=lambda w: (w[1], w[0]))
-    if not ny_ok:
-        return data, False
-
-    freeze15 = lock_other_ship(data["frame"], 14)
-    free = count_free14(data["frame"], freeze15)
-    south = max(free, key=lambda w: (w[1], w[0]))
-    others = [w for w in free if w != south]
-    # Under west15@(42,50)+east@(58,50): n3 south→(48,42) HIT d14 40→35 bud≈7
-    # (skip S4044 intermediate — saves 2). Under west@(42,54): S(40,46) also OK.
-    # Under west@(38,50)/(34,54): S40 DEAD.
-    west15_now = min(list(freeze15), key=lambda w: w[0]) if freeze15 else (0, 0)
-    if west15_now[1] >= 54:
-        s_tgts = ((40, 46), (48, 42), (40, 44))
-    else:
-        s_tgts = ((48, 42), (40, 44), (40, 46))
-    for stgt in s_tgts:
-        if near_any(stgt, list(freeze15), cheb=5):
-            print(f"  frog-ny S{stgt} near15 — skip")
-            continue
-        if any(max(abs(stgt[0] - o[0]), abs(stgt[1] - o[1])) < 5 for o in others):
-            print(f"  frog-ny S{stgt} merge — skip")
-            continue
-        data, newc, st = move_wp(sess, data, south, stgt, freeze15)
-        print(f"  frog-ny S {south}->{stgt} {st}->{newc}")
-        if st == "dead":
-            print(f"  frog-ny S{stgt} dead — try next")
-            if data.get("state") == "GAME_OVER" or "frame" not in data:
+        for nyt in ((46, 36), (45, 36), (44, 36)):
+            if near_any(nyt, list(freeze15), cheb=5):
+                continue
+            if max(abs(nyt[0] - south[0]), abs(nyt[1] - south[1])) < 5:
+                continue
+            data, newc, st = move_wp(sess, data, north, nyt, freeze15)
+            print(f"  se-ny Ny-fb {north}->{nyt} {st}->{newc}")
+            if st == "dead" or data.get("state") == "GAME_OVER" or "frame" not in data:
                 return data, False
+            if st == "moved":
+                freeze15 = lock_other_ship(data["frame"], 14)
+                free = count_free14(data["frame"], freeze15)
+                if len(free) < 2:
+                    return data, False
+                south = max(free, key=lambda w: (w[1], w[0]))
+                north = min(free, key=lambda w: (w[1], w[0]))
+                for nt in ((48, 32), (50, 32)):
+                    if near_any(nt, list(freeze15), cheb=5):
+                        continue
+                    if max(abs(nt[0] - south[0]), abs(nt[1] - south[1])) < 5:
+                        continue
+                    data, newc, st = move_wp(sess, data, north, nt, freeze15)
+                    print(f"  se-ny N4832b {north}->{nt} {st}->{newc}")
+                    if st == "moved":
+                        n4832_ok = True
+                        break
+                    if st == "dead" or data.get("state") == "GAME_OVER" or "frame" not in data:
+                        return data, False
+                break
+        if not n4832_ok:
+            # Last resort: old S4842 without N unlock
             freeze15 = lock_other_ship(data["frame"], 14)
             free = count_free14(data["frame"], freeze15)
             if len(free) < 2:
-                break
+                return data, False
             south = max(free, key=lambda w: (w[1], w[0]))
             others = [w for w in free if w != south]
-            continue
-        if data.get("state") == "GAME_OVER" or "frame" not in data:
-            return data, False
-        if st == "moved":
-            break
-
-    # If already on (48,42): Ne only when north still west of x44.
-    # Ny(44,36)+S already d14=34 bud≈10 — skip Ne to keep budget.
-    freeze15 = lock_other_ship(data["frame"], 14)
-    free = count_free14(data["frame"], freeze15)
-    if len(free) >= 2 and step_budget(data["frame"]) >= 4:
-        south = max(free, key=lambda w: (w[0], w[1]))
-        north = min(free, key=lambda w: (w[1], w[0]))
-        others_n = [w for w in free if w != north]
-        if south == (48, 42) or (south[0] >= 46 and south[1] >= 40):
-            if north[0] >= 44:
-                print(f"  frog-ny Ne skip (north already {north})")
-            else:
-                for tgt in ((45, 36), (44, 36)):
-                    if near_any(tgt, list(freeze15), cheb=5):
-                        continue
-                    if any(max(abs(tgt[0] - o[0]), abs(tgt[1] - o[1])) < 5 for o in others_n):
-                        continue
-                    data, newc, st = move_wp(sess, data, north, tgt, freeze15)
-                    print(f"  frog-ny Ne {north}->{tgt} {st}->{newc}")
-                    if st == "dead" or data.get("state") == "GAME_OVER" or "frame" not in data:
-                        return data, False
-                    if st == "moved":
-                        break
-        else:
-            others = [w for w in free if w != south]
-            for tgt in ((48, 42), (45, 40)):
-                if near_any(tgt, list(freeze15), cheb=5):
-                    print(f"  frog-ny SE{tgt} near15 — skip")
+            for stgt in ((48, 42), (40, 44), (40, 46)):
+                if near_any(stgt, list(freeze15), cheb=5):
                     continue
-                if any(max(abs(tgt[0] - o[0]), abs(tgt[1] - o[1])) < 5 for o in others):
-                    print(f"  frog-ny SE{tgt} merge — skip")
+                if any(max(abs(stgt[0] - o[0]), abs(stgt[1] - o[1])) < 5 for o in others):
                     continue
-                data, newc, st = move_wp(sess, data, south, tgt, freeze15)
-                print(f"  frog-ny SE {south}->{tgt} {st}->{newc}")
+                data, newc, st = move_wp(sess, data, south, stgt, freeze15)
+                print(f"  se-ny Sfb {south}->{stgt} {st}->{newc}")
                 if st == "dead" or data.get("state") == "GAME_OVER" or "frame" not in data:
                     return data, False
                 if st == "moved":
                     break
-    elif step_budget(data["frame"]) < 4:
-        print(f"  frog-ny SE skip (bud={step_budget(data['frame'])})")
+    if n4832_ok:
+        freeze15 = lock_other_ship(data["frame"], 14)
+        free = count_free14(data["frame"], freeze15)
+        if len(free) < 2:
+            return data, False
+        south = max(free, key=lambda w: (w[1], w[0]))
+        others = [w for w in free if w != south]
+        s_ok = False
+        # Direct S(60,44) after N4832: d14=30 bud≈9 (skip S5242/S5642 saves ~5).
+        for stgt in ((60, 44), (62, 44), (58, 46), (56, 42), (52, 42), (48, 42)):
+            if near_any(stgt, list(freeze15), cheb=5):
+                print(f"  se-ny S{stgt} near15 — skip")
+                continue
+            if any(max(abs(stgt[0] - o[0]), abs(stgt[1] - o[1])) < 5 for o in others):
+                print(f"  se-ny S{stgt} merge — skip")
+                continue
+            data, newc, st = move_wp(sess, data, south, stgt, freeze15)
+            print(f"  se-ny S {south}->{stgt} {st}->{newc}")
+            if st == "dead":
+                print(f"  se-ny S{stgt} dead — try next")
+                if data.get("state") == "GAME_OVER" or "frame" not in data:
+                    return data, False
+                freeze15 = lock_other_ship(data["frame"], 14)
+                free = count_free14(data["frame"], freeze15)
+                if len(free) < 2:
+                    break
+                south = max(free, key=lambda w: (w[1], w[0]))
+                others = [w for w in free if w != south]
+                continue
+            if data.get("state") == "GAME_OVER" or "frame" not in data:
+                return data, False
+            if st == "moved":
+                s_ok = True
+                break
+        if not s_ok:
+            print("  se-ny S-east after N4832 failed")
+        elif step_budget(data["frame"]) >= 4:
+            # Only micro-push if direct S6044 missed (landed short of x58).
+            freeze15 = lock_other_ship(data["frame"], 14)
+            free = count_free14(data["frame"], freeze15)
+            if len(free) >= 2:
+                south = max(free, key=lambda w: (w[1], w[0]))
+                north = min(free, key=lambda w: (w[1], w[0]))
+                if south[0] < 58:
+                    for stgt in ((60, 44), (56, 42), (62, 44)):
+                        if near_any(stgt, list(freeze15), cheb=5):
+                            continue
+                        if max(abs(stgt[0] - north[0]), abs(stgt[1] - north[1])) < 5:
+                            continue
+                        if max(abs(stgt[0] - south[0]), abs(stgt[1] - south[1])) <= 1:
+                            continue
+                        data, newc, st = move_wp(sess, data, south, stgt, freeze15)
+                        print(f"  se-ny S2 {south}->{stgt} {st}->{newc}")
+                        if st == "dead" or data.get("state") == "GAME_OVER" or "frame" not in data:
+                            return data, False
+                        if st == "moved":
+                            break
+                        freeze15 = lock_other_ship(data["frame"], 14)
+                        free = count_free14(data["frame"], freeze15)
+                        if len(free) < 2:
+                            break
+                        south = max(free, key=lambda w: (w[1], w[0]))
+                        north = min(free, key=lambda w: (w[1], w[0]))
+        # After S6044: N→(60,38) live HIT; then stack-east does S6248.
+        if s_ok and step_budget(data["frame"]) >= 4:
+            freeze15 = lock_other_ship(data["frame"], 14)
+            free = count_free14(data["frame"], freeze15)
+            if len(free) >= 2:
+                south = max(free, key=lambda w: (w[1], w[0]))
+                north = min(free, key=lambda w: (w[1], w[0]))
+                for nt in ((60, 38), (56, 38), (58, 38), (54, 38), (52, 38)):
+                    if near_any(nt, list(freeze15), cheb=5):
+                        continue
+                    if max(abs(nt[0] - south[0]), abs(nt[1] - south[1])) < 5:
+                        continue
+                    if max(abs(nt[0] - north[0]), abs(nt[1] - north[1])) <= 1:
+                        continue
+                    data, newc, st = move_wp(sess, data, north, nt, freeze15)
+                    print(f"  se-ny N2 {north}->{nt} {st}->{newc}")
+                    if st == "dead" or data.get("state") == "GAME_OVER" or "frame" not in data:
+                        return data, False
+                    if st == "moved":
+                        break
+                    freeze15 = lock_other_ship(data["frame"], 14)
+                    free = count_free14(data["frame"], freeze15)
+                    if len(free) < 2:
+                        break
+                    south = max(free, key=lambda w: (w[1], w[0]))
+                    north = min(free, key=lambda w: (w[1], w[0]))
+                # Optional N3: if landed short of x60 on y38, push east
+                if step_budget(data["frame"]) >= 4:
+                    freeze15 = lock_other_ship(data["frame"], 14)
+                    free = count_free14(data["frame"], freeze15)
+                    if len(free) >= 2:
+                        south = max(free, key=lambda w: (w[1], w[0]))
+                        north = min(free, key=lambda w: (w[1], w[0]))
+                        if north[0] < 60 or north[1] > 38:
+                            for nt in ((60, 38), (56, 38), (58, 40)):
+                                if near_any(nt, list(freeze15), cheb=5):
+                                    continue
+                                if max(abs(nt[0] - south[0]), abs(nt[1] - south[1])) < 5:
+                                    continue
+                                if max(abs(nt[0] - north[0]), abs(nt[1] - north[1])) <= 1:
+                                    continue
+                                data, newc, st = move_wp(sess, data, north, nt, freeze15)
+                                print(f"  se-ny N3 {north}->{nt} {st}->{newc}")
+                                if st == "dead" or data.get("state") == "GAME_OVER" or "frame" not in data:
+                                    return data, False
+                                if st == "moved":
+                                    break
+                                freeze15 = lock_other_ship(data["frame"], 14)
+                                free = count_free14(data["frame"], freeze15)
+                                if len(free) < 2:
+                                    break
+                                south = max(free, key=lambda w: (w[1], w[0]))
+                                north = min(free, key=lambda w: (w[1], w[0]))
+            # After N6038: defer S6048 until chrome15 docks. Live sand15
+            # (2026-09-11): skip-S6048 + fin15 → d15=4 bud=6; west→(28,58)
+            # alone puts ship15 ON (34,57) d15=0 (bud 6→4). S6048 after.
+            if step_budget(data["frame"]) >= 4:
+                freeze14 = lock_other_ship(data["frame"], 15)
+                flock15 = list(lock_other_ship(data["frame"], 14))
+                if flock15:
+                    east15 = max(flock15, key=lambda w: w[0])
+                    west15 = min(flock15, key=lambda w: w[0])
+                    if east15[0] >= 50 and east15[1] >= 50:
+                        for vt in ((40, 56), (44, 56), (48, 56), (52, 56), (36, 56)):
+                            if max(abs(vt[0] - west15[0]), abs(vt[1] - west15[1])) < 5:
+                                continue
+                            if near_any(vt, list(freeze14), cheb=5):
+                                continue
+                            data, newc, st = move_wp(sess, data, east15, vt, freeze14)
+                            print(f"  se-ny haul15E {east15}->{vt} {st}->{newc}")
+                            if st == "dead":
+                                print(f"  se-ny haul15E {vt} dead — try next")
+                                if data.get("state") == "GAME_OVER" or "frame" not in data:
+                                    return data, False
+                                freeze14 = lock_other_ship(data["frame"], 15)
+                                flock15 = list(lock_other_ship(data["frame"], 14))
+                                if not flock15:
+                                    break
+                                east15 = max(flock15, key=lambda w: w[0])
+                                west15 = min(flock15, key=lambda w: w[0])
+                                continue
+                            if data.get("state") == "GAME_OVER" or "frame" not in data:
+                                return data, False
+                            if st == "moved":
+                                break
+
+            # Residual chrome15 — skip if early-dock already put ship on goal15.
+            me15 = next(s for s in ships(data["frame"]) if s["chrome"] == 15)
+            d15_now = abs(me15["c"][0] - goal15[0]) + abs(me15["c"][1] - goal15[1])
+            if d15_now == 0:
+                print(f"  se-ny skip late-fin15 (already d15=0 @{me15['c']})")
+            elif step_budget(data["frame"]) >= 3:
+                freeze14 = lock_other_ship(data["frame"], 15)
+                flock15 = list(lock_other_ship(data["frame"], 14))
+                if flock15:
+                    rem = sorted(
+                        flock15,
+                        key=lambda w: (abs(w[0] - 42) + abs(w[1] - 50), -w[0]),
+                    )[0]
+                    other = next((w for w in flock15 if w != rem), rem)
+                    if rem[0] >= 38 and rem[1] <= 52:
+                        for vt in ((34, 56), (34, 57), (32, 56), (36, 56)):
+                            if max(abs(vt[0] - other[0]), abs(vt[1] - other[1])) < 5:
+                                continue
+                            if near_any(vt, list(freeze14), cheb=5):
+                                continue
+                            data, newc, st = move_wp(sess, data, rem, vt, freeze14)
+                            print(f"  se-ny fin15 {rem}->{vt} {st}->{newc}")
+                            if st == "dead":
+                                print(f"  se-ny fin15 {vt} dead — abort fin")
+                                if data.get("state") == "GAME_OVER" or "frame" not in data:
+                                    return data, False
+                                break
+                            if data.get("state") == "GAME_OVER" or "frame" not in data:
+                                return data, False
+                            if st == "moved":
+                                break
+            # d15=4 fallback dock: west → (28,58). Skip if already clear.
+            if d15_now > 0 and step_budget(data["frame"]) >= 2:
+                freeze14 = lock_other_ship(data["frame"], 15)
+                flock15 = list(lock_other_ship(data["frame"], 14))
+                if flock15:
+                    west = min(flock15, key=lambda w: w[0])
+                    east = max(flock15, key=lambda w: w[0])
+                    if west[0] <= 36 and west[1] >= 54:
+                        for vt in ((28, 58), (28, 56), (30, 56), (26, 56)):
+                            if max(abs(vt[0] - east[0]), abs(vt[1] - east[1])) < 5:
+                                continue
+                            if near_any(vt, list(freeze14), cheb=5):
+                                continue
+                            data, newc, st = move_wp(sess, data, west, vt, freeze14)
+                            print(f"  se-ny fin15w {west}->{vt} {st}->{newc}")
+                            if st == "dead":
+                                print(f"  se-ny fin15w {vt} dead — stop")
+                                if data.get("state") == "GAME_OVER" or "frame" not in data:
+                                    return data, False
+                                break
+                            if data.get("state") == "GAME_OVER" or "frame" not in data:
+                                return data, False
+                            if st == "moved":
+                                break
+            # After 15 dock: S6048 costs ~3 bud for d14−1 → bud=1 trap.
+            # Hold leftover for real 14 south pulls (probe _l3_d14_after15).
+            if False and step_budget(data["frame"]) >= 2:
+                freeze15 = lock_other_ship(data["frame"], 14)
+                free = count_free14(data["frame"], freeze15)
+                if len(free) >= 2:
+                    south = max(free, key=lambda w: (w[1], w[0]))
+                    north = min(free, key=lambda w: (w[1], w[0]))
+                    if (
+                        south[0] >= 58
+                        and south[1] <= 44
+                        and north[0] >= 56
+                        and abs(north[0] - south[0]) <= 2
+                    ):
+                        for stgt in ((60, 48), (62, 48), (58, 48)):
+                            if near_any(stgt, list(freeze15), cheb=5):
+                                continue
+                            if max(abs(stgt[0] - north[0]), abs(stgt[1] - north[1])) < 5:
+                                continue
+                            if max(abs(stgt[0] - south[0]), abs(stgt[1] - south[1])) <= 1:
+                                continue
+                            data, newc, st = move_wp(sess, data, south, stgt, freeze15)
+                            print(f"  se-ny S6048-post15 {south}->{stgt} {st}->{newc}")
+                            if st == "dead" or data.get("state") == "GAME_OVER" or "frame" not in data:
+                                return data, False
+                            if st == "moved":
+                                break
+                            freeze15 = lock_other_ship(data["frame"], 14)
+                            free = count_free14(data["frame"], freeze15)
+                            if len(free) < 2:
+                                break
+                            south = max(free, key=lambda w: (w[1], w[0]))
+                            north = min(free, key=lambda w: (w[1], w[0]))
 
     me14 = next(s for s in ships(data["frame"]) if s["chrome"] == 14)
     print(
-        f"  L3 frog-ny done ship={me14['c']} "
+        f"  L3 se-ny done ship={me14['c']} "
         f"bud={step_budget(data['frame'])} "
         f"free={count_free14(data['frame'], lock_other_ship(data['frame'], 14))}"
     )
@@ -2458,16 +2808,87 @@ def clear_l3(sess, data):
                 break
 
         # Gate: after mid-east SE band — ship may drift west to x~25 while wps at y44.
+        all_wps = [w["c"] for w in r11l.waypoints(data["frame"])]
         free14n = count_free14(data["frame"], freeze15)
+        # After S6248, lock may still pollute free with west15@(42,50). Recover
+        # ONLY when free south is polluted (x≤50) AND a real SE-south pad exists
+        # at y∈[46,50] (post-S6248). Never treat east15@(58,54|50) as S.
+        _east15_known = {
+            (42, 50),
+            (58, 54),
+            (58, 50),
+            (41, 40),
+            (52, 40),
+            (34, 56),
+            (36, 56),
+            (34, 54),
+            (32, 56),
+            (40, 56),
+            (44, 56),
+            (48, 56),
+            (52, 56),
+        }
+        se_pads = [
+            c
+            for c in all_wps
+            if c[0] >= 56 and c[1] >= 36 and c not in _east15_known
+        ]
+        free_south = max(free14n, key=lambda w: (w[1], w[0])) if free14n else (0, 0)
+        se_south_cands = [
+            c for c in se_pads if c[0] >= 58 and 46 <= c[1] <= 50
+        ]
+        se_north_cands = [c for c in se_pads if c[0] >= 56 and c[1] <= 40]
+        if (
+            me14["c"][0] >= 40
+            and me14["c"][1] >= 36
+            and free_south[0] <= 50
+            and se_south_cands
+            and se_north_cands
+        ):
+            south_fix = max(se_south_cands, key=lambda w: (w[1], w[0]))
+            north_fix = min(se_north_cands, key=lambda w: (w[1], w[0]))
+            if south_fix not in _east15_known and south_fix[0] >= 58:
+                free14n = [north_fix, south_fix]
+                freeze15 = [
+                    c
+                    for c in all_wps
+                    if c not in free14n
+                    and (
+                        c in _east15_known
+                        or (
+                            abs(c[0] - me15["c"][0]) + abs(c[1] - me15["c"][1]) + 6
+                            < abs(c[0] - me14["c"][0]) + abs(c[1] - me14["c"][1])
+                        )
+                    )
+                ]
+                freeze14 = [c for c in free14n]
+                print(
+                    f"  L3 se-recover N={north_fix} S={south_fix} "
+                    f"freeze15={sorted(freeze15)} bud={bud}"
+                )
         # Frog-ny stack: both wps east of x38 (e.g. (43,36)+(40,44)). SE-cont
         # catch-lag toward (47/48,36) is live-dead — use micro stack-east instead.
+        # When chrome15 already clear and pads sit on x60 corridor, S6048 only
+        # burns bud 4→1 for d14−1 — skip and hold for real last-mile.
         stack_east = (
             len(free14n) == 2
             and all(w[0] >= 38 for w in free14n)
             and me14["c"][0] >= 30
             and me14["c"][1] >= 34
         )
-        if stack_east and d14 > 10 and bud >= 4 and stack_soft < 1:
+        if (
+            stack_east
+            and d15 == 0
+            and all(w[0] >= 58 for w in free14n)
+            and bud < 8
+        ):
+            print(
+                f"  L3 skip stack-east (d15=0 x60 hold) "
+                f"free={sorted(free14n)} bud={bud}"
+            )
+            print("  L3 hold last-mile — stop turns (need bud>=8 or new SE)")
+            break
+        if stack_east and d14 > 10 and bud >= 3 and stack_soft < 1:
             south = max(free14n, key=lambda w: (w[1], w[0]))
             north = min(free14n, key=lambda w: (w[1], w[0]))
             print(
@@ -2548,10 +2969,58 @@ def clear_l3(sess, data):
             # Live HIT: north→(45,36) d14 35→34. Do NOT vacate west15 after E48.
             # Ny44 pose: north already (44,36) — skip +1 east (burns "already").
             # Ban (43,38) here (noop→dead). East SE mostly noop/dead.
-            if north[0] >= 44:
+            # N4832+S5242: free (48,32)+(52,42) ship~(39,36) d14=33 bud≈9.
+            # N4832+S6044: free (48,32)+(60,44). Live: N→(52,38) d14 30→28.
+            # After N5238: free (52,38)+(60,44) ship~(42,38).
+            # N6038+S6044: same-col x60, cheb=6. Live: d14=26 bud=5.
+            # With east15@(58,54) y48 unsealed (was sealed by (58,50)).
+            # Ban same-row west (58,38) — live noop burn (v53).
+            stack_cands = []
+            if (
+                north[0] >= 58
+                and south[0] >= 58
+                and abs(north[0] - south[0]) <= 2
+                and south[1] <= 44
+            ):
+                # Pre-S60x8 same-col: prefer S(60,48) then S(62,48).
+                stack_cands = [
+                    (south, (60, 48)),
+                    (south, (62, 48)),
+                    (south, (58, 48)),
+                ]
+            elif (
+                south[0] >= 56
+                and south[1] >= 46
+                and north[0] >= 56
+                and north[1] <= 40
+            ):
+                # Post-S6048/S6248: goal-band mostly noop/dead; hold leftover bud.
+                stack_cands = []
+                print("  stack-east post-S60x8 hold (no safe push yet)")
+            elif north[1] <= 40 and south[0] >= 58:
+                stack_cands = [
+                    (north, (60, 38)),
+                    (north, (58, 38)),
+                    (north, (56, 40)),
+                    (south, (62, 46)),
+                    (south, (60, 48)),
+                    (north, (54, 40)),
+                    # (62,44) live-noop under N5638 — omit
+                ]
+            elif north[1] <= 34 and south[0] >= 50:
+                stack_cands = [
+                    (north, (52, 38)),
+                    (north, (54, 38)),
+                    (north, (50, 38)),
+                    (south, (62, 46)),
+                    (south, (60, 48)),
+                    (north, (52, 36)),
+                    (north, (54, 34)),
+                    (north, (54, 36)),
+                ]
+            elif north[0] >= 44:
                 stack_cands = [
                     (south, (50, 44)),
-                    (south, (54, 44)),
                     (south, (52, 46)),
                     (south, (48, 46)),
                     (south, (50, 46)),
@@ -2561,7 +3030,7 @@ def clear_l3(sess, data):
                     (north, (50, 40)),
                     (north, (52, 38)),
                     (north, (46, 40)),
-                    # (52,42) live-noop under Ny44/46 — omit
+                    # (52,42)/(54,44) live-noop under Ny46 — omit
                 ]
             else:
                 stack_cands = [
@@ -2583,8 +3052,21 @@ def clear_l3(sess, data):
                     (south, (52, 42)),
                 ]
             for cur, ld in stack_cands:
-                if step_budget(data["frame"]) < 4:
+                if step_budget(data["frame"]) < 3:
                     break
+                # Never steer chrome15's known east/west pads as if they were 14's.
+                if cur in (
+                    (42, 50),
+                    (58, 54),
+                    (58, 50),
+                    (41, 40),
+                    (52, 40),
+                    (34, 56),
+                    (36, 56),
+                    (34, 54),
+                    (32, 56),
+                ):
+                    continue
                 if not (0 <= ld[0] < 64 and 0 <= ld[1] < 64):
                     continue
                 if ld in tried or ld == cur:
@@ -2638,9 +3120,9 @@ def clear_l3(sess, data):
                     break
             if progressed:
                 continue
-            # Soft haul15 toward goal with leftover bud (14 SE stalled at d14≈34).
-            # haul15_toward itself needs bud≥8; otherwise just mark stalled.
-            if step_budget(data["frame"]) >= 8 and d15 > 6:
+            # Soft haul15 only if 14 SE made a real move — never after noop soft-fail
+            # (haul15 noops burn leftover bud: 9→2 live).
+            if noops == 0 and step_budget(data["frame"]) >= 8 and d15 > 6:
                 data, _ = haul15_toward(
                     sess, data, gmap[15], max_step=4, label="15stack"
                 )

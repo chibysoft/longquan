@@ -1,0 +1,6349 @@
+{
+  "traces": {
+    "spam1_x64": [
+      {
+        "step": 0,
+        "act": null,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {},
+          "id": 0,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 64,
+        "n4": 0,
+        "first4": null,
+        "last4": null,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111111"
+      },
+      {
+        "step": 1,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 64,
+        "n4": 0,
+        "first4": null,
+        "last4": null,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111111"
+      },
+      {
+        "step": 2,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 63,
+        "n4": 1,
+        "first4": 63,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111114"
+      },
+      {
+        "step": 3,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 63,
+        "n4": 1,
+        "first4": 63,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111114"
+      },
+      {
+        "step": 4,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 62,
+        "n4": 2,
+        "first4": 62,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111144"
+      },
+      {
+        "step": 5,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 62,
+        "n4": 2,
+        "first4": 62,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111144"
+      },
+      {
+        "step": 6,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 61,
+        "n4": 3,
+        "first4": 61,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111444"
+      },
+      {
+        "step": 7,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 61,
+        "n4": 3,
+        "first4": 61,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111444"
+      },
+      {
+        "step": 8,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 60,
+        "n4": 4,
+        "first4": 60,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111114444"
+      },
+      {
+        "step": 9,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 60,
+        "n4": 4,
+        "first4": 60,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111114444"
+      },
+      {
+        "step": 10,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 59,
+        "n4": 5,
+        "first4": 59,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111144444"
+      },
+      {
+        "step": 11,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 59,
+        "n4": 5,
+        "first4": 59,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111144444"
+      },
+      {
+        "step": 12,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 58,
+        "n4": 6,
+        "first4": 58,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111444444"
+      },
+      {
+        "step": 13,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 58,
+        "n4": 6,
+        "first4": 58,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111444444"
+      },
+      {
+        "step": 14,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 57,
+        "n4": 7,
+        "first4": 57,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111114444444"
+      },
+      {
+        "step": 15,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 57,
+        "n4": 7,
+        "first4": 57,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111114444444"
+      },
+      {
+        "step": 16,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 56,
+        "n4": 8,
+        "first4": 56,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111144444444"
+      },
+      {
+        "step": 17,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 56,
+        "n4": 8,
+        "first4": 56,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111144444444"
+      },
+      {
+        "step": 18,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 55,
+        "n4": 9,
+        "first4": 55,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111444444444"
+      },
+      {
+        "step": 19,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 55,
+        "n4": 9,
+        "first4": 55,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111444444444"
+      },
+      {
+        "step": 20,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 54,
+        "n4": 10,
+        "first4": 54,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111114444444444"
+      },
+      {
+        "step": 21,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 54,
+        "n4": 10,
+        "first4": 54,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111114444444444"
+      },
+      {
+        "step": 22,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 53,
+        "n4": 11,
+        "first4": 53,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111144444444444"
+      },
+      {
+        "step": 23,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 53,
+        "n4": 11,
+        "first4": 53,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111144444444444"
+      },
+      {
+        "step": 24,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 52,
+        "n4": 12,
+        "first4": 52,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111444444444444"
+      },
+      {
+        "step": 25,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 52,
+        "n4": 12,
+        "first4": 52,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111444444444444"
+      },
+      {
+        "step": 26,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 51,
+        "n4": 13,
+        "first4": 51,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111114444444444444"
+      },
+      {
+        "step": 27,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 51,
+        "n4": 13,
+        "first4": 51,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111114444444444444"
+      },
+      {
+        "step": 28,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 50,
+        "n4": 14,
+        "first4": 50,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111144444444444444"
+      },
+      {
+        "step": 29,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 50,
+        "n4": 14,
+        "first4": 50,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111144444444444444"
+      },
+      {
+        "step": 30,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 49,
+        "n4": 15,
+        "first4": 49,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111444444444444444"
+      },
+      {
+        "step": 31,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 49,
+        "n4": 15,
+        "first4": 49,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111444444444444444"
+      },
+      {
+        "step": 32,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 48,
+        "n4": 16,
+        "first4": 48,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11114444444444444444"
+      },
+      {
+        "step": 33,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 48,
+        "n4": 16,
+        "first4": 48,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11114444444444444444"
+      },
+      {
+        "step": 34,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 47,
+        "n4": 17,
+        "first4": 47,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11144444444444444444"
+      },
+      {
+        "step": 35,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 47,
+        "n4": 17,
+        "first4": 47,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11144444444444444444"
+      },
+      {
+        "step": 36,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 46,
+        "n4": 18,
+        "first4": 46,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11444444444444444444"
+      },
+      {
+        "step": 37,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 46,
+        "n4": 18,
+        "first4": 46,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11444444444444444444"
+      },
+      {
+        "step": 38,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 45,
+        "n4": 19,
+        "first4": 45,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "14444444444444444444"
+      },
+      {
+        "step": 39,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 45,
+        "n4": 19,
+        "first4": 45,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "14444444444444444444"
+      },
+      {
+        "step": 40,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 44,
+        "n4": 20,
+        "first4": 44,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 41,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 44,
+        "n4": 20,
+        "first4": 44,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 42,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 43,
+        "n4": 21,
+        "first4": 43,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 43,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 43,
+        "n4": 21,
+        "first4": 43,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 44,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 42,
+        "n4": 22,
+        "first4": 42,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 45,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 42,
+        "n4": 22,
+        "first4": 42,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 46,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 41,
+        "n4": 23,
+        "first4": 41,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 47,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 41,
+        "n4": 23,
+        "first4": 41,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 48,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 40,
+        "n4": 24,
+        "first4": 40,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 49,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 40,
+        "n4": 24,
+        "first4": 40,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 50,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 39,
+        "n4": 25,
+        "first4": 39,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 51,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 39,
+        "n4": 25,
+        "first4": 39,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 52,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 38,
+        "n4": 26,
+        "first4": 38,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 53,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 38,
+        "n4": 26,
+        "first4": 38,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 54,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 37,
+        "n4": 27,
+        "first4": 37,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 55,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 37,
+        "n4": 27,
+        "first4": 37,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 56,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 36,
+        "n4": 28,
+        "first4": 36,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 57,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 36,
+        "n4": 28,
+        "first4": 36,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 58,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 35,
+        "n4": 29,
+        "first4": 35,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 59,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 35,
+        "n4": 29,
+        "first4": 35,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 60,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 34,
+        "n4": 30,
+        "first4": 34,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 61,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 34,
+        "n4": 30,
+        "first4": 34,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 62,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 33,
+        "n4": 31,
+        "first4": 33,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 63,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 33,
+        "n4": 31,
+        "first4": 33,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 64,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 32,
+        "n4": 32,
+        "first4": 32,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      }
+    ],
+    "spam4_x64": [
+      {
+        "step": 0,
+        "act": null,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {},
+          "id": 0,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 64,
+        "n4": 0,
+        "first4": null,
+        "last4": null,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111111"
+      },
+      {
+        "step": 1,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 64,
+        "n4": 0,
+        "first4": null,
+        "last4": null,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111111"
+      },
+      {
+        "step": 2,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 63,
+        "n4": 1,
+        "first4": 63,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111114"
+      },
+      {
+        "step": 3,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 63,
+        "n4": 1,
+        "first4": 63,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111114"
+      },
+      {
+        "step": 4,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 62,
+        "n4": 2,
+        "first4": 62,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111144"
+      },
+      {
+        "step": 5,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 62,
+        "n4": 2,
+        "first4": 62,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111144"
+      },
+      {
+        "step": 6,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 61,
+        "n4": 3,
+        "first4": 61,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111444"
+      },
+      {
+        "step": 7,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 61,
+        "n4": 3,
+        "first4": 61,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111444"
+      },
+      {
+        "step": 8,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 60,
+        "n4": 4,
+        "first4": 60,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111114444"
+      },
+      {
+        "step": 9,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 60,
+        "n4": 4,
+        "first4": 60,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111114444"
+      },
+      {
+        "step": 10,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 59,
+        "n4": 5,
+        "first4": 59,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111144444"
+      },
+      {
+        "step": 11,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 59,
+        "n4": 5,
+        "first4": 59,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111144444"
+      },
+      {
+        "step": 12,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 58,
+        "n4": 6,
+        "first4": 58,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111444444"
+      },
+      {
+        "step": 13,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 58,
+        "n4": 6,
+        "first4": 58,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111444444"
+      },
+      {
+        "step": 14,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 57,
+        "n4": 7,
+        "first4": 57,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111114444444"
+      },
+      {
+        "step": 15,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 57,
+        "n4": 7,
+        "first4": 57,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111114444444"
+      },
+      {
+        "step": 16,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 56,
+        "n4": 8,
+        "first4": 56,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111144444444"
+      },
+      {
+        "step": 17,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 56,
+        "n4": 8,
+        "first4": 56,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111144444444"
+      },
+      {
+        "step": 18,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 55,
+        "n4": 9,
+        "first4": 55,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111444444444"
+      },
+      {
+        "step": 19,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 55,
+        "n4": 9,
+        "first4": 55,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111444444444"
+      },
+      {
+        "step": 20,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 54,
+        "n4": 10,
+        "first4": 54,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111114444444444"
+      },
+      {
+        "step": 21,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 54,
+        "n4": 10,
+        "first4": 54,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111114444444444"
+      },
+      {
+        "step": 22,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 53,
+        "n4": 11,
+        "first4": 53,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111144444444444"
+      },
+      {
+        "step": 23,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 53,
+        "n4": 11,
+        "first4": 53,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111144444444444"
+      },
+      {
+        "step": 24,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 52,
+        "n4": 12,
+        "first4": 52,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111444444444444"
+      },
+      {
+        "step": 25,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 52,
+        "n4": 12,
+        "first4": 52,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111444444444444"
+      },
+      {
+        "step": 26,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 51,
+        "n4": 13,
+        "first4": 51,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111114444444444444"
+      },
+      {
+        "step": 27,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 51,
+        "n4": 13,
+        "first4": 51,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111114444444444444"
+      },
+      {
+        "step": 28,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 50,
+        "n4": 14,
+        "first4": 50,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111144444444444444"
+      },
+      {
+        "step": 29,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 50,
+        "n4": 14,
+        "first4": 50,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111144444444444444"
+      },
+      {
+        "step": 30,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 49,
+        "n4": 15,
+        "first4": 49,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111444444444444444"
+      },
+      {
+        "step": 31,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 49,
+        "n4": 15,
+        "first4": 49,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111444444444444444"
+      },
+      {
+        "step": 32,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 48,
+        "n4": 16,
+        "first4": 48,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11114444444444444444"
+      },
+      {
+        "step": 33,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 48,
+        "n4": 16,
+        "first4": 48,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11114444444444444444"
+      },
+      {
+        "step": 34,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 47,
+        "n4": 17,
+        "first4": 47,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11144444444444444444"
+      },
+      {
+        "step": 35,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 47,
+        "n4": 17,
+        "first4": 47,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11144444444444444444"
+      },
+      {
+        "step": 36,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 46,
+        "n4": 18,
+        "first4": 46,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11444444444444444444"
+      },
+      {
+        "step": 37,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 46,
+        "n4": 18,
+        "first4": 46,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11444444444444444444"
+      },
+      {
+        "step": 38,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 45,
+        "n4": 19,
+        "first4": 45,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "14444444444444444444"
+      },
+      {
+        "step": 39,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 45,
+        "n4": 19,
+        "first4": 45,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "14444444444444444444"
+      },
+      {
+        "step": 40,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 44,
+        "n4": 20,
+        "first4": 44,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 41,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 44,
+        "n4": 20,
+        "first4": 44,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 42,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 43,
+        "n4": 21,
+        "first4": 43,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 43,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 43,
+        "n4": 21,
+        "first4": 43,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 44,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 42,
+        "n4": 22,
+        "first4": 42,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 45,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 42,
+        "n4": 22,
+        "first4": 42,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 46,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 41,
+        "n4": 23,
+        "first4": 41,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 47,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 41,
+        "n4": 23,
+        "first4": 41,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 48,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 40,
+        "n4": 24,
+        "first4": 40,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 49,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 40,
+        "n4": 24,
+        "first4": 40,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 50,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 39,
+        "n4": 25,
+        "first4": 39,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 51,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 39,
+        "n4": 25,
+        "first4": 39,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 52,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 38,
+        "n4": 26,
+        "first4": 38,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 53,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 38,
+        "n4": 26,
+        "first4": 38,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 54,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 37,
+        "n4": 27,
+        "first4": 37,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 55,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 37,
+        "n4": 27,
+        "first4": 37,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 56,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 36,
+        "n4": 28,
+        "first4": 36,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 57,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 36,
+        "n4": 28,
+        "first4": 36,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 58,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 35,
+        "n4": 29,
+        "first4": 35,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 59,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 35,
+        "n4": 29,
+        "first4": 35,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 60,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 34,
+        "n4": 30,
+        "first4": 34,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 61,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 34,
+        "n4": 30,
+        "first4": 34,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 62,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 33,
+        "n4": 31,
+        "first4": 33,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 63,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 33,
+        "n4": 31,
+        "first4": 33,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 64,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 32,
+        "n4": 32,
+        "first4": 32,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      }
+    ],
+    "spam3_x64": [
+      {
+        "step": 0,
+        "act": null,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {},
+          "id": 0,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 64,
+        "n4": 0,
+        "first4": null,
+        "last4": null,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111111"
+      },
+      {
+        "step": 1,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 64,
+        "n4": 0,
+        "first4": null,
+        "last4": null,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111111"
+      },
+      {
+        "step": 2,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 63,
+        "n4": 1,
+        "first4": 63,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111114"
+      },
+      {
+        "step": 3,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 63,
+        "n4": 1,
+        "first4": 63,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111114"
+      },
+      {
+        "step": 4,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 62,
+        "n4": 2,
+        "first4": 62,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111144"
+      },
+      {
+        "step": 5,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 62,
+        "n4": 2,
+        "first4": 62,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111144"
+      },
+      {
+        "step": 6,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 61,
+        "n4": 3,
+        "first4": 61,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111444"
+      },
+      {
+        "step": 7,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 61,
+        "n4": 3,
+        "first4": 61,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111444"
+      },
+      {
+        "step": 8,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 60,
+        "n4": 4,
+        "first4": 60,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111114444"
+      },
+      {
+        "step": 9,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 60,
+        "n4": 4,
+        "first4": 60,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111114444"
+      },
+      {
+        "step": 10,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 59,
+        "n4": 5,
+        "first4": 59,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111144444"
+      },
+      {
+        "step": 11,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 59,
+        "n4": 5,
+        "first4": 59,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111144444"
+      },
+      {
+        "step": 12,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 58,
+        "n4": 6,
+        "first4": 58,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111444444"
+      },
+      {
+        "step": 13,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 58,
+        "n4": 6,
+        "first4": 58,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111444444"
+      },
+      {
+        "step": 14,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 57,
+        "n4": 7,
+        "first4": 57,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111114444444"
+      },
+      {
+        "step": 15,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 57,
+        "n4": 7,
+        "first4": 57,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111114444444"
+      },
+      {
+        "step": 16,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 56,
+        "n4": 8,
+        "first4": 56,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111144444444"
+      },
+      {
+        "step": 17,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 56,
+        "n4": 8,
+        "first4": 56,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111144444444"
+      },
+      {
+        "step": 18,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 55,
+        "n4": 9,
+        "first4": 55,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111444444444"
+      },
+      {
+        "step": 19,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 55,
+        "n4": 9,
+        "first4": 55,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111444444444"
+      },
+      {
+        "step": 20,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 54,
+        "n4": 10,
+        "first4": 54,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111114444444444"
+      },
+      {
+        "step": 21,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 54,
+        "n4": 10,
+        "first4": 54,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111114444444444"
+      },
+      {
+        "step": 22,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 53,
+        "n4": 11,
+        "first4": 53,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111144444444444"
+      },
+      {
+        "step": 23,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 53,
+        "n4": 11,
+        "first4": 53,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111144444444444"
+      },
+      {
+        "step": 24,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 52,
+        "n4": 12,
+        "first4": 52,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111444444444444"
+      },
+      {
+        "step": 25,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 52,
+        "n4": 12,
+        "first4": 52,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111444444444444"
+      },
+      {
+        "step": 26,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 51,
+        "n4": 13,
+        "first4": 51,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111114444444444444"
+      },
+      {
+        "step": 27,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 51,
+        "n4": 13,
+        "first4": 51,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111114444444444444"
+      },
+      {
+        "step": 28,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 50,
+        "n4": 14,
+        "first4": 50,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111144444444444444"
+      },
+      {
+        "step": 29,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 50,
+        "n4": 14,
+        "first4": 50,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111144444444444444"
+      },
+      {
+        "step": 30,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 49,
+        "n4": 15,
+        "first4": 49,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111444444444444444"
+      },
+      {
+        "step": 31,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 49,
+        "n4": 15,
+        "first4": 49,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111444444444444444"
+      },
+      {
+        "step": 32,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 48,
+        "n4": 16,
+        "first4": 48,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11114444444444444444"
+      },
+      {
+        "step": 33,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 48,
+        "n4": 16,
+        "first4": 48,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11114444444444444444"
+      },
+      {
+        "step": 34,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 47,
+        "n4": 17,
+        "first4": 47,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11144444444444444444"
+      },
+      {
+        "step": 35,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 47,
+        "n4": 17,
+        "first4": 47,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11144444444444444444"
+      },
+      {
+        "step": 36,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 46,
+        "n4": 18,
+        "first4": 46,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11444444444444444444"
+      },
+      {
+        "step": 37,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 46,
+        "n4": 18,
+        "first4": 46,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11444444444444444444"
+      },
+      {
+        "step": 38,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 45,
+        "n4": 19,
+        "first4": 45,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "14444444444444444444"
+      },
+      {
+        "step": 39,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 45,
+        "n4": 19,
+        "first4": 45,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "14444444444444444444"
+      },
+      {
+        "step": 40,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 44,
+        "n4": 20,
+        "first4": 44,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 41,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 44,
+        "n4": 20,
+        "first4": 44,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 42,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 43,
+        "n4": 21,
+        "first4": 43,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 43,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 43,
+        "n4": 21,
+        "first4": 43,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 44,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 42,
+        "n4": 22,
+        "first4": 42,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 45,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 42,
+        "n4": 22,
+        "first4": 42,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 46,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 41,
+        "n4": 23,
+        "first4": 41,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 47,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 41,
+        "n4": 23,
+        "first4": 41,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 48,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 40,
+        "n4": 24,
+        "first4": 40,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 49,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 40,
+        "n4": 24,
+        "first4": 40,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 50,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 39,
+        "n4": 25,
+        "first4": 39,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 51,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 39,
+        "n4": 25,
+        "first4": 39,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 52,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 38,
+        "n4": 26,
+        "first4": 38,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 53,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 38,
+        "n4": 26,
+        "first4": 38,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 54,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 37,
+        "n4": 27,
+        "first4": 37,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 55,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 37,
+        "n4": 27,
+        "first4": 37,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 56,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 36,
+        "n4": 28,
+        "first4": 36,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 57,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 36,
+        "n4": 28,
+        "first4": 36,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 58,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 35,
+        "n4": 29,
+        "first4": 35,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 59,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 35,
+        "n4": 29,
+        "first4": 35,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 60,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 34,
+        "n4": 30,
+        "first4": 34,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 61,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 34,
+        "n4": 30,
+        "first4": 34,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 62,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 33,
+        "n4": 31,
+        "first4": 33,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 63,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 33,
+        "n4": 31,
+        "first4": 33,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 64,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 32,
+        "n4": 32,
+        "first4": 32,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      }
+    ],
+    "alt14_x64": [
+      {
+        "step": 0,
+        "act": null,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {},
+          "id": 0,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 64,
+        "n4": 0,
+        "first4": null,
+        "last4": null,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111111"
+      },
+      {
+        "step": 1,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 64,
+        "n4": 0,
+        "first4": null,
+        "last4": null,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111111"
+      },
+      {
+        "step": 2,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 63,
+        "n4": 1,
+        "first4": 63,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111114"
+      },
+      {
+        "step": 3,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 63,
+        "n4": 1,
+        "first4": 63,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111114"
+      },
+      {
+        "step": 4,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 62,
+        "n4": 2,
+        "first4": 62,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111144"
+      },
+      {
+        "step": 5,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 62,
+        "n4": 2,
+        "first4": 62,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111144"
+      },
+      {
+        "step": 6,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 61,
+        "n4": 3,
+        "first4": 61,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111444"
+      },
+      {
+        "step": 7,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 61,
+        "n4": 3,
+        "first4": 61,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111444"
+      },
+      {
+        "step": 8,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 60,
+        "n4": 4,
+        "first4": 60,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111114444"
+      },
+      {
+        "step": 9,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 60,
+        "n4": 4,
+        "first4": 60,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111114444"
+      },
+      {
+        "step": 10,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 59,
+        "n4": 5,
+        "first4": 59,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111144444"
+      },
+      {
+        "step": 11,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 59,
+        "n4": 5,
+        "first4": 59,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111144444"
+      },
+      {
+        "step": 12,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 58,
+        "n4": 6,
+        "first4": 58,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111444444"
+      },
+      {
+        "step": 13,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 58,
+        "n4": 6,
+        "first4": 58,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111444444"
+      },
+      {
+        "step": 14,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 57,
+        "n4": 7,
+        "first4": 57,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111114444444"
+      },
+      {
+        "step": 15,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 57,
+        "n4": 7,
+        "first4": 57,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111114444444"
+      },
+      {
+        "step": 16,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 56,
+        "n4": 8,
+        "first4": 56,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111144444444"
+      },
+      {
+        "step": 17,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 56,
+        "n4": 8,
+        "first4": 56,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111144444444"
+      },
+      {
+        "step": 18,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 55,
+        "n4": 9,
+        "first4": 55,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111444444444"
+      },
+      {
+        "step": 19,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 55,
+        "n4": 9,
+        "first4": 55,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111444444444"
+      },
+      {
+        "step": 20,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 54,
+        "n4": 10,
+        "first4": 54,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111114444444444"
+      },
+      {
+        "step": 21,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 54,
+        "n4": 10,
+        "first4": 54,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111114444444444"
+      },
+      {
+        "step": 22,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 53,
+        "n4": 11,
+        "first4": 53,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111144444444444"
+      },
+      {
+        "step": 23,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 53,
+        "n4": 11,
+        "first4": 53,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111144444444444"
+      },
+      {
+        "step": 24,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 52,
+        "n4": 12,
+        "first4": 52,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111444444444444"
+      },
+      {
+        "step": 25,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 52,
+        "n4": 12,
+        "first4": 52,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111444444444444"
+      },
+      {
+        "step": 26,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 51,
+        "n4": 13,
+        "first4": 51,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111114444444444444"
+      },
+      {
+        "step": 27,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 51,
+        "n4": 13,
+        "first4": 51,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111114444444444444"
+      },
+      {
+        "step": 28,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 50,
+        "n4": 14,
+        "first4": 50,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111144444444444444"
+      },
+      {
+        "step": 29,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 50,
+        "n4": 14,
+        "first4": 50,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111144444444444444"
+      },
+      {
+        "step": 30,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 49,
+        "n4": 15,
+        "first4": 49,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111444444444444444"
+      },
+      {
+        "step": 31,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 49,
+        "n4": 15,
+        "first4": 49,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111444444444444444"
+      },
+      {
+        "step": 32,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 48,
+        "n4": 16,
+        "first4": 48,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11114444444444444444"
+      },
+      {
+        "step": 33,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 48,
+        "n4": 16,
+        "first4": 48,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11114444444444444444"
+      },
+      {
+        "step": 34,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 47,
+        "n4": 17,
+        "first4": 47,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11144444444444444444"
+      },
+      {
+        "step": 35,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 47,
+        "n4": 17,
+        "first4": 47,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11144444444444444444"
+      },
+      {
+        "step": 36,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 46,
+        "n4": 18,
+        "first4": 46,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11444444444444444444"
+      },
+      {
+        "step": 37,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 46,
+        "n4": 18,
+        "first4": 46,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11444444444444444444"
+      },
+      {
+        "step": 38,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 45,
+        "n4": 19,
+        "first4": 45,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "14444444444444444444"
+      },
+      {
+        "step": 39,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 45,
+        "n4": 19,
+        "first4": 45,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "14444444444444444444"
+      },
+      {
+        "step": 40,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 44,
+        "n4": 20,
+        "first4": 44,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 41,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 44,
+        "n4": 20,
+        "first4": 44,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 42,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 43,
+        "n4": 21,
+        "first4": 43,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 43,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 43,
+        "n4": 21,
+        "first4": 43,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 44,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 42,
+        "n4": 22,
+        "first4": 42,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 45,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 42,
+        "n4": 22,
+        "first4": 42,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 46,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 41,
+        "n4": 23,
+        "first4": 41,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 47,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 41,
+        "n4": 23,
+        "first4": 41,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 48,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 40,
+        "n4": 24,
+        "first4": 40,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 49,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 40,
+        "n4": 24,
+        "first4": 40,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 50,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 39,
+        "n4": 25,
+        "first4": 39,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 51,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 39,
+        "n4": 25,
+        "first4": 39,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 52,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 38,
+        "n4": 26,
+        "first4": 38,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 53,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 38,
+        "n4": 26,
+        "first4": 38,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 54,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 37,
+        "n4": 27,
+        "first4": 37,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 55,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 37,
+        "n4": 27,
+        "first4": 37,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 56,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 36,
+        "n4": 28,
+        "first4": 36,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 57,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 36,
+        "n4": 28,
+        "first4": 36,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 58,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 35,
+        "n4": 29,
+        "first4": 35,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 59,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 35,
+        "n4": 29,
+        "first4": 35,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 60,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 34,
+        "n4": 30,
+        "first4": 34,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 61,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 34,
+        "n4": 30,
+        "first4": 34,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 62,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 33,
+        "n4": 31,
+        "first4": 33,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 63,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 1,
+        "n1": 33,
+        "n4": 31,
+        "first4": 33,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 64,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 32,
+        "n4": 32,
+        "first4": 32,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      }
+    ],
+    "fill_act1": [
+      {
+        "step": 0,
+        "act": null,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {},
+          "id": 0,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 64,
+        "n4": 0,
+        "first4": null,
+        "last4": null,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111111"
+      },
+      {
+        "step": 0,
+        "act": null,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {},
+          "id": 0,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 64,
+        "n4": 0,
+        "first4": null,
+        "last4": null,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111111"
+      },
+      {
+        "step": 1,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 64,
+        "n4": 0,
+        "first4": null,
+        "last4": null,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111111"
+      },
+      {
+        "step": 2,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 63,
+        "n4": 1,
+        "first4": 63,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111114"
+      },
+      {
+        "step": 3,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 63,
+        "n4": 1,
+        "first4": 63,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111114"
+      },
+      {
+        "step": 7,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 61,
+        "n4": 3,
+        "first4": 61,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111444"
+      },
+      {
+        "step": 14,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 57,
+        "n4": 7,
+        "first4": 57,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111114444444"
+      },
+      {
+        "step": 21,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 54,
+        "n4": 10,
+        "first4": 54,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111114444444444"
+      },
+      {
+        "step": 32,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 48,
+        "n4": 16,
+        "first4": 48,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11114444444444444444"
+      },
+      {
+        "step": 48,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 40,
+        "n4": 24,
+        "first4": 40,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 63,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 33,
+        "n4": 31,
+        "first4": 33,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 64,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 32,
+        "n4": 32,
+        "first4": 32,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 65,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 32,
+        "n4": 32,
+        "first4": 32,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 126,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 1,
+        "n4": 63,
+        "first4": 1,
+        "last4": 63,
+        "run_head": "14444444444444444444",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 127,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 1,
+        "n4": 63,
+        "first4": 1,
+        "last4": 63,
+        "run_head": "14444444444444444444",
+        "run_tail": "44444444444444444444"
+      },
+      {
+        "step": 128,
+        "act": 1,
+        "lv": 0,
+        "state": "GAME_OVER",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 0,
+        "n4": 64,
+        "first4": 0,
+        "last4": 63,
+        "run_head": "44444444444444444444",
+        "run_tail": "44444444444444444444"
+      }
+    ]
+  },
+  "cleared": false,
+  "findings": [
+    {
+      "spam1_first4": {
+        "step": 2,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 63,
+        "n4": 1,
+        "first4": 63,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111114"
+      }
+    },
+    {
+      "spam4_first4": {
+        "step": 2,
+        "act": 4,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 4,
+          "reasoning": null
+        },
+        "sel": 2,
+        "n1": 63,
+        "n4": 1,
+        "first4": 63,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111114"
+      }
+    },
+    {
+      "spam3_first4": {
+        "step": 2,
+        "act": 3,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 3,
+          "reasoning": null
+        },
+        "sel": 3,
+        "n1": 63,
+        "n4": 1,
+        "first4": 63,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "11111111111111111114"
+      }
+    },
+    {
+      "fill_act1_end": {
+        "step": 128,
+        "act": 1,
+        "lv": 0,
+        "state": "GAME_OVER",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 0,
+        "n1": 0,
+        "n4": 64,
+        "first4": 0,
+        "last4": 63,
+        "run_head": "44444444444444444444",
+        "run_tail": "44444444444444444444"
+      },
+      "n_steps": 128
+    },
+    {
+      "full_period_all_slots": {
+        "step": 39,
+        "act": 1,
+        "lv": 0,
+        "state": "NOT_FINISHED",
+        "full_reset": false,
+        "action_input": {
+          "data": {
+            "game_id": "tr87-cd924810"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "sel": 4,
+        "n1": 45,
+        "n4": 19,
+        "first4": 45,
+        "last4": 63,
+        "run_head": "11111111111111111111",
+        "run_tail": "14444444444444444444"
+      },
+      "n_acts": 39
+    },
+    {
+      "action_input_trace": [
+        {
+          "i": 1,
+          "action_input": {
+            "data": {
+              "game_id": "tr87-cd924810"
+            },
+            "id": 1,
+            "reasoning": null
+          },
+          "n4": 0,
+          "keys": [
+            "action_input",
+            "available_actions",
+            "full_reset",
+            "game_id",
+            "guid",
+            "levels_completed",
+            "state",
+            "win_levels"
+          ]
+        },
+        {
+          "i": 2,
+          "action_input": {
+            "data": {
+              "game_id": "tr87-cd924810"
+            },
+            "id": 1,
+            "reasoning": null
+          },
+          "n4": 1,
+          "keys": [
+            "action_input",
+            "available_actions",
+            "full_reset",
+            "game_id",
+            "guid",
+            "levels_completed",
+            "state",
+            "win_levels"
+          ]
+        },
+        {
+          "i": 3,
+          "action_input": {
+            "data": {
+              "game_id": "tr87-cd924810"
+            },
+            "id": 1,
+            "reasoning": null
+          },
+          "n4": 1,
+          "keys": [
+            "action_input",
+            "available_actions",
+            "full_reset",
+            "game_id",
+            "guid",
+            "levels_completed",
+            "state",
+            "win_levels"
+          ]
+        },
+        {
+          "i": 4,
+          "action_input": {
+            "data": {
+              "game_id": "tr87-cd924810"
+            },
+            "id": 1,
+            "reasoning": null
+          },
+          "n4": 2,
+          "keys": [
+            "action_input",
+            "available_actions",
+            "full_reset",
+            "game_id",
+            "guid",
+            "levels_completed",
+            "state",
+            "win_levels"
+          ]
+        },
+        {
+          "i": 5,
+          "action_input": {
+            "data": {
+              "game_id": "tr87-cd924810"
+            },
+            "id": 1,
+            "reasoning": null
+          },
+          "n4": 2,
+          "keys": [
+            "action_input",
+            "available_actions",
+            "full_reset",
+            "game_id",
+            "guid",
+            "levels_completed",
+            "state",
+            "win_levels"
+          ]
+        },
+        {
+          "i": 6,
+          "action_input": {
+            "data": {
+              "game_id": "tr87-cd924810"
+            },
+            "id": 1,
+            "reasoning": null
+          },
+          "n4": 3,
+          "keys": [
+            "action_input",
+            "available_actions",
+            "full_reset",
+            "game_id",
+            "guid",
+            "levels_completed",
+            "state",
+            "win_levels"
+          ]
+        },
+        {
+          "i": 7,
+          "action_input": {
+            "data": {
+              "game_id": "tr87-cd924810"
+            },
+            "id": 1,
+            "reasoning": null
+          },
+          "n4": 3,
+          "keys": [
+            "action_input",
+            "available_actions",
+            "full_reset",
+            "game_id",
+            "guid",
+            "levels_completed",
+            "state",
+            "win_levels"
+          ]
+        },
+        {
+          "i": 8,
+          "action_input": {
+            "data": {
+              "game_id": "tr87-cd924810"
+            },
+            "id": 1,
+            "reasoning": null
+          },
+          "n4": 4,
+          "keys": [
+            "action_input",
+            "available_actions",
+            "full_reset",
+            "game_id",
+            "guid",
+            "levels_completed",
+            "state",
+            "win_levels"
+          ]
+        },
+        {
+          "i": 9,
+          "action_input": {
+            "data": {
+              "game_id": "tr87-cd924810"
+            },
+            "id": 1,
+            "reasoning": null
+          },
+          "n4": 4,
+          "keys": [
+            "action_input",
+            "available_actions",
+            "full_reset",
+            "game_id",
+            "guid",
+            "levels_completed",
+            "state",
+            "win_levels"
+          ]
+        },
+        {
+          "i": 10,
+          "action_input": {
+            "data": {
+              "game_id": "tr87-cd924810"
+            },
+            "id": 1,
+            "reasoning": null
+          },
+          "n4": 5,
+          "keys": [
+            "action_input",
+            "available_actions",
+            "full_reset",
+            "game_id",
+            "guid",
+            "levels_completed",
+            "state",
+            "win_levels"
+          ]
+        },
+        {
+          "i": 11,
+          "action_input": {
+            "data": {
+              "game_id": "tr87-cd924810"
+            },
+            "id": 1,
+            "reasoning": null
+          },
+          "n4": 5,
+          "keys": [
+            "action_input",
+            "available_actions",
+            "full_reset",
+            "game_id",
+            "guid",
+            "levels_completed",
+            "state",
+            "win_levels"
+          ]
+        },
+        {
+          "i": 12,
+          "action_input": {
+            "data": {
+              "game_id": "tr87-cd924810"
+            },
+            "id": 1,
+            "reasoning": null
+          },
+          "n4": 6,
+          "keys": [
+            "action_input",
+            "available_actions",
+            "full_reset",
+            "game_id",
+            "guid",
+            "levels_completed",
+            "state",
+            "win_levels"
+          ]
+        },
+        {
+          "i": 13,
+          "action_input": {
+            "data": {
+              "game_id": "tr87-cd924810"
+            },
+            "id": 1,
+            "reasoning": null
+          },
+          "n4": 6,
+          "keys": [
+            "action_input",
+            "available_actions",
+            "full_reset",
+            "game_id",
+            "guid",
+            "levels_completed",
+            "state",
+            "win_levels"
+          ]
+        },
+        {
+          "i": 14,
+          "action_input": {
+            "data": {
+              "game_id": "tr87-cd924810"
+            },
+            "id": 1,
+            "reasoning": null
+          },
+          "n4": 7,
+          "keys": [
+            "action_input",
+            "available_actions",
+            "full_reset",
+            "game_id",
+            "guid",
+            "levels_completed",
+            "state",
+            "win_levels"
+          ]
+        },
+        {
+          "i": 15,
+          "action_input": {
+            "data": {
+              "game_id": "tr87-cd924810"
+            },
+            "id": 1,
+            "reasoning": null
+          },
+          "n4": 7,
+          "keys": [
+            "action_input",
+            "available_actions",
+            "full_reset",
+            "game_id",
+            "guid",
+            "levels_completed",
+            "state",
+            "win_levels"
+          ]
+        },
+        {
+          "i": 16,
+          "action_input": {
+            "data": {
+              "game_id": "tr87-cd924810"
+            },
+            "id": 1,
+            "reasoning": null
+          },
+          "n4": 8,
+          "keys": [
+            "action_input",
+            "available_actions",
+            "full_reset",
+            "game_id",
+            "guid",
+            "levels_completed",
+            "state",
+            "win_levels"
+          ]
+        },
+        {
+          "i": 17,
+          "action_input": {
+            "data": {
+              "game_id": "tr87-cd924810"
+            },
+            "id": 1,
+            "reasoning": null
+          },
+          "n4": 8,
+          "keys": [
+            "action_input",
+            "available_actions",
+            "full_reset",
+            "game_id",
+            "guid",
+            "levels_completed",
+            "state",
+            "win_levels"
+          ]
+        },
+        {
+          "i": 18,
+          "action_input": {
+            "data": {
+              "game_id": "tr87-cd924810"
+            },
+            "id": 1,
+            "reasoning": null
+          },
+          "n4": 9,
+          "keys": [
+            "action_input",
+            "available_actions",
+            "full_reset",
+            "game_id",
+            "guid",
+            "levels_completed",
+            "state",
+            "win_levels"
+          ]
+        },
+        {
+          "i": 19,
+          "action_input": {
+            "data": {
+              "game_id": "tr87-cd924810"
+            },
+            "id": 1,
+            "reasoning": null
+          },
+          "n4": 9,
+          "keys": [
+            "action_input",
+            "available_actions",
+            "full_reset",
+            "game_id",
+            "guid",
+            "levels_completed",
+            "state",
+            "win_levels"
+          ]
+        },
+        {
+          "i": 20,
+          "action_input": {
+            "data": {
+              "game_id": "tr87-cd924810"
+            },
+            "id": 1,
+            "reasoning": null
+          },
+          "n4": 10,
+          "keys": [
+            "action_input",
+            "available_actions",
+            "full_reset",
+            "game_id",
+            "guid",
+            "levels_completed",
+            "state",
+            "win_levels"
+          ]
+        }
+      ]
+    },
+    {
+      "before_soft_check": {
+        "n4": 15,
+        "full_reset": false,
+        "lv": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,578 @@
+{
+  "samples": [
+    {
+      "slot": 0,
+      "step": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED",
+      "acts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sel": 0,
+      "extra_keys": [
+        "action_input",
+        "available_actions",
+        "full_reset",
+        "levels_completed",
+        "win_levels"
+      ]
+    },
+    {
+      "slot": 0,
+      "step": 1,
+      "levels": 0,
+      "state": "NOT_FINISHED",
+      "acts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sel": 0,
+      "extra_keys": [
+        "action_input",
+        "available_actions",
+        "full_reset",
+        "levels_completed",
+        "win_levels"
+      ]
+    },
+    {
+      "slot": 0,
+      "step": 2,
+      "levels": 0,
+      "state": "NOT_FINISHED",
+      "acts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sel": 0,
+      "extra_keys": [
+        "action_input",
+        "available_actions",
+        "full_reset",
+        "levels_completed",
+        "win_levels"
+      ]
+    },
+    {
+      "slot": 1,
+      "step": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED",
+      "acts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sel": 1,
+      "extra_keys": [
+        "action_input",
+        "available_actions",
+        "full_reset",
+        "levels_completed",
+        "win_levels"
+      ]
+    },
+    {
+      "slot": 1,
+      "step": 1,
+      "levels": 0,
+      "state": "NOT_FINISHED",
+      "acts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sel": 1,
+      "extra_keys": [
+        "action_input",
+        "available_actions",
+        "full_reset",
+        "levels_completed",
+        "win_levels"
+      ]
+    },
+    {
+      "slot": 1,
+      "step": 2,
+      "levels": 0,
+      "state": "NOT_FINISHED",
+      "acts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sel": 1,
+      "extra_keys": [
+        "action_input",
+        "available_actions",
+        "full_reset",
+        "levels_completed",
+        "win_levels"
+      ]
+    },
+    {
+      "slot": 2,
+      "step": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED",
+      "acts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sel": 2,
+      "extra_keys": [
+        "action_input",
+        "available_actions",
+        "full_reset",
+        "levels_completed",
+        "win_levels"
+      ]
+    },
+    {
+      "slot": 2,
+      "step": 1,
+      "levels": 0,
+      "state": "NOT_FINISHED",
+      "acts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sel": 2,
+      "extra_keys": [
+        "action_input",
+        "available_actions",
+        "full_reset",
+        "levels_completed",
+        "win_levels"
+      ]
+    },
+    {
+      "slot": 2,
+      "step": 2,
+      "levels": 0,
+      "state": "NOT_FINISHED",
+      "acts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sel": 2,
+      "extra_keys": [
+        "action_input",
+        "available_actions",
+        "full_reset",
+        "levels_completed",
+        "win_levels"
+      ]
+    },
+    {
+      "slot": 3,
+      "step": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED",
+      "acts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sel": 3,
+      "extra_keys": [
+        "action_input",
+        "available_actions",
+        "full_reset",
+        "levels_completed",
+        "win_levels"
+      ]
+    },
+    {
+      "slot": 3,
+      "step": 1,
+      "levels": 0,
+      "state": "NOT_FINISHED",
+      "acts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sel": 3,
+      "extra_keys": [
+        "action_input",
+        "available_actions",
+        "full_reset",
+        "levels_completed",
+        "win_levels"
+      ]
+    },
+    {
+      "slot": 3,
+      "step": 2,
+      "levels": 0,
+      "state": "NOT_FINISHED",
+      "acts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sel": 3,
+      "extra_keys": [
+        "action_input",
+        "available_actions",
+        "full_reset",
+        "levels_completed",
+        "win_levels"
+      ]
+    },
+    {
+      "slot": 4,
+      "step": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED",
+      "acts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sel": 4,
+      "extra_keys": [
+        "action_input",
+        "available_actions",
+        "full_reset",
+        "levels_completed",
+        "win_levels"
+      ]
+    },
+    {
+      "slot": 4,
+      "step": 1,
+      "levels": 0,
+      "state": "NOT_FINISHED",
+      "acts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sel": 4,
+      "extra_keys": [
+        "action_input",
+        "available_actions",
+        "full_reset",
+        "levels_completed",
+        "win_levels"
+      ]
+    },
+    {
+      "slot": 4,
+      "step": 2,
+      "levels": 0,
+      "state": "NOT_FINISHED",
+      "acts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sel": 4,
+      "extra_keys": [
+        "action_input",
+        "available_actions",
+        "full_reset",
+        "levels_completed",
+        "win_levels"
+      ]
+    }
+  ],
+  "reset_keys": [
+    "action_input",
+    "available_actions",
+    "frame",
+    "full_reset",
+    "game_id",
+    "guid",
+    "levels_completed",
+    "state",
+    "win_levels"
+  ],
+  "reset_meta": {
+    "action_input": {
+      "data": {},
+      "id": 0,
+      "reasoning": null
+    },
+    "available_actions": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "full_reset": false,
+    "game_id": "tr87-cd924810",
+    "guid": "678c58a4-8fad-43a4-9fa0-d302929ceb31",
+    "levels_completed": 0,
+    "state": "NOT_FINISHED",
+    "win_levels": 6
+  },
+  "trials": [
+    {
+      "name": "walk_flip1",
+      "seq": [
+        4,
+        1,
+        4,
+        1,
+        4,
+        1,
+        4,
+        1,
+        4,
+        1
+      ],
+      "lv0": 0,
+      "lv1": 0,
+      "cleared": false
+    },
+    {
+      "name": "walk_flip2",
+      "seq": [
+        4,
+        2,
+        4,
+        2,
+        4,
+        2,
+        4,
+        2,
+        4,
+        2
+      ],
+      "lv0": 0,
+      "lv1": 0,
+      "cleared": false
+    },
+    {
+      "name": "all1_then_walk",
+      "seq": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        4,
+        4,
+        4
+      ],
+      "lv0": 0,
+      "lv1": 0,
+      "cleared": false
+    },
+    {
+      "name": "spiral",
+      "seq": [
+        1,
+        4,
+        2,
+        4,
+        1,
+        4,
+        2,
+        4,
+        1
+      ],
+      "lv0": 0,
+      "lv1": 0,
+      "cleared": false
+    },
+    {
+      "name": "only3x5",
+      "seq": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "lv0": 0,
+      "lv1": 0,
+      "cleared": false
+    },
+    {
+      "name": "only4x5",
+      "seq": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "lv0": 0,
+      "lv1": 0,
+      "cleared": false
+    },
+    {
+      "name": "121212",
+      "seq": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2
+      ],
+      "lv0": 0,
+      "lv1": 0,
+      "cleared": false
+    },
+    {
+      "name": "12341234",
+      "seq": [
+        1,
+        2,
+        3,
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "lv0": 0,
+      "lv1": 0,
+      "cleared": false
+    },
+    {
+      "name": "43214321",
+      "seq": [
+        4,
+        3,
+        2,
+        1,
+        4,
+        3,
+        2,
+        1
+      ],
+      "lv0": 0,
+      "lv1": 0,
+      "cleared": false
+    },
+    {
+      "name": "each_slot_one_1",
+      "seq": [
+        1,
+        4,
+        1,
+        4,
+        1,
+        4,
+        1,
+        4,
+        1
+      ],
+      "lv0": 0,
+      "lv1": 0,
+      "cleared": false
+    }
+  ],
+  "align_submit": {
+    "base": [
+      1,
+      1,
+      4,
+      2
+    ],
+    "ends": [
+      {
+        "end": [],
+        "lv1": 0
+      },
+      {
+        "end": [
+          1,
+          2
+        ],
+        "lv1": 0
+      },
+      {
+        "end": [
+          2,
+          1
+        ],
+        "lv1": 0
+      },
+      {
+        "end": [
+          3
+        ],
+        "lv1": 0
+      },
+      {
+        "end": [
+          4
+        ],
+        "lv1": 0
+      },
+      {
+        "end": [
+          3,
+          4
+        ],
+        "lv1": 0
+      },
+      {
+        "end": [
+          4,
+          3
+        ],
+        "lv1": 0
+      },
+      {
+        "end": [
+          1
+        ],
+        "lv1": 0
+      },
+      {
+        "end": [
+          2
+        ],
+        "lv1": 0
+      },
+      {
+        "end": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "lv1": 0
+      }
+    ]
+  },
+  "reading": "META_PARTIAL"
+}

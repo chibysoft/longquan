@@ -1,4 +1,4 @@
-"""Arrive at Ne(45,36) with more bud: skip 4250 / skip 4842 staging / 15-first."""
+"""Save-bud variants: skip east15b and/or S6048 so fin15 leaves bud>=3 for d15→0."""
 from __future__ import annotations
 
 import sys
@@ -11,26 +11,32 @@ from tools.ls20_online_validate import BASE, OnlineSession, _api_key
 from tools.r11l_l2_clear_probe import clear_l2, move_wp, step_budget
 from tools.r11l_l2_probe import ships
 from tools.r11l_l3_2wp_probe import advance_14_mid_east
-from tools.r11l_l3_sync_probe import clear15_corridor, count_free14, haul15_toward, lock_other_ship, near_any
+from tools.r11l_l3_sync_probe import clear15_corridor, count_free14, lock_other_ship, near_any
 from tools.r11l_seated_clear import clear_l1, reset
+
+GOAL14, GOAL15 = (55, 53), (34, 57)
+
+
+def cheb(a, b):
+    return max(abs(a[0] - b[0]), abs(a[1] - b[1]))
 
 
 def dump(data, label):
     fr15 = lock_other_ship(data["frame"], 14)
     free = count_free14(data["frame"], fr15)
-    me = next(s for s in ships(data["frame"]) if s["chrome"] == 14)
+    me14 = next(s for s in ships(data["frame"]) if s["chrome"] == 14)
     me15 = next(s for s in ships(data["frame"]) if s["chrome"] == 15)
-    d14 = abs(me["c"][0] - 55) + abs(me["c"][1] - 53)
-    d15 = abs(me15["c"][0] - 34) + abs(me15["c"][1] - 57)
+    d14 = abs(me14["c"][0] - GOAL14[0]) + abs(me14["c"][1] - GOAL14[1])
+    d15 = abs(me15["c"][0] - GOAL15[0]) + abs(me15["c"][1] - GOAL15[1])
     print(
-        f"{label} ship14={me['c']} d14={d14} free={sorted(free)} "
-        f"d15={d15} fr15={sorted(fr15)} bud={step_budget(data['frame'])}",
+        f"{label} ship14={me14['c']} d14={d14} free={sorted(free)} "
+        f"ship15={me15['c']} d15={d15} fr15={sorted(fr15)} bud={step_budget(data['frame'])}",
         flush=True,
     )
-    return d14, free, fr15
+    return d14, d15, free, fr15
 
 
-def boot_l2():
+def boot_mideast():
     key = _api_key()
     sess = OnlineSession(key)
     r = sess.s.post(
@@ -44,188 +50,266 @@ def boot_l2():
     data = reset(sess)
     data, _ = clear_l1(sess, data)
     data, _ = clear_l2(sess, data)
+    lv0 = data.get("levels_completed") or 0
     freeze14 = lock_other_ship(data["frame"], 15)
     data, _ = clear15_corridor(sess, data, freeze14)
-    data, _ = advance_14_mid_east(sess, data, data.get("levels_completed") or 0, do_clear15=False)
+    data, _ = advance_14_mid_east(sess, data, lv0, do_clear15=False)
     return sess, data
 
 
-def stage15(sess, data, do_4842=True, do_4250=True, do_5850=True):
+def move15(sess, data, cur, tgt):
     freeze14 = lock_other_ship(data["frame"], 15)
-    fr15 = list(lock_other_ship(data["frame"], 14))
-    data, _, st = move_wp(sess, data, max(fr15, key=lambda w: w[0]), (58, 42), freeze14)
-    print(f"5842 {st} bud={step_budget(data['frame'])}", flush=True)
-    if do_4842:
-        freeze14 = lock_other_ship(data["frame"], 15)
-        data, _, st = move_wp(
-            sess,
-            data,
-            min(lock_other_ship(data["frame"], 14), key=lambda w: w[0]),
-            (48, 42),
-            freeze14,
-        )
-        print(f"4842 {st} bud={step_budget(data['frame'])}", flush=True)
-    if do_4250:
-        freeze14 = lock_other_ship(data["frame"], 15)
-        flock = list(lock_other_ship(data["frame"], 14))
-        data, _, st = move_wp(sess, data, min(flock, key=lambda w: w[0]), (42, 50), freeze14)
-        print(f"4250 {st} bud={step_budget(data['frame'])}", flush=True)
-    if do_5850:
-        freeze14 = lock_other_ship(data["frame"], 15)
-        flock = list(lock_other_ship(data["frame"], 14))
-        data, _, st = move_wp(sess, data, max(flock, key=lambda w: w[0]), (58, 50), freeze14)
-        print(f"5850 {st} bud={step_budget(data['frame'])}", flush=True)
-    return data
+    flock = list(lock_other_ship(data["frame"], 14))
+    other = next((w for w in flock if w != cur), cur)
+    if cheb(tgt, other) < 5 or near_any(tgt, list(freeze14), cheb=5):
+        return data, "blocked"
+    data, newc, st = move_wp(sess, data, cur, tgt, freeze14)
+    print(f"  15 {cur}->{tgt} {st}->{newc} bud={step_budget(data['frame']) if 'frame' in data else '?'}", flush=True)
+    if st == "dead" or data.get("state") == "GAME_OVER" or "frame" not in data:
+        return data, "dead"
+    return data, st
 
 
-def frog_se_ne(sess, data):
-    fr15 = lock_other_ship(data["frame"], 14)
-    free = count_free14(data["frame"], fr15)
-    if len(free) != 2:
-        print(f"bad free n={len(free)}", flush=True)
-        return data, False
-    lead = max(free, key=lambda w: w[0])
-    data, _, st = move_wp(sess, data, lead, (lead[0], lead[1] + 4), fr15)
-    print(f"leadS {st}", flush=True)
-    if st == "dead":
-        return data, False
-    fr15 = lock_other_ship(data["frame"], 14)
-    free = count_free14(data["frame"], fr15)
-    lead = max(free, key=lambda w: (w[1], w[0]))
-    lag = min(free, key=lambda w: (w[1], w[0]))
-    data, _, st = move_wp(sess, data, lag, (lag[0] + 2, lead[1] + 4), fr15)
-    print(f"frog {st}", flush=True)
-    if st != "moved":
-        return data, False
-    fr15 = lock_other_ship(data["frame"], 14)
-    free = count_free14(data["frame"], fr15)
-    n = min(free, key=lambda w: (w[1], w[0]))
-    data, _, st = move_wp(sess, data, n, (40, 36), fr15)
-    print(f"Ny36 {st}", flush=True)
-    if st != "moved":
-        return data, False
-    fr15 = lock_other_ship(data["frame"], 14)
-    free = count_free14(data["frame"], fr15)
-    s = max(free, key=lambda w: (w[1], w[0]))
-    # Prefer direct SE
-    for tgt in ((48, 42), (40, 44)):
-        if near_any(tgt, list(fr15), cheb=5):
-            continue
-        others = [w for w in free if w != s]
-        if any(max(abs(tgt[0] - o[0]), abs(tgt[1] - o[1])) < 5 for o in others):
-            continue
-        data, _, st = move_wp(sess, data, s, tgt, fr15)
-        print(f"S {tgt} {st}", flush=True)
-        if st == "dead":
-            return data, False
-        if st == "moved":
-            break
+def move14(sess, data, who, tgt):
     fr15 = lock_other_ship(data["frame"], 14)
     free = count_free14(data["frame"], fr15)
     if len(free) < 2:
-        dump(data, "n1")
-        return data, False
-    south = max(free, key=lambda w: (w[0], w[1]))
+        return data, "nfree"
+    lead = max(free, key=lambda w: w[0])
+    lag = min(free, key=lambda w: w[0])
     north = min(free, key=lambda w: (w[1], w[0]))
-    if south[0] >= 46:
-        data, _, st = move_wp(sess, data, north, (45, 36), fr15)
-        print(f"Ne {st}", flush=True)
-    dump(data, "done")
+    south = max(free, key=lambda w: (w[1], w[0]))
+    cur = {"R": lead, "L": lag, "N": north, "S": south}[who]
+    other = next(w for w in free if w != cur)
+    if cheb(tgt, other) < 5 or near_any(tgt, list(fr15), cheb=5):
+        return data, "blocked"
+    data, newc, st = move_wp(sess, data, cur, tgt, fr15)
+    print(f"  14{who} {cur}->{tgt} {st}->{newc} bud={step_budget(data['frame']) if 'frame' in data else '?'}", flush=True)
+    if st == "dead" or data.get("state") == "GAME_OVER" or "frame" not in data:
+        return data, "dead"
+    return data, st
+
+
+def deep15(sess, data, *, do_east15b=True, early_tgt=(40, 56)):
+    freeze14 = lock_other_ship(data["frame"], 15)
+    flock = list(lock_other_ship(data["frame"], 14))
+    west = min(flock, key=lambda w: w[0])
+    east = max(flock, key=lambda w: w[0])
+    if east[0] < 56:
+        for tgt in ((58, 42), (56, 44)):
+            if cheb(tgt, west) < 5:
+                continue
+            data, st = move15(sess, data, east, tgt)
+            if st == "dead":
+                return data, False
+            if st == "moved":
+                freeze14 = lock_other_ship(data["frame"], 15)
+                flock = list(lock_other_ship(data["frame"], 14))
+                west = min(flock, key=lambda w: w[0])
+                east = max(flock, key=lambda w: w[0])
+                break
+    moved_w = False
+    for tgt in ((42, 50), (48, 42)):
+        if cheb(tgt, east) < 5:
+            continue
+        data, st = move15(sess, data, west, tgt)
+        if st == "dead":
+            return data, False
+        if st == "moved":
+            moved_w = True
+            freeze14 = lock_other_ship(data["frame"], 15)
+            flock = list(lock_other_ship(data["frame"], 14))
+            west = min(flock, key=lambda w: w[0])
+            east = max(flock, key=lambda w: w[0])
+            break
+    if not moved_w:
+        return data, False
+    if do_east15b and east[1] < 52:
+        for tgt in ((58, 54), (58, 50)):
+            if cheb(tgt, west) < 5:
+                continue
+            data, st = move15(sess, data, east, tgt)
+            if st == "dead":
+                return data, False
+            if st == "moved":
+                freeze14 = lock_other_ship(data["frame"], 15)
+                flock = list(lock_other_ship(data["frame"], 14))
+                west = min(flock, key=lambda w: w[0])
+                east = max(flock, key=lambda w: w[0])
+                break
+    if early_tgt:
+        east = max(lock_other_ship(data["frame"], 14), key=lambda w: w[0])
+        west = min(lock_other_ship(data["frame"], 14), key=lambda w: w[0])
+        data, st = move15(sess, data, east, early_tgt)
+        if st == "dead":
+            return data, False
+        if st != "moved":
+            # try alts
+            for alt in ((44, 56), (48, 56), (36, 56)):
+                data, st = move15(sess, data, east, alt)
+                if st == "moved":
+                    break
+            if st != "moved":
+                return data, False
+    dump(data, "after-deep")
     return data, True
 
 
-def scan_few(sess, data):
-    d0, free, fr15 = dump(data, "scan")
-    cands = [
-        ((45, 36), (50, 38)),
-        ((45, 36), (48, 40)),
-        ((45, 36), (50, 40)),
-        ((48, 42), (52, 44)),
-        ((48, 42), (50, 46)),
-        ((48, 42), (54, 48)),
-        ((45, 36), (48, 36)),
-    ]
-    for cur0, ld in cands:
-        if step_budget(data["frame"]) < 3:
-            print("budout", flush=True)
-            return
-        fr15 = lock_other_ship(data["frame"], 14)
-        free = count_free14(data["frame"], fr15)
-        if cur0 not in free:
-            continue
-        if near_any(ld, list(fr15), cheb=5):
-            continue
-        others = [w for w in free if w != cur0]
-        if any(max(abs(ld[0] - o[0]), abs(ld[1] - o[1])) < 5 for o in others):
-            continue
-        data, newc, st = move_wp(sess, data, cur0, ld, fr15)
-        me = next(z for z in ships(data["frame"]) if z["chrome"] == 14)
-        d14 = abs(me["c"][0] - 55) + abs(me["c"][1] - 53)
-        print(
-            f"  {cur0}->{ld} {st}->{newc} ship={me['c']} d14={d14}({d14-d0:+d}) "
-            f"bud={step_budget(data['frame'])}",
-            flush=True,
-        )
-        if st == "dead":
-            print("DEAD", flush=True)
-            return
-        if st == "moved" and d14 < d0:
-            print("IMPROVED", flush=True)
-            dump(data, "HIT")
-            return
+def se_to_n6038(sess, data):
+    for who, tgt in (("L", (36, 44)), ("N", (48, 32)), ("S", (60, 44)), ("N", (60, 38))):
+        data, st = move14(sess, data, who, tgt)
+        if st != "moved":
+            return data, False
+    dump(data, "N6038")
+    return data, True
+
+
+def do_s6048(sess, data):
+    data, st = move14(sess, data, "S", (60, 48))
+    if st != "moved":
+        data, st = move14(sess, data, "S", (62, 48))
+    if st != "moved":
+        return data, False
+    dump(data, "S6048")
+    return data, True
+
+
+def do_fin15(sess, data):
+    flock = list(lock_other_ship(data["frame"], 14))
+    if not flock:
+        return data, False
+    rem = sorted(flock, key=lambda w: (abs(w[0] - 42) + abs(w[1] - 50), -w[0]))[0]
+    if rem[0] < 38:
+        # already both near goal — try haul further
+        rem = max(flock, key=lambda w: abs(w[0] - 34) + abs(w[1] - 57))
+    for vt in ((34, 56), (34, 57), (32, 56), (36, 57), (34, 55)):
+        data, st = move15(sess, data, rem, vt)
         if st == "moved":
-            d0 = d14
-            dump(data, "moved")
-            return
+            dump(data, "fin15")
+            return data, True
+        if st == "dead":
+            return data, False
+        rem = sorted(lock_other_ship(data["frame"], 14), key=lambda w: (abs(w[0] - 42) + abs(w[1] - 50), -w[0]))[0]
+    return data, False
+
+
+# After fin15-like pose, try finish d15 / push d14
+FINISH = [
+    ("15goal", "15", (34, 57)),
+    ("15a", "15", (34, 56)),
+    ("15b", "15", (36, 57)),
+    ("15c", "15", (32, 57)),
+    ("15d", "15", (37, 57)),
+    ("14S5553", "14S", (55, 53)),
+    ("14S5550", "14S", (55, 50)),
+    ("14S60452", "14S", (60, 52)),
+]
+
+
+def try_finish(sess, data, d14_0, d15_0):
+    hits = []
+    flock = list(lock_other_ship(data["frame"], 14))
+    free = count_free14(data["frame"], flock)
+    for name, kind, tgt in FINISH:
+        if "frame" not in data or step_budget(data["frame"]) < 2:
+            print("  budout finish", flush=True)
+            break
+        if kind == "15":
+            if not flock:
+                continue
+            # move pad farthest from goal
+            cur = max(flock, key=lambda w: abs(w[0] - GOAL15[0]) + abs(w[1] - GOAL15[1]))
+            data, st = move15(sess, data, cur, tgt)
+        else:
+            data, st = move14(sess, data, "S", tgt)
+        if st == "dead":
+            print("  DEAD finish", flush=True)
+            return hits, True  # need reboot
+        if st != "moved":
+            continue
+        d14, d15, _, _ = dump(data, f"fin-{name}")
+        tag = []
+        if d15 < d15_0:
+            tag.append(f"BEAT15:{d15}")
+        if d14 < d14_0:
+            tag.append(f"BEAT14:{d14}")
+        if d15 == 0:
+            tag.append("D15CLEAR")
+        if d14 == 0:
+            tag.append("D14CLEAR")
+        if (data.get("levels_completed") or 0) >= 3:
+            tag.append("PASS")
+        print(f"RESULT {' '.join(tag) or 'LIVE'} {name}", flush=True)
+        hits.append((tag, name, d14, d15, step_budget(data["frame"])))
+        flock = list(lock_other_ship(data["frame"], 14))
+        # one success path — keep going on same pose for chained finish
+        d14_0, d15_0 = d14, d15
+        if d15 == 0 and d14 == 0:
+            break
+    return hits, False
+
+
+VARIANTS = [
+    # name, do_east15b, do_s6048, early_tgt
+    ("base-v64", True, True, (40, 56)),
+    ("skip-e54", False, True, (40, 56)),
+    ("skip-s6048", True, False, (40, 56)),
+    ("skip-both", False, False, (40, 56)),
+    ("skip-e54-early44", False, True, (44, 56)),
+    ("e54-no-early-fin-only", True, True, None),  # classic then fin only if remnant
+]
 
 
 def main():
-    # A: baseline (expect bud~4)
-    print("\n===== A baseline =====", flush=True)
-    sess, data = boot_l2()
-    data = stage15(sess, data, True, True, True)
-    data, ok = frog_se_ne(sess, data)
-    if ok:
-        scan_few(sess, data)
+    all_hits = []
+    for name, do_e54, do_s60, early in VARIANTS:
+        print(f"\n===== {name} e54={do_e54} s60={do_s60} early={early} =====", flush=True)
+        sess, data = boot_mideast()
+        data, ok = deep15(sess, data, do_east15b=do_e54, early_tgt=early)
+        if not ok:
+            print("SOFT deep", flush=True)
+            continue
+        data, ok = se_to_n6038(sess, data)
+        if not ok:
+            print("SOFT SE", flush=True)
+            continue
+        if do_s60:
+            data, ok = do_s6048(sess, data)
+            if not ok:
+                print("SOFT S6048", flush=True)
+                continue
+        # fin15 if remnant exists
+        data, _ = do_fin15(sess, data)
+        d14, d15, _, _ = dump(data, "pose")
+        beat = ""
+        if d15 < 4:
+            beat = " BEAT15<4"
+        if d14 < 25:
+            beat += " BEAT14<25"
+        print(
+            f"POSE {name} d14={d14} d15={d15} bud={step_budget(data['frame'])}{beat}",
+            flush=True,
+        )
+        hits, dead = try_finish(sess, data, d14, d15)
+        for h in hits:
+            all_hits.append((name,) + h)
+        if (data.get("levels_completed") or 0) >= 3:
+            print("PASS L3!", flush=True)
+            break
 
-    # B: skip 4250 — frog under 4842+5850?
-    print("\n===== B skip4250 =====", flush=True)
-    sess, data = boot_l2()
-    data = stage15(sess, data, True, False, True)
-    data, ok = frog_se_ne(sess, data)
-    if ok:
-        scan_few(sess, data)
-
-    # C: skip 4842 — only 5842 then 5850? need west somehow
-    print("\n===== C skip4842 keep4250 =====", flush=True)
-    sess, data = boot_l2()
-    # 5842, then west from wherever to 4250, then 5850
-    freeze14 = lock_other_ship(data["frame"], 15)
-    fr15 = list(lock_other_ship(data["frame"], 14))
-    data, _, _ = move_wp(sess, data, max(fr15, key=lambda w: w[0]), (58, 42), freeze14)
-    freeze14 = lock_other_ship(data["frame"], 15)
-    flock = list(lock_other_ship(data["frame"], 14))
-    data, _, st = move_wp(sess, data, min(flock, key=lambda w: w[0]), (42, 50), freeze14)
-    print(f"direct4250 {st} bud={step_budget(data['frame'])}", flush=True)
-    if st == "moved":
-        freeze14 = lock_other_ship(data["frame"], 15)
-        flock = list(lock_other_ship(data["frame"], 14))
-        data, _, _ = move_wp(sess, data, max(flock, key=lambda w: w[0]), (58, 50), freeze14)
-        data, ok = frog_se_ne(sess, data)
-        if ok:
-            scan_few(sess, data)
-
-    # D: haul15 after mid-east before frog (spend ~8 on 15)
-    print("\n===== D haul15 then shallow frog =====", flush=True)
-    sess, data = boot_l2()
-    g15 = next(s for s in ships(data["frame"]) if s["chrome"] == 15)
-    # goal hardcoded
-    data, _ = haul15_toward(sess, data, (34, 57), max_step=6, label="15pre")
-    dump(data, "after-haul")
-    data = stage15(sess, data, True, True, True)
-    data, ok = frog_se_ne(sess, data)
-    if ok:
-        scan_few(sess, data)
+    print("\n===== ALL HITS =====", flush=True)
+    for h in all_hits:
+        print(h, flush=True)
+    best = sorted(
+        [h for h in all_hits if h[1]],
+        key=lambda x: (
+            0 if "PASS" in x[1] else 1,
+            x[3] if isinstance(x[3], int) else 99,  # d15
+            x[2] if isinstance(x[2], int) else 99,  # d14
+            -x[4],
+        ),
+    )
+    print("BEST", best[:12] or "none", flush=True)
 
 
 if __name__ == "__main__":

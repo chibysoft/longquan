@@ -6,13 +6,13 @@
 
 |------|-----|
 
-| 状态 | **L1–L3 PASS**；L4：H55 a/b 双线空；中窗门假设动摇 |
+| 状态 | **L1–L3 PASS**；L4：**僵局**（H53–H59 全空） |
 
 | 机制 | 点色9：冲量/开路；强调带对齐同色缝（L1–2 对齐 x，L3 对齐 y）；L4 另有色1→12 门 |
 
 | 验证 | 线上 `levels_completed` 递增 |
 
-| 下一刀 | (c) 顶棚未知东进/微x，或 (d) 不经 mid12 的 3→4 |
+| 下一刀 | 换假设层级，或暂停 L4 并行其它游戏 |
 
 
 
@@ -32,7 +32,7 @@
 
 - L2：`vc33_l2_clear_confirm.py` · `vc33_l2_unblock_hunt.py`
 
-- L4：`vc33_l4_pad_map.py` · `vc33_l4_gate_allpads.py` · `vc33_l4_col26.py` · `vc33_l4_pit_east.py` · `vc33_l4_phase_mid.py` · `vc33_l4_ceil_break.py` · `vc33_l4_pit_carry.py` · `vc33_l4_flank_east.py` · `vc33_l4_east_path.py` · `vc33_l4_dig_offset.py` · `vc33_l4_park_x.py` · `vc33_l4_enter_scan.py` · `vc33_l4_remodel.py` · `vc33_l4_h45_h47_session.py` · `vc33_l4_no_left.py` · `vc33_l4_action_enum.py` · `vc33_l4_postclear_mid.py` · `vc33_l4_c12_phase.py`
+- L4：`vc33_l4_pad_map.py` · `vc33_l4_gate_allpads.py` · `vc33_l4_col26.py` · `vc33_l4_pit_east.py` · `vc33_l4_phase_mid.py` · `vc33_l4_ceil_break.py` · `vc33_l4_pit_carry.py` · `vc33_l4_flank_east.py` · `vc33_l4_east_path.py` · `vc33_l4_dig_offset.py` · `vc33_l4_park_x.py` · `vc33_l4_enter_scan.py` · `vc33_l4_remodel.py` · `vc33_l4_h45_h47_session.py` · `vc33_l4_no_left.py` · `vc33_l4_action_enum.py` · `vc33_l4_postclear_mid.py` · `vc33_l4_c12_phase.py` · `vc33_l4_micro_east.py` · `vc33_l4_bypass_mid.py` · `vc33_l4_flank_grow.py` · `vc33_l4_last_resort.py`
 
 
 

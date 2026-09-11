@@ -1,0 +1,1201 @@
+{
+  "reading": "NO_LAST_RESORT",
+  "hits": [],
+  "odd_colors_union": [],
+  "hist_states": [
+    {
+      "name": "spawn",
+      "hist": {
+        "0": 450,
+        "1": 72,
+        "3": 3068,
+        "4": 16,
+        "5": 354,
+        "7": 64,
+        "9": 54,
+        "11": 18
+      },
+      "novel": {},
+      "meta": {
+        "action_input": {
+          "data": {
+            "game_id": "vc33-5430563c"
+          },
+          "id": 1,
+          "reasoning": null
+        },
+        "available_actions": [
+          6
+        ],
+        "full_reset": false,
+        "game_id": "vc33-5430563c",
+        "levels_completed": 3,
+        "state": "NOT_FINISHED",
+        "win_levels": 7
+      }
+    },
+    {
+      "name": "convert",
+      "hist": {
+        "0": 466,
+        "1": 36,
+        "3": 3052,
+        "4": 19,
+        "5": 354,
+        "7": 61,
+        "9": 54,
+        "11": 18,
+        "12": 36
+      },
+      "novel": {},
+      "meta": {
+        "action_input": {
+          "data": {
+            "game_id": "vc33-5430563c",
+            "x": 16,
+            "y": 62
+          },
+          "id": 6,
+          "reasoning": null
+        },
+        "available_actions": [
+          6
+        ],
+        "full_reset": false,
+        "game_id": "vc33-5430563c",
+        "levels_completed": 3,
+        "state": "NOT_FINISHED",
+        "win_levels": 7
+      }
+    },
+    {
+      "name": "armed",
+      "hist": {
+        "0": 450,
+        "1": 36,
+        "3": 3068,
+        "4": 20,
+        "5": 354,
+        "7": 60,
+        "9": 54,
+        "11": 18,
+        "12": 36
+      },
+      "novel": {},
+      "meta": {
+        "action_input": {
+          "data": {
+            "game_id": "vc33-5430563c",
+            "x": 13,
+            "y": 48
+          },
+          "id": 6,
+          "reasoning": null
+        },
+        "available_actions": [
+          6
+        ],
+        "full_reset": false,
+        "game_id": "vc33-5430563c",
+        "levels_completed": 3,
+        "state": "NOT_FINISHED",
+        "win_levels": 7
+      }
+    },
+    {
+      "name": "bay1",
+      "hist": {
+        "0": 475,
+        "1": 36,
+        "3": 3043,
+        "4": 21,
+        "5": 354,
+        "7": 59,
+        "9": 54,
+        "11": 18,
+        "12": 36
+      },
+      "novel": {},
+      "meta": {
+        "action_input": {
+          "data": {
+            "game_id": "vc33-5430563c",
+            "x": 40,
+            "y": 62
+          },
+          "id": 6,
+          "reasoning": null
+        },
+        "available_actions": [
+          6
+        ],
+        "full_reset": false,
+        "game_id": "vc33-5430563c",
+        "levels_completed": 3,
+        "state": "NOT_FINISHED",
+        "win_levels": 7
+      }
+    },
+    {
+      "name": "ceil",
+      "hist": {
+        "0": 468,
+        "1": 72,
+        "3": 3050,
+        "4": 26,
+        "5": 354,
+        "7": 54,
+        "9": 54,
+        "11": 18
+      },
+      "novel": {},
+      "meta": {
+        "action_input": {
+          "data": {
+            "game_id": "vc33-5430563c",
+            "x": 16,
+            "y": 62
+          },
+          "id": 6,
+          "reasoning": null
+        },
+        "available_actions": [
+          6
+        ],
+        "full_reset": false,
+        "game_id": "vc33-5430563c",
+        "levels_completed": 3,
+        "state": "NOT_FINISHED",
+        "win_levels": 7
+      }
+    }
+  ],
+  "meta_events_n": 27,
+  "meta_events": [
+    {
+      "target": "dig26_46",
+      "n": 8,
+      "xy": [
+        26,
+        46
+      ],
+      "nd": 0,
+      "meta_diff": {
+        "state": {
+          "from": "NOT_FINISHED",
+          "to": "GAME_OVER"
+        }
+      },
+      "novel": {},
+      "lv": 3,
+      "acts": [
+        6
+      ],
+      "mid": 1,
+      "h12": 36
+    },
+    {
+      "label": "D/mid_gap_0",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 16,
+              "y": 62
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_gap_1",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 43,
+              "y": 30
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_gap_2",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 43,
+              "y": 30
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_gap_3",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 43,
+              "y": 30
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_gap_4",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 43,
+              "y": 30
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_gap_5",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 43,
+              "y": 30
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_gap_6",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 43,
+              "y": 30
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_gap_7",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 43,
+              "y": 30
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_dig_0",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 43,
+              "y": 30
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_dig_1",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 26,
+              "y": 45
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_dig_2",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 26,
+              "y": 45
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_dig_3",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 26,
+              "y": 45
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_dig_4",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 26,
+              "y": 45
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_dig_5",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 26,
+              "y": 45
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_dig_6",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 26,
+              "y": 45
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_dig_7",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 26,
+              "y": 45
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_beam_0",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 26,
+              "y": 45
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_beam_1",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 46
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_beam_2",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 46
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_beam_3",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 46
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_beam_4",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 46
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_beam_5",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 46
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_beam_6",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 46
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "D/mid_beam_7",
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 46
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      }
+    },
+    {
+      "label": "E/c9",
+      "ch": {
+        "0->3": 51,
+        "12->1": 36,
+        "3->0": 17,
+        "3->4": 14,
+        "11->0": 12,
+        "4->11": 8,
+        "4->0": 6,
+        "3->11": 4
+      }
+    },
+    {
+      "label": "E/c9",
+      "ch": {
+        "3->0": 51,
+        "1->12": 36,
+        "0->3": 17,
+        "4->3": 14,
+        "0->11": 12,
+        "11->4": 8,
+        "0->4": 6,
+        "11->3": 4
+      }
+    }
+  ],
+  "click_logs_interesting": [
+    {
+      "target": "mid",
+      "n": 1,
+      "xy": [
+        28,
+        40
+      ],
+      "nd": 0,
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 16,
+              "y": 62
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      },
+      "novel": {},
+      "lv": 3,
+      "acts": [
+        6
+      ],
+      "mid": 1,
+      "h12": 36
+    },
+    {
+      "target": "midbot",
+      "n": 1,
+      "xy": [
+        27,
+        45
+      ],
+      "nd": 0,
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 28,
+              "y": 40
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 27,
+              "y": 45
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      },
+      "novel": {},
+      "lv": 3,
+      "acts": [
+        6
+      ],
+      "mid": 1,
+      "h12": 36
+    },
+    {
+      "target": "gap",
+      "n": 1,
+      "xy": [
+        43,
+        30
+      ],
+      "nd": 0,
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 27,
+              "y": 45
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 43,
+              "y": 30
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      },
+      "novel": {},
+      "lv": 3,
+      "acts": [
+        6
+      ],
+      "mid": 1,
+      "h12": 36
+    },
+    {
+      "target": "left12",
+      "n": 1,
+      "xy": [
+        13,
+        48
+      ],
+      "nd": 16,
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 43,
+              "y": 30
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 13,
+              "y": 48
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      },
+      "novel": {},
+      "lv": 3,
+      "acts": [
+        6
+      ],
+      "mid": 1,
+      "h12": 36
+    },
+    {
+      "target": "left12",
+      "n": 2,
+      "xy": [
+        13,
+        48
+      ],
+      "nd": 56,
+      "meta_diff": {},
+      "novel": {},
+      "lv": 3,
+      "acts": [
+        6
+      ],
+      "mid": 1,
+      "h12": 36
+    },
+    {
+      "target": "left12",
+      "n": 4,
+      "xy": [
+        13,
+        48
+      ],
+      "nd": 56,
+      "meta_diff": {},
+      "novel": {},
+      "lv": 3,
+      "acts": [
+        6
+      ],
+      "mid": 1,
+      "h12": 36
+    },
+    {
+      "target": "left12",
+      "n": 6,
+      "xy": [
+        13,
+        48
+      ],
+      "nd": 56,
+      "meta_diff": {},
+      "novel": {},
+      "lv": 3,
+      "acts": [
+        6
+      ],
+      "mid": 1,
+      "h12": 36
+    },
+    {
+      "target": "left12",
+      "n": 8,
+      "xy": [
+        13,
+        48
+      ],
+      "nd": 56,
+      "meta_diff": {},
+      "novel": {},
+      "lv": 3,
+      "acts": [
+        6
+      ],
+      "mid": 1,
+      "h12": 36
+    },
+    {
+      "target": "dig26_45",
+      "n": 1,
+      "xy": [
+        26,
+        45
+      ],
+      "nd": 72,
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 13,
+              "y": 48
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 26,
+              "y": 45
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      },
+      "novel": {},
+      "lv": 3,
+      "acts": [
+        6
+      ],
+      "mid": 1,
+      "h12": 36
+    },
+    {
+      "target": "dig26_46",
+      "n": 1,
+      "xy": [
+        26,
+        46
+      ],
+      "nd": 0,
+      "meta_diff": {
+        "action_input": {
+          "from": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 26,
+              "y": 45
+            },
+            "id": 6,
+            "reasoning": null
+          },
+          "to": {
+            "data": {
+              "game_id": "vc33-5430563c",
+              "x": 26,
+              "y": 46
+            },
+            "id": 6,
+            "reasoning": null
+          }
+        }
+      },
+      "novel": {},
+      "lv": 3,
+      "acts": [
+        6
+      ],
+      "mid": 1,
+      "h12": 36
+    },
+    {
+      "target": "dig26_46",
+      "n": 8,
+      "xy": [
+        26,
+        46
+      ],
+      "nd": 0,
+      "meta_diff": {
+        "state": {
+          "from": "NOT_FINISHED",
+          "to": "GAME_OVER"
+        }
+      },
+      "novel": {},
+      "lv": 3,
+      "acts": [
+        6
+      ],
+      "mid": 1,
+      "h12": 36
+    },
+    {
+      "target": "flank16_45",
+      "n": 1,
+      "http": true
+    },
+    {
+      "target": "flank10_45",
+      "n": 1,
+      "http": true
+    },
+    {
+      "target": "deep26_55",
+      "n": 1,
+      "http": true
+    },
+    {
+      "target": "accent",
+      "n": 1,
+      "http": true
+    },
+    {
+      "target": "c7",
+      "n": 1,
+      "http": true
+    },
+    {
+      "target": "ui4",
+      "n": 1,
+      "http": true
+    }
+  ],
+  "hypothesis": "H59 last resort hidden UI / novel color / multi-click",
+  "h48_ignore": [
+    {
+      "target": "dig26_46",
+      "n": 8,
+      "xy": [
+        26,
+        46
+      ],
+      "nd": 0,
+      "meta_diff": {
+        "state": {
+          "from": "NOT_FINISHED",
+          "to": "GAME_OVER"
+        }
+      },
+      "novel": {},
+      "lv": 3,
+      "acts": [
+        6
+      ],
+      "mid": 1,
+      "h12": 36
+    }
+  ],
+  "meta_events_real": [],
+  "note": "odd_colors=[]; multi-click dig26_46 x8 -> GAME_OVER (H48 ignore); action_input echo only; acts always [6]; win_levels=7"
+}

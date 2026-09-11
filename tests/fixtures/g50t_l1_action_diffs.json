@@ -1,0 +1,150 @@
+{
+  "game_id": "g50t-5849a774",
+  "card_id": "881b9ac6-492c-4138-84c6-afd54b734220",
+  "tags": [
+    "g50t_recon"
+  ],
+  "available_actions": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "dir_map": {},
+  "per_action": [
+    {
+      "action": "ACTION1",
+      "kwargs": {},
+      "body_ndiff": 0,
+      "full_ndiff": 0,
+      "ui_tick": [],
+      "change_hist": {},
+      "movers": [],
+      "meta": {
+        "levels_completed": 0,
+        "state": "NOT_FINISHED",
+        "available_actions": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "win_levels": 7
+      }
+    },
+    {
+      "action": "ACTION2",
+      "kwargs": {},
+      "body_ndiff": 0,
+      "full_ndiff": 0,
+      "ui_tick": [],
+      "change_hist": {},
+      "movers": [],
+      "meta": {
+        "levels_completed": 0,
+        "state": "NOT_FINISHED",
+        "available_actions": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "win_levels": 7
+      }
+    },
+    {
+      "action": "ACTION3",
+      "kwargs": {},
+      "body_ndiff": 0,
+      "full_ndiff": 0,
+      "ui_tick": [],
+      "change_hist": {},
+      "movers": [],
+      "meta": {
+        "levels_completed": 0,
+        "state": "NOT_FINISHED",
+        "available_actions": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "win_levels": 7
+      }
+    },
+    {
+      "action": "ACTION4",
+      "kwargs": {},
+      "body_ndiff": 0,
+      "full_ndiff": 0,
+      "ui_tick": [],
+      "change_hist": {},
+      "movers": [],
+      "meta": {
+        "levels_completed": 0,
+        "state": "NOT_FINISHED",
+        "available_actions": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "win_levels": 7
+      }
+    },
+    {
+      "action": "ACTION5",
+      "kwargs": {},
+      "body_ndiff": 0,
+      "full_ndiff": 0,
+      "ui_tick": [],
+      "change_hist": {},
+      "movers": [],
+      "meta": {
+        "levels_completed": 0,
+        "state": "NOT_FINISHED",
+        "available_actions": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "win_levels": 7
+      }
+    }
+  ],
+  "extra_clicks": [],
+  "verdicts": {
+    "H1": {
+      "verdict": "OPEN",
+      "why": "acts=[1, 2, 3, 4, 5]; need more probes"
+    },
+    "H2": {
+      "verdict": "OPEN",
+      "why": "\u2014"
+    },
+    "H3": {
+      "verdict": "REFUTED",
+      "why": "no y=0 cell change on single steps"
+    },
+    "H4": {
+      "verdict": "OPEN",
+      "why": "collision not yet probed this run"
+    },
+    "H5": {
+      "verdict": "OPEN",
+      "why": "no levels\u2191 on single steps"
+    },
+    "H6": {
+      "verdict": "SUPPORTED",
+      "why": "ACTION6 not in available_actions; movement via discrete acts"
+    }
+  },
+  "next_cut": "1) \u9501\u5b9a\u89d2\u8272\u8272/\u8fde\u901a\u5757\uff08\u89c1 movers\uff09\uff1b2) \u671d\u969c\u788d\u90bb\u683c\u6b65\u8fdb\u6d4b H4 \u78b0\u649e\uff1b3) \u626b\u53ef\u8fbe\u533a\u627e\u76ee\u6807/\u51fa\u53e3\uff1b4) \u6700\u77ed\u5b89\u5168\u8def\u5f84\u6c42 levels 0\u21921\u3002"
+}

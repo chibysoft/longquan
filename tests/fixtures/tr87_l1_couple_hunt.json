@@ -1,0 +1,176 @@
+{
+  "couple_act1_slot0": [
+    true,
+    false,
+    false,
+    false,
+    false
+  ],
+  "couple_act1_slot1": [
+    false,
+    true,
+    false,
+    false,
+    false
+  ],
+  "reachable_top7": {
+    "0": [
+      [
+        22,
+        4
+      ]
+    ],
+    "1": [
+      [
+        22,
+        13
+      ]
+    ],
+    "2": [
+      [
+        22,
+        4
+      ]
+    ],
+    "3": [
+      [
+        22,
+        4
+      ]
+    ],
+    "4": [
+      [
+        22,
+        4
+      ]
+    ]
+  },
+  "all_equal": [
+    {
+      "ti": 0,
+      "eq": 3,
+      "lv0": 0,
+      "lv1": 0,
+      "nact": 8,
+      "cleared": false
+    },
+    {
+      "ti": 1,
+      "eq": 4,
+      "lv0": 0,
+      "lv1": 0,
+      "nact": 11,
+      "cleared": false
+    },
+    {
+      "ti": 2,
+      "eq": 4,
+      "lv0": 0,
+      "lv1": 0,
+      "nact": 11,
+      "cleared": false
+    },
+    {
+      "ti": 3,
+      "eq": 3,
+      "lv0": 0,
+      "lv1": 0,
+      "nact": 8,
+      "cleared": false
+    },
+    {
+      "ti": 4,
+      "eq": 3,
+      "lv0": 0,
+      "lv1": 0,
+      "nact": 8,
+      "cleared": false
+    },
+    {
+      "ti": 5,
+      "eq": 4,
+      "lv0": 0,
+      "lv1": 0,
+      "nact": 11,
+      "cleared": false
+    },
+    {
+      "ti": 6,
+      "eq": 3,
+      "lv0": 0,
+      "lv1": 0,
+      "nact": 9,
+      "cleared": false
+    }
+  ],
+  "left_col_plan": {
+    "ok_targets_in_map": false,
+    "lv0": 0,
+    "lv1": 0,
+    "actions": [
+      1,
+      1,
+      4,
+      2
+    ],
+    "bottom": [
+      [
+        "55557",
+        "57755",
+        "57775",
+        "55775",
+        "75555"
+      ],
+      [
+        "55555",
+        "57757",
+        "57757",
+        "55557",
+        "57777"
+      ],
+      [
+        "55555",
+        "57775",
+        "55575",
+        "57575",
+        "55555"
+      ],
+      [
+        "55555",
+        "57775",
+        "55555",
+        "75757",
+        "75557"
+      ],
+      [
+        "55557",
+        "57755",
+        "57775",
+        "55775",
+        "75555"
+      ]
+    ]
+  },
+  "partial_top7": {
+    "lv0": 0,
+    "lv1": 0,
+    "actions": [
+      1,
+      1,
+      4,
+      2
+    ]
+  },
+  "unify_b0": {
+    "lv0": 0,
+    "lv1": 0,
+    "match": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  "reading": "COUPLE_PARTIAL"
+}

@@ -1,0 +1,3757 @@
+{
+  "mid_spur": [
+    {
+      "i": 0,
+      "a": 2,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 10.0,
+        "box": [
+          14,
+          8,
+          18,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 0,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 1,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 16.0,
+        "box": [
+          14,
+          14,
+          18,
+          18
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 1,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 2,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 22.0,
+        "box": [
+          14,
+          20,
+          18,
+          24
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 1,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 3,
+      "a": 4,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 28.0,
+        "box": [
+          14,
+          26,
+          18,
+          30
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 2,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 4,
+      "a": 4,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 28.0,
+        "box": [
+          14,
+          26,
+          18,
+          30
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 2,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 5,
+      "a": 4,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 28.0,
+        "box": [
+          14,
+          26,
+          18,
+          30
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 3,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 6,
+      "a": 4,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 28.0,
+        "box": [
+          14,
+          26,
+          18,
+          30
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 3,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 7,
+      "a": 2,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 28.0,
+        "box": [
+          14,
+          26,
+          18,
+          30
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 4,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 8,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 4,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 9,
+      "a": 4,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 5,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 10,
+      "a": 4,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 5,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 11,
+      "a": 4,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 6,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    }
+  ],
+  "eat_head_then_5": [
+    {
+      "i": 0,
+      "a": 4,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 10.0,
+        "box": [
+          14,
+          8,
+          18,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 0,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 1,
+      "a": 4,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 22.0,
+        "cy": 10.0,
+        "box": [
+          20,
+          8,
+          24,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 1,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 2,
+      "a": 4,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 28.0,
+        "cy": 10.0,
+        "box": [
+          26,
+          8,
+          30,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 1,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 3,
+      "a": 4,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 34.0,
+        "cy": 10.0,
+        "box": [
+          32,
+          8,
+          36,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 2,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 4,
+      "a": 4,
+      "body": 105,
+      "actor": {
+        "n": 24,
+        "cx": 40.0,
+        "cy": 10.0,
+        "box": [
+          38,
+          8,
+          42,
+          12
+        ]
+      },
+      "e8": {
+        "n": 66,
+        "ymin": 13,
+        "ymax": 42,
+        "xmin": 20,
+        "xmax": 40,
+        "at_left_shaft_y38": 0,
+        "stem40": 25
+      },
+      "bar1": 2,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 5,
+      "a": 5,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 40.0,
+        "cy": 10.0,
+        "box": [
+          38,
+          8,
+          42,
+          12
+        ]
+      },
+      "e8": {
+        "n": 66,
+        "ymin": 13,
+        "ymax": 42,
+        "xmin": 20,
+        "xmax": 40,
+        "at_left_shaft_y38": 0,
+        "stem40": 25
+      },
+      "bar1": 3,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 6,
+      "a": 5,
+      "body": 128,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 10.0,
+        "box": [
+          14,
+          8,
+          18,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 3,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 7,
+      "a": 5,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 10.0,
+        "box": [
+          14,
+          8,
+          18,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 4,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 8,
+      "a": 2,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 10.0,
+        "box": [
+          14,
+          8,
+          18,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 4,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 9,
+      "a": 2,
+      "body": 72,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 16.0,
+        "box": [
+          14,
+          14,
+          18,
+          18
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 5,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 10,
+      "a": 2,
+      "body": 96,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 22.0,
+        "box": [
+          14,
+          20,
+          18,
+          24
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 5,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 11,
+      "a": 3,
+      "body": 96,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 28.0,
+        "box": [
+          14,
+          26,
+          18,
+          30
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 6,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 12,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 28.0,
+        "box": [
+          14,
+          26,
+          18,
+          30
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 6,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 13,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 28.0,
+        "box": [
+          14,
+          26,
+          18,
+          30
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 7,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    }
+  ],
+  "eat_head_then_L_D": [
+    {
+      "i": 0,
+      "a": 4,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 10.0,
+        "box": [
+          14,
+          8,
+          18,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 0,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 1,
+      "a": 4,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 22.0,
+        "cy": 10.0,
+        "box": [
+          20,
+          8,
+          24,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 1,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 2,
+      "a": 4,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 28.0,
+        "cy": 10.0,
+        "box": [
+          26,
+          8,
+          30,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 1,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 3,
+      "a": 4,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 34.0,
+        "cy": 10.0,
+        "box": [
+          32,
+          8,
+          36,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 2,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 4,
+      "a": 4,
+      "body": 105,
+      "actor": {
+        "n": 24,
+        "cx": 40.0,
+        "cy": 10.0,
+        "box": [
+          38,
+          8,
+          42,
+          12
+        ]
+      },
+      "e8": {
+        "n": 66,
+        "ymin": 13,
+        "ymax": 42,
+        "xmin": 20,
+        "xmax": 40,
+        "at_left_shaft_y38": 0,
+        "stem40": 25
+      },
+      "bar1": 2,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 5,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 40.0,
+        "cy": 10.0,
+        "box": [
+          38,
+          8,
+          42,
+          12
+        ]
+      },
+      "e8": {
+        "n": 66,
+        "ymin": 13,
+        "ymax": 42,
+        "xmin": 20,
+        "xmax": 40,
+        "at_left_shaft_y38": 0,
+        "stem40": 25
+      },
+      "bar1": 3,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 6,
+      "a": 3,
+      "body": 105,
+      "actor": {
+        "n": 24,
+        "cx": 34.0,
+        "cy": 10.0,
+        "box": [
+          32,
+          8,
+          36,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 3,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 7,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 28.0,
+        "cy": 10.0,
+        "box": [
+          26,
+          8,
+          30,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 4,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 8,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 28.0,
+        "cy": 16.0,
+        "box": [
+          26,
+          14,
+          30,
+          18
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 4,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 9,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 28.0,
+        "cy": 22.0,
+        "box": [
+          26,
+          20,
+          30,
+          24
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 5,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 10,
+      "a": 2,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 28.0,
+        "cy": 22.0,
+        "box": [
+          26,
+          20,
+          30,
+          24
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 5,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 11,
+      "a": 4,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 28.0,
+        "cy": 22.0,
+        "box": [
+          26,
+          20,
+          30,
+          24
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 6,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 12,
+      "a": 4,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 28.0,
+        "cy": 22.0,
+        "box": [
+          26,
+          20,
+          30,
+          24
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 6,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    }
+  ],
+  "timer_at_22": [
+    {
+      "i": 0,
+      "a": 2,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 10.0,
+        "box": [
+          14,
+          8,
+          18,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 0,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 1,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 16.0,
+        "box": [
+          14,
+          14,
+          18,
+          18
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 1,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 2,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 22.0,
+        "box": [
+          14,
+          20,
+          18,
+          24
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 1,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 3,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 28.0,
+        "box": [
+          14,
+          26,
+          18,
+          30
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 2,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 4,
+      "a": 3,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 2,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 5,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 3,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 6,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 3,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 7,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 4,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 8,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 4,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 9,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 5,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 10,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 5,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 11,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 6,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 12,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 6,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 13,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 7,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 14,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 7,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 15,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 8,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 16,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 8,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 17,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 9,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 18,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 9,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 19,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 10,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 20,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 10,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 21,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 11,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 22,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 11,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 23,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 12,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 24,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 12,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 25,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 13,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 26,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 13,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 27,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 14,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 28,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 14,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 29,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 15,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 30,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 15,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 31,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 16,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 32,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 16,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 33,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 17,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 34,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 17,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 35,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 18,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 36,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 18,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 37,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 19,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 38,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 19,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 39,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 20,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 40,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 20,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 41,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 21,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 42,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 21,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 43,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 22,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    }
+  ],
+  "bottom_A5_once": [
+    {
+      "i": 0,
+      "a": 2,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 10.0,
+        "box": [
+          14,
+          8,
+          18,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 0,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 1,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 16.0,
+        "box": [
+          14,
+          14,
+          18,
+          18
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 1,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 2,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 22.0,
+        "box": [
+          14,
+          20,
+          18,
+          24
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 1,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 3,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 28.0,
+        "box": [
+          14,
+          26,
+          18,
+          30
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 2,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 4,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 2,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 5,
+      "a": 5,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 3,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 6,
+      "a": 2,
+      "body": 71,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 10.0,
+        "box": [
+          14,
+          8,
+          18,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 3,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 7,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 16.0,
+        "box": [
+          14,
+          14,
+          18,
+          18
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 4,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 8,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 22.0,
+        "box": [
+          14,
+          20,
+          18,
+          24
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 4,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 9,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 28.0,
+        "box": [
+          14,
+          26,
+          18,
+          30
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 5,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 10,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 5,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 11,
+      "a": 4,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 6,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 12,
+      "a": 4,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 6,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 13,
+      "a": 4,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 7,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 14,
+      "a": 4,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 7,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 15,
+      "a": 4,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 8,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    }
+  ],
+  "bottom_5_2": [
+    {
+      "i": 0,
+      "a": 2,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 10.0,
+        "box": [
+          14,
+          8,
+          18,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 0,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 1,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 16.0,
+        "box": [
+          14,
+          14,
+          18,
+          18
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 1,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 2,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 22.0,
+        "box": [
+          14,
+          20,
+          18,
+          24
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 1,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 3,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 28.0,
+        "box": [
+          14,
+          26,
+          18,
+          30
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 2,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 4,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 2,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 5,
+      "a": 5,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 34.0,
+        "box": [
+          14,
+          32,
+          18,
+          36
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 3,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 6,
+      "a": 2,
+      "body": 71,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 10.0,
+        "box": [
+          14,
+          8,
+          18,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 3,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 7,
+      "a": 5,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 16.0,
+        "box": [
+          14,
+          14,
+          18,
+          18
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 4,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 8,
+      "a": 2,
+      "body": 71,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 10.0,
+        "box": [
+          14,
+          8,
+          18,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 4,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 9,
+      "a": 5,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 16.0,
+        "box": [
+          14,
+          14,
+          18,
+          18
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 5,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 10,
+      "a": 2,
+      "body": 71,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 10.0,
+        "box": [
+          14,
+          8,
+          18,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 5,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 11,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 16.0,
+        "box": [
+          14,
+          14,
+          18,
+          18
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 6,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 12,
+      "a": 2,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 22.0,
+        "box": [
+          14,
+          20,
+          18,
+          24
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 6,
+      "n1": 0,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    }
+  ],
+  "ream_head": [
+    {
+      "i": 0,
+      "a": 4,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 16.0,
+        "cy": 10.0,
+        "box": [
+          14,
+          8,
+          18,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 0,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 1,
+      "a": 4,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 22.0,
+        "cy": 10.0,
+        "box": [
+          20,
+          8,
+          24,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 1,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 2,
+      "a": 4,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 28.0,
+        "cy": 10.0,
+        "box": [
+          26,
+          8,
+          30,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 1,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 3,
+      "a": 4,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 34.0,
+        "cy": 10.0,
+        "box": [
+          32,
+          8,
+          36,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 2,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 4,
+      "a": 4,
+      "body": 105,
+      "actor": {
+        "n": 24,
+        "cx": 40.0,
+        "cy": 10.0,
+        "box": [
+          38,
+          8,
+          42,
+          12
+        ]
+      },
+      "e8": {
+        "n": 66,
+        "ymin": 13,
+        "ymax": 42,
+        "xmin": 20,
+        "xmax": 40,
+        "at_left_shaft_y38": 0,
+        "stem40": 25
+      },
+      "bar1": 2,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 5,
+      "a": 3,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 40.0,
+        "cy": 10.0,
+        "box": [
+          38,
+          8,
+          42,
+          12
+        ]
+      },
+      "e8": {
+        "n": 66,
+        "ymin": 13,
+        "ymax": 42,
+        "xmin": 20,
+        "xmax": 40,
+        "at_left_shaft_y38": 0,
+        "stem40": 25
+      },
+      "bar1": 3,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 6,
+      "a": 3,
+      "body": 105,
+      "actor": {
+        "n": 24,
+        "cx": 34.0,
+        "cy": 10.0,
+        "box": [
+          32,
+          8,
+          36,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 3,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 7,
+      "a": 4,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 28.0,
+        "cy": 10.0,
+        "box": [
+          26,
+          8,
+          30,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 4,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 8,
+      "a": 4,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 34.0,
+        "cy": 10.0,
+        "box": [
+          32,
+          8,
+          36,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 4,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 9,
+      "a": 3,
+      "body": 105,
+      "actor": {
+        "n": 24,
+        "cx": 40.0,
+        "cy": 10.0,
+        "box": [
+          38,
+          8,
+          42,
+          12
+        ]
+      },
+      "e8": {
+        "n": 66,
+        "ymin": 13,
+        "ymax": 42,
+        "xmin": 20,
+        "xmax": 40,
+        "at_left_shaft_y38": 0,
+        "stem40": 25
+      },
+      "bar1": 5,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 10,
+      "a": 3,
+      "body": 105,
+      "actor": {
+        "n": 24,
+        "cx": 34.0,
+        "cy": 10.0,
+        "box": [
+          32,
+          8,
+          36,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 5,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 11,
+      "a": 4,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 28.0,
+        "cy": 10.0,
+        "box": [
+          26,
+          8,
+          30,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 6,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 12,
+      "a": 4,
+      "body": 48,
+      "actor": {
+        "n": 24,
+        "cx": 34.0,
+        "cy": 10.0,
+        "box": [
+          32,
+          8,
+          36,
+          12
+        ]
+      },
+      "e8": {
+        "n": 82,
+        "ymin": 9,
+        "ymax": 42,
+        "xmin": 14,
+        "xmax": 41,
+        "at_left_shaft_y38": 23,
+        "stem40": 26
+      },
+      "bar1": 6,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 13,
+      "a": 4,
+      "body": 105,
+      "actor": {
+        "n": 24,
+        "cx": 40.0,
+        "cy": 10.0,
+        "box": [
+          38,
+          8,
+          42,
+          12
+        ]
+      },
+      "e8": {
+        "n": 66,
+        "ymin": 13,
+        "ymax": 42,
+        "xmin": 20,
+        "xmax": 40,
+        "at_left_shaft_y38": 0,
+        "stem40": 25
+      },
+      "bar1": 7,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 14,
+      "a": 2,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 40.0,
+        "cy": 10.0,
+        "box": [
+          38,
+          8,
+          42,
+          12
+        ]
+      },
+      "e8": {
+        "n": 66,
+        "ymin": 13,
+        "ymax": 42,
+        "xmin": 20,
+        "xmax": 40,
+        "at_left_shaft_y38": 0,
+        "stem40": 25
+      },
+      "bar1": 7,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 15,
+      "a": 2,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 40.0,
+        "cy": 10.0,
+        "box": [
+          38,
+          8,
+          42,
+          12
+        ]
+      },
+      "e8": {
+        "n": 66,
+        "ymin": 13,
+        "ymax": 42,
+        "xmin": 20,
+        "xmax": 40,
+        "at_left_shaft_y38": 0,
+        "stem40": 25
+      },
+      "bar1": 8,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    },
+    {
+      "i": 16,
+      "a": 2,
+      "body": 0,
+      "actor": {
+        "n": 24,
+        "cx": 40.0,
+        "cy": 10.0,
+        "box": [
+          38,
+          8,
+          42,
+          12
+        ]
+      },
+      "e8": {
+        "n": 66,
+        "ymin": 13,
+        "ymax": 42,
+        "xmin": 20,
+        "xmax": 40,
+        "at_left_shaft_y38": 0,
+        "stem40": 25
+      },
+      "bar1": 8,
+      "n1": 9,
+      "levels": 0,
+      "state": "NOT_FINISHED"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "cleared": false,
+  "final_pos": [
+    52.0,
+    28.0
+  ],
+  "final_e8": {
+    "n": 36,
+    "bbox": [
+      14,
+      26,
+      31,
+      30
+    ],
+    "xmin": 14,
+    "xmax": 31,
+    "ymin": 26,
+    "ymax": 30
+  },
+  "lv": 3,
+  "nact": 243
+}

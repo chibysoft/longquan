@@ -1,0 +1,103 @@
+{
+  "rows": [
+    {
+      "slot": 0,
+      "period": 7,
+      "n": 7,
+      "top7": [
+        [
+          22,
+          4
+        ]
+      ],
+      "topA": [],
+      "mid": [],
+      "bots_in_cycle": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "slot": 1,
+      "period": 7,
+      "n": 7,
+      "top7": [
+        [
+          22,
+          13
+        ]
+      ],
+      "topA": [],
+      "mid": [],
+      "bots_in_cycle": [
+        1
+      ]
+    },
+    {
+      "slot": 2,
+      "period": 7,
+      "n": 7,
+      "top7": [
+        [
+          22,
+          4
+        ]
+      ],
+      "topA": [],
+      "mid": [],
+      "bots_in_cycle": [
+        2,
+        4
+      ]
+    },
+    {
+      "slot": 3,
+      "period": 7,
+      "n": 7,
+      "top7": [
+        [
+          22,
+          4
+        ]
+      ],
+      "topA": [],
+      "mid": [],
+      "bots_in_cycle": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "slot": 4,
+      "period": 7,
+      "n": 7,
+      "top7": [
+        [
+          22,
+          4
+        ]
+      ],
+      "topA": [],
+      "mid": [],
+      "bots_in_cycle": [
+        0,
+        3,
+        4
+      ]
+    }
+  ],
+  "same_alphabet": false,
+  "alphabet_sizes": [
+    7,
+    7,
+    7,
+    7,
+    7
+  ],
+  "union_n": 18,
+  "top7_covered": 2,
+  "topA_covered": 0,
+  "mid_covered": 0
+}

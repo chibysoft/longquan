@@ -1,0 +1,11 @@
+{
+  "base_actions": [
+    1,
+    1,
+    4,
+    2
+  ],
+  "cleared": false,
+  "hit": null,
+  "reading": "TORUS_EMPTY"
+}
